@@ -1,0 +1,19 @@
+rules:
+  - id: vibe-missing-error-handling
+    patterns:
+      - pattern: |
+          try:
+            ...
+          except:
+            pass
+    message: "Bare except with pass detected. Vibe Coder requires explicit error handling or logging."
+    languages: [python]
+    severity: WARNING
+
+  - id: vibe-hardcoded-config
+    patterns:
+      - pattern: |
+          $CONFIG = { ... }
+    message: "Hardcoded configuration detected. Use vibe.config.yml for environment-specific settings."
+    languages: [python, javascript, typescript]
+    severity: INFO

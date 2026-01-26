@@ -1,0 +1,4978 @@
+{
+  "version": "12.12.3-antigravity-enterprise",
+  "started_at": "2026-01-21T07:09:35.356973Z",
+  "finished_at": "2026-01-21T07:09:35.442276Z",
+  "repo_root": "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise",
+  "mode": "accuracy",
+  "task": "",
+  "detected_stacks": [],
+  "analyzed_files": [
+    "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/.github/workflows/vibe-evidencepack.yml",
+    "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/.github/workflows/vibe-sarif.yml",
+    "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/README.md",
+    "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/docs/RLM_KNOWLEDGE_LIFECYCLE_PIPELINE.md",
+    "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/docs/SKILLS_AUDIT.md",
+    "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/vibe.config.yml"
+  ],
+  "findings": [],
+  "scores": {
+    "overall": 100,
+    "grade": "A",
+    "penalty": 0,
+    "counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0,
+      "info": 0
+    },
+    "internal": {
+      "file_read_errors": 0,
+      "cache_read_errors": 0,
+      "cache_write_errors": 0
+    }
+  },
+  "action_plan": [],
+  "gates": [
+    {
+      "name": "gate-1",
+      "command": "python3 -m compileall .",
+      "allowed": false,
+      "exit_code": null,
+      "stdout": "",
+      "stderr": "",
+      "duration_ms": null,
+      "artifacts": null
+    }
+  ],
+  "traces": [
+    {
+      "name": "repo_root",
+      "started_at": "2026-01-21T07:09:35.357022Z",
+      "finished_at": "2026-01-21T07:09:35.357368Z",
+      "duration_ms": 0,
+      "meta": {}
+    },
+    {
+      "name": "detect_stacks",
+      "started_at": "2026-01-21T07:09:35.357387Z",
+      "finished_at": "2026-01-21T07:09:35.357468Z",
+      "duration_ms": 0,
+      "meta": {}
+    },
+    {
+      "name": "config",
+      "started_at": "2026-01-21T07:09:35.357476Z",
+      "finished_at": "2026-01-21T07:09:35.407970Z",
+      "duration_ms": 50,
+      "meta": {}
+    },
+    {
+      "name": "collect_files",
+      "started_at": "2026-01-21T07:09:35.408078Z",
+      "finished_at": "2026-01-21T07:09:35.408744Z",
+      "duration_ms": 0,
+      "meta": {
+        "diff_base": null,
+        "mode": "accuracy"
+      }
+    },
+    {
+      "name": "load_rules",
+      "started_at": "2026-01-21T07:09:35.408853Z",
+      "finished_at": "2026-01-21T07:09:35.409768Z",
+      "duration_ms": 0,
+      "meta": {}
+    },
+    {
+      "name": "analyze_files",
+      "started_at": "2026-01-21T07:09:35.409789Z",
+      "finished_at": "2026-01-21T07:09:35.412950Z",
+      "duration_ms": 3,
+      "meta": {
+        "file_count": 6
+      }
+    },
+    {
+      "name": "external_tools",
+      "started_at": "2026-01-21T07:09:35.412972Z",
+      "finished_at": "2026-01-21T07:09:35.413728Z",
+      "duration_ms": 0,
+      "meta": {
+        "mode": "accuracy"
+      }
+    },
+    {
+      "name": "dedupe",
+      "started_at": "2026-01-21T07:09:35.413747Z",
+      "finished_at": "2026-01-21T07:09:35.413754Z",
+      "duration_ms": 0,
+      "meta": {}
+    },
+    {
+      "name": "confidence_filter",
+      "started_at": "2026-01-21T07:09:35.413763Z",
+      "finished_at": "2026-01-21T07:09:35.413768Z",
+      "duration_ms": 0,
+      "meta": {
+        "min_confidence": 80
+      }
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-01-21T07:09:35.413781Z",
+      "finished_at": "2026-01-21T07:09:35.413815Z",
+      "duration_ms": 0,
+      "meta": {
+        "run_gates": true
+      }
+    },
+    {
+      "name": "score_and_plan",
+      "started_at": "2026-01-21T07:09:35.413827Z",
+      "finished_at": "2026-01-21T07:09:35.413851Z",
+      "duration_ms": 0,
+      "meta": {}
+    },
+    {
+      "name": "cruel",
+      "started_at": "2026-01-21T07:09:35.418730Z",
+      "finished_at": "2026-01-21T07:09:35.442244Z",
+      "duration_ms": 23,
+      "meta": {}
+    },
+    {
+      "name": "skills_router",
+      "started_at": "2026-01-21T07:09:35.413870Z",
+      "finished_at": "2026-01-21T07:09:35.442269Z",
+      "duration_ms": 28,
+      "meta": {}
+    }
+  ],
+  "manifest": {
+    "version": "12.12.3-antigravity-enterprise",
+    "started_at": "2026-01-21T07:09:35.356973Z",
+    "finished_at": "2026-01-21T07:09:35.442276Z",
+    "seed": 0,
+    "repo_root": "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise",
+    "mode": "accuracy",
+    "diff_base": null,
+    "file_count": 6,
+    "file_hashes": {
+      "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/.github/workflows/vibe-evidencepack.yml": "cd4d7cc6942749417c05fa9ba70a37bf56eedb2ea4ad91957880060bce0a0c38",
+      "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/.github/workflows/vibe-sarif.yml": "ef2f6020b9540e628ea50aa4af3c869dfb44681194e229b782c18165daa9756d",
+      "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/README.md": "f2d55b3b6d6ca56e5a76d7e528a05493ffb7cae632083c340b47b1477ea5b51d",
+      "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/docs/RLM_KNOWLEDGE_LIFECYCLE_PIPELINE.md": "f1aa3aba057da6d1ac33569aa583bc6523fd37852274242eee6be54ed6709772",
+      "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/docs/SKILLS_AUDIT.md": "92b3dc60863bc890aeb7069046660e6b73446cbd7adf2a806c50438855d161e9",
+      "/mnt/data/v12_12_3_work/vibe_coder_v12.12.3_antigravity_enterprise/vibe.config.yml": "4ea9a855b545194d73979fe2379da4178c3cb25d9d7c566bf096507adc36bf63"
+    },
+    "config_hash": "1522810cdc2e6dfd",
+    "tool_versions": {
+      "python3": "Python 3.11.2",
+      "git": "git version 2.39.5"
+    }
+  },
+  "skills": {
+    "rulemap_loaded": true,
+    "selected": [
+      {
+        "skill_id": "vibe-documentation-auto",
+        "rel_path": ".agent/skills/vibe-documentation-auto.md",
+        "score": 115,
+        "matched_triggers": [
+          "need:base"
+        ],
+        "kind": "skillpack",
+        "tags": [
+          "agent_runtime",
+          "docs"
+        ],
+        "repo": ""
+      },
+      {
+        "skill_id": "vibe-qa-debugging",
+        "rel_path": ".agent/skills/vibe-qa-debugging.md",
+        "score": 115,
+        "matched_triggers": [
+          "need:base"
+        ],
+        "kind": "skillpack",
+        "tags": [
+          "agent_runtime",
+          "testing"
+        ],
+        "repo": ""
+      },
+      {
+        "skill_id": "vibe-rlm-knowledge-lifecycle",
+        "rel_path": ".agent/skills/vibe-rlm-knowledge-lifecycle.md",
+        "score": 115,
+        "matched_triggers": [
+          "need:base"
+        ],
+        "kind": "config",
+        "tags": [
+          "agent_runtime",
+          "spec"
+        ],
+        "repo": ""
+      },
+      {
+        "skill_id": "vibe-super-coder-skills",
+        "rel_path": ".agent/skills/vibe-super-coder-skills.md",
+        "score": 115,
+        "matched_triggers": [
+          "need:base"
+        ],
+        "kind": "skillpack",
+        "tags": [
+          "agent_runtime",
+          "testing"
+        ],
+        "repo": ""
+      },
+      {
+        "skill_id": "vibe-external-integrations",
+        "rel_path": ".agent/skills/vibe-external-integrations.md",
+        "score": 95,
+        "matched_triggers": [
+          "need:discovery"
+        ],
+        "kind": "registry",
+        "tags": [
+          "agent_runtime",
+          "ci",
+          "devtools",
+          "security",
+          "skills_registry"
+        ],
+        "repo": "https://github.com/ZhangYu-zjut/awesome-Antigravity"
+      },
+      {
+        "skill_id": "vibe-external-skills-catalog",
+        "rel_path": ".agent/skills/vibe-external-skills-catalog.md",
+        "score": 95,
+        "matched_triggers": [
+          "need:discovery"
+        ],
+        "kind": "registry",
+        "tags": [
+          "agent_runtime",
+          "devtools",
+          "nextjs",
+          "react",
+          "security",
+          "skills_registry",
+          "spec",
+          "testing"
+        ],
+        "repo": "https://github.com/agentskills/agentskills"
+      },
+      {
+        "skill_id": "vibe-design-intelligence",
+        "rel_path": ".agent/skills/vibe-design-intelligence.md",
+        "score": 80,
+        "matched_triggers": [],
+        "kind": "skillpack",
+        "tags": [
+          "agent_runtime",
+          "ux_ui"
+        ],
+        "repo": ""
+      },
+      {
+        "skill_id": "vibe-tech-stack-modern-web",
+        "rel_path": ".agent/skills/vibe-tech-stack-modern-web.md",
+        "score": 80,
+        "matched_triggers": [],
+        "kind": "cli",
+        "tags": [
+          "agent_runtime",
+          "devtools",
+          "spec",
+          "ux_ui"
+        ],
+        "repo": ""
+      },
+      {
+        "skill_id": "vibe-v11-feature-matrix",
+        "rel_path": ".agent/skills/vibe-v11-feature-matrix.md",
+        "score": 80,
+        "matched_triggers": [],
+        "kind": "engine",
+        "tags": [
+          "agent_runtime",
+          "ci",
+          "docs",
+          "security",
+          "spec",
+          "ux_ui"
+        ],
+        "repo": ""
+      },
+      {
+        "skill_id": "ext-awesome-agent-skills-heilcheng",
+        "rel_path": ".agent/skills/ext-awesome-agent-skills-heilcheng.md",
+        "score": 35,
+        "matched_triggers": [
+          "need:discovery"
+        ],
+        "kind": "registry",
+        "tags": [
+          "agent_runtime",
+          "ci",
+          "skills_registry"
+        ],
+        "repo": "https://github.com/heilcheng/awesome-agent-skills"
+      },
+      {
+        "skill_id": "ext-awesome-agent-skills-skillmatic",
+        "rel_path": ".agent/skills/ext-awesome-agent-skills-skillmatic.md",
+        "score": 35,
+        "matched_triggers": [
+          "need:discovery"
+        ],
+        "kind": "registry",
+        "tags": [
+          "agent_runtime",
+          "ci",
+          "skills_registry"
+        ],
+        "repo": "https://github.com/skillmatic-ai/awesome-agent-skills"
+      },
+      {
+        "skill_id": "ext-skillport",
+        "rel_path": ".agent/skills/ext-skillport.md",
+        "score": 35,
+        "matched_triggers": [
+          "need:discovery"
+        ],
+        "kind": "registry",
+        "tags": [
+          "agent_runtime",
+          "ci"
+        ],
+        "repo": "https://github.com/gotalab/skillport"
+      }
+    ],
+    "all_triggers": [
+      "need:base",
+      "need:discovery"
+    ],
+    "excluded_external_unpinned": [],
+    "enforced_lock": true,
+    "max_selected": 12,
+    "automap_loaded": true
+  },
+  "cruel": {
+    "enabled": true,
+    "mode": "A",
+    "files_analyzed": 40,
+    "files": [
+      ".agent/rules/GEMINI_PATCH.md",
+      ".agent/rules/vibe-coder-v12.md",
+      ".agent/skills/ext-agent-skills-ddaakk.md",
+      ".agent/skills/ext-agentskills-spec.md",
+      ".agent/skills/ext-ai-skills-strativd.md",
+      ".agent/skills/ext-anthropic-skills.md",
+      ".agent/skills/ext-anthropic-webapp-testing.md",
+      ".agent/skills/ext-awesome-agent-skills-heilcheng.md",
+      ".agent/skills/ext-awesome-agent-skills-skillmatic.md",
+      ".agent/skills/ext-awesome-antigravity-zhangyu.md",
+      ".agent/skills/ext-claude-agents-skills.md",
+      ".agent/skills/ext-context-engineering-skills.md",
+      ".agent/skills/ext-cursor-skills.md",
+      ".agent/skills/ext-getsentry-agents-md.md",
+      ".agent/skills/ext-getsentry-code-review.md",
+      ".agent/skills/ext-getsentry-commit.md",
+      ".agent/skills/ext-getsentry-create-pr.md",
+      ".agent/skills/ext-getsentry-deslop.md",
+      ".agent/skills/ext-getsentry-find-bugs.md",
+      ".agent/skills/ext-react-agent-skills.md",
+      ".agent/skills/ext-skillport.md",
+      ".agent/skills/ext-trailofbits-differential-review.md",
+      ".agent/skills/ext-trailofbits-property-based-testing.md",
+      ".agent/skills/ext-trailofbits-semgrep-rule-creator.md",
+      ".agent/skills/ext-trailofbits-sharp-edges.md",
+      ".agent/skills/ext-trailofbits-static-analysis.md",
+      ".agent/skills/ext-ui-ux-pro-max-skill.md",
+      ".agent/skills/ext-vercel-add-skill.md",
+      ".agent/skills/ext-vercel-agent-skills.md",
+      ".agent/skills/ext-wshobson-agents.md",
+      ".agent/skills/vercel-react-best-practices.md",
+      ".agent/skills/vibe-design-intelligence.md",
+      ".agent/skills/vibe-documentation-auto.md",
+      ".agent/skills/vibe-external-integrations.md",
+      ".agent/skills/vibe-external-skills-catalog.md",
+      ".agent/skills/vibe-qa-debugging.md",
+      ".agent/skills/vibe-rlm-knowledge-lifecycle.md",
+      ".agent/skills/vibe-super-coder-skills.md",
+      ".agent/skills/vibe-tech-stack-modern-web.md",
+      ".agent/skills/vibe-v11-feature-matrix.md"
+    ],
+    "overall_score_avg": 83.3,
+    "dimension_scores_avg": {},
+    "warnings_total": 323,
+    "file_reports": [
+      {
+        "file": ".agent/rules/GEMINI_PATCH.md",
+        "language": "markdown",
+        "code_length": 8,
+        "overall_score": 95,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/rules/vibe-coder-v12.md",
+        "language": "markdown",
+        "code_length": 102,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "missing_null_check",
+            "message": "Potential null/undefined reference",
+            "line": 89,
+            "alternatives": [
+              "Add null check before access",
+              "Use optional chaining (if supported)",
+              "Use try-except block"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "missing_null_check",
+            "message": "Potential null/undefined reference",
+            "line": 99,
+            "alternatives": [
+              "Add null check before access",
+              "Use optional chaining (if supported)",
+              "Use try-except block"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 21,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 25,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 25,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 25,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 25,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 30,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 31,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 32,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 33,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 34,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 35,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 36,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-agent-skills-ddaakk.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-agentskills-spec.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 5,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-ai-skills-strativd.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-anthropic-skills.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-anthropic-webapp-testing.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-awesome-agent-skills-heilcheng.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-awesome-agent-skills-skillmatic.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-awesome-antigravity-zhangyu.md",
+        "language": "markdown",
+        "code_length": 19,
+        "overall_score": 88,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 7,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-claude-agents-skills.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-context-engineering-skills.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-cursor-skills.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-getsentry-agents-md.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-getsentry-code-review.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-getsentry-commit.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-getsentry-create-pr.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-getsentry-deslop.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-getsentry-find-bugs.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-react-agent-skills.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-skillport.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 1,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-trailofbits-differential-review.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-trailofbits-property-based-testing.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-trailofbits-semgrep-rule-creator.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-trailofbits-sharp-edges.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-trailofbits-static-analysis.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-ui-ux-pro-max-skill.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 1,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-vercel-add-skill.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-vercel-agent-skills.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/ext-wshobson-agents.md",
+        "language": "markdown",
+        "code_length": 16,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vercel-react-best-practices.md",
+        "language": "markdown",
+        "code_length": 36,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 5,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 6,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 18,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 22,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 25,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 27,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 29,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 35,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 35,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 35,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-design-intelligence.md",
+        "language": "markdown",
+        "code_length": 22,
+        "overall_score": 90,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 1,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 20,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 21,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-documentation-auto.md",
+        "language": "markdown",
+        "code_length": 20,
+        "overall_score": 85,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 6,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 13,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 18,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 19,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-external-integrations.md",
+        "language": "markdown",
+        "code_length": 15,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 12,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-external-skills-catalog.md",
+        "language": "markdown",
+        "code_length": 97,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 15,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 17,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 17,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 17,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 20,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 20,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 20,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 20,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 23,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 23,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 23,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 26,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 26,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 26,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 29,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 29,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 29,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-qa-debugging.md",
+        "language": "markdown",
+        "code_length": 23,
+        "overall_score": 90,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 7,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 16,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 17,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 17,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-rlm-knowledge-lifecycle.md",
+        "language": "markdown",
+        "code_length": 195,
+        "overall_score": 79,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 37,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 37,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 39,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 40,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 40,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 41,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 59,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 59,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 61,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 65,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 67,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 72,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 74,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 88,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 95,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 95,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 99,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 101,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 101,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 102,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-super-coder-skills.md",
+        "language": "markdown",
+        "code_length": 29,
+        "overall_score": 83,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 1,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 1,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 7,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 9,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 18,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 21,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-tech-stack-modern-web.md",
+        "language": "markdown",
+        "code_length": 28,
+        "overall_score": 80,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 1,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 1,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 3,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 6,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 12,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 12,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 14,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 19,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 20,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      },
+      {
+        "file": ".agent/skills/vibe-v11-feature-matrix.md",
+        "language": "markdown",
+        "code_length": 38,
+        "overall_score": 79,
+        "dimension_scores": null,
+        "warnings": [
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 8,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 9,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 9,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 10,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 11,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 12,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 12,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 12,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 12,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 12,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 13,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          },
+          {
+            "dimension": "logic",
+            "severity": "HIGH",
+            "type": "division_by_zero",
+            "message": "Potential division by zero",
+            "line": 13,
+            "alternatives": [
+              "Add zero check before division",
+              "Use exception handling",
+              "Provide default value"
+            ],
+            "confidence": 80
+          }
+        ]
+      }
+    ]
+  }
+}

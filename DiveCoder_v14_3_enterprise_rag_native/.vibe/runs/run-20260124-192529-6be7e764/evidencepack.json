@@ -1,0 +1,404 @@
+{
+  "pack_id": "ep-run-20260124-192529-6be7e764-6818",
+  "run_id": "run-20260124-192529-6be7e764",
+  "created_at": "2026-01-24T19:25:29.169480+00:00",
+  "git": {
+    "sha": null,
+    "branch": null
+  },
+  "ci": {
+    "run_id": null,
+    "job_name": null
+  },
+  "run_summary": {
+    "run_spec": {
+      "run_id": "run-20260124-192529-6be7e764",
+      "mode": "general",
+      "task_type": "generic",
+      "repo_root": ".",
+      "inputs": {
+        "prompt": "What is 2+2? Explain briefly.",
+        "references": [],
+        "context_files": []
+      },
+      "constraints": {
+        "required_evidence_level": "E2",
+        "latency_budget_ms": 300000,
+        "cost_budget_usd": 1.0,
+        "max_tool_calls": 20,
+        "max_llm_calls": 10,
+        "privacy": {
+          "store_scratchpad": false,
+          "redact_logs": true
+        }
+      },
+      "provider_preferences": {
+        "provider_route": null,
+        "preferred_model": null
+      },
+      "created_at": "2026-01-24T19:25:29.165198+00:00",
+      "tags": {}
+    },
+    "router_decision": {
+      "run_id": "run-20260124-192529-6be7e764",
+      "path": "think",
+      "decision_factors": {
+        "task_type": "generic",
+        "risk_class": "medium",
+        "required_evidence": "E2",
+        "complexity_score": 0.2558
+      },
+      "routing": {
+        "policy_branch": "high_evidence_required",
+        "rationale": "High evidence requirements need structured reasoning chain",
+        "selected_tier": "tier_think",
+        "fallback_tiers": [
+          "tier_fast"
+        ],
+        "thinking_strategy": "chain_of_thought"
+      },
+      "meta": {
+        "created_at": "2026-01-24T19:25:29.165398+00:00",
+        "router_version": "2.0.0"
+      }
+    },
+    "effort_plan": {
+      "run_id": "run-20260124-192529-6be7e764",
+      "effort_level": "medium",
+      "budget": {
+        "budget_tokens": 10000,
+        "budget_used": 0
+      },
+      "inference_scaling": {
+        "num_samples": 2,
+        "use_self_consistency": true,
+        "use_search_beam": false,
+        "beam_width": 1
+      },
+      "tool_verification": {
+        "max_iterations": 3,
+        "enabled": true
+      },
+      "thinking": {
+        "interleaved_enabled": false,
+        "preserve_blocks": true
+      },
+      "phases": [
+        "input_processing",
+        "exploration",
+        "analysis",
+        "verification",
+        "conclusion",
+        "output_generation"
+      ],
+      "rationale": "Effort level: medium | Routing path: think | Thinking strategy: chain_of_thought | Risk class: medium | Required evidence: E2",
+      "created_at": "2026-01-24T19:25:29.165564+00:00"
+    }
+  },
+  "artifacts": [
+    {
+      "name": "router_decision",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/router_decision.json",
+      "sha256": "87cfb85f374f84c021a0e7290f6fa50982178f82031d81c923cd313a1e5e165c",
+      "size_bytes": 587,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "effort_plan",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/effort_plan.json",
+      "sha256": "2018d9bbdf2a24f0962d4f942fd2d1bc093380db3ffd09860bf9b3a7844f3171",
+      "size_bytes": 772,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "budget_plan",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/budget_plan.json",
+      "sha256": "fb320885a8645a31e66f805b35e9a028266e3c86c1b8e7e8a2f240abec585996",
+      "size_bytes": 529,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "process_trace",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/process_trace_summary.md",
+      "sha256": "de5111383fdf9c1a5c01daf93e124855991470cc20b97c4fbc9bdc2c3cd04f4d",
+      "size_bytes": 3649,
+      "evidence_level": "E1"
+    },
+    {
+      "name": "monitor_report",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/monitor_report.json",
+      "sha256": "5ed8e8986ccadff0581553942e164dec5c694ad3d39b722b598d9bca20fcfff0",
+      "size_bytes": 801,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "monitor_findings",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/monitor_findings.md",
+      "sha256": "e77ba1789211949d474f6e26912d1fd968db1b21c55f5cd0a6edc510fd358cc8",
+      "size_bytes": 525,
+      "evidence_level": "E1"
+    },
+    {
+      "name": "mode_run",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/mode_run.json",
+      "sha256": "04b031f1b7e0e94b49f9fba7bcceb9bd5cff0ef60db24417a7c7c6e0ce4ac379",
+      "size_bytes": 10491,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_input_processing",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_input_processing.json",
+      "sha256": "5d4229922c85ae8598ea62153300d992bdacde503dc8061478caf8718de11f1d",
+      "size_bytes": 906,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_exploration",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_exploration.json",
+      "sha256": "f14c86c7d915791ddd165ba58bc3e61e77c0864265d787eada3766f4e4fdf1af",
+      "size_bytes": 1004,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_analysis",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_analysis.json",
+      "sha256": "b79eb8772adcf9152817701f11f198b5d49f727b72db160d8799c84927588f7f",
+      "size_bytes": 1001,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_verification",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_verification.json",
+      "sha256": "0670f60a34e035a4012d9a3e36bb336fe65fdddd99cc9572f8c4c498904982bc",
+      "size_bytes": 908,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_conclusion",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_conclusion.json",
+      "sha256": "465efaaf5a2fbd3b4b42f748b667c5936771fdb433e288d733c0e8c8ee08bcc5",
+      "size_bytes": 867,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_output_generation",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_output_generation.json",
+      "sha256": "85ae451a1619b4076991bde1595b5cfa6044004c75334fb858f5ff224a94aad0",
+      "size_bytes": 895,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "process_trace_summary",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/process_trace_summary.json",
+      "sha256": "7fc531fb7235e1d9265bc2bf4d2d2cb048d0ba21761b3278653f9876fecc8e8f",
+      "size_bytes": 4428,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "scorecard",
+      "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/scorecard.json",
+      "sha256": "f1f0e3eebb7f664e130f52004655888e043bafb58a154aa9400154888ee64ae5",
+      "size_bytes": 795,
+      "evidence_level": "E2"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "run-20260124-192529-6be7e764-claim-001",
+      "run_id": "run-20260124-192529-6be7e764",
+      "claim_type": "routing",
+      "statement": "Task routed to think path with chain_of_thought strategy",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/router_decision.json",
+          "sha256": "87cfb85f374f84c021a0e7290f6fa50982178f82031d81c923cd313a1e5e165c"
+        }
+      ],
+      "created_at": "2026-01-24T19:25:29.167828+00:00"
+    },
+    {
+      "claim_id": "run-20260124-192529-6be7e764-claim-002",
+      "run_id": "run-20260124-192529-6be7e764",
+      "claim_type": "effort",
+      "statement": "Effort level set to medium with 10000 thinking tokens",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/effort_plan.json",
+          "sha256": "2018d9bbdf2a24f0962d4f942fd2d1bc093380db3ffd09860bf9b3a7844f3171"
+        }
+      ],
+      "created_at": "2026-01-24T19:25:29.167863+00:00"
+    },
+    {
+      "claim_id": "run-20260124-192529-6be7e764-claim-003",
+      "run_id": "run-20260124-192529-6be7e764",
+      "claim_type": "execution",
+      "statement": "Completed 6/6 cognitive phases",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/mode_run.json",
+          "sha256": "04b031f1b7e0e94b49f9fba7bcceb9bd5cff0ef60db24417a7c7c6e0ce4ac379"
+        }
+      ],
+      "created_at": "2026-01-24T19:25:29.167924+00:00"
+    },
+    {
+      "claim_id": "run-20260124-192529-6be7e764-claim-004",
+      "run_id": "run-20260124-192529-6be7e764",
+      "claim_type": "monitoring",
+      "statement": "Process monitoring verdict: pass",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/monitor_report.json",
+          "sha256": "5ed8e8986ccadff0581553942e164dec5c694ad3d39b722b598d9bca20fcfff0"
+        }
+      ],
+      "created_at": "2026-01-24T19:25:29.167950+00:00"
+    },
+    {
+      "claim_id": "run-20260124-192529-6be7e764-claim-005",
+      "run_id": "run-20260124-192529-6be7e764",
+      "claim_type": "traceability",
+      "statement": "Process trace generated with 3 key decisions documented",
+      "evidence_level": "E1",
+      "artifact_refs": [
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/process_trace_summary.md",
+          "sha256": "de5111383fdf9c1a5c01daf93e124855991470cc20b97c4fbc9bdc2c3cd04f4d"
+        }
+      ],
+      "created_at": "2026-01-24T19:25:29.167982+00:00"
+    },
+    {
+      "claim_id": "run-20260124-192529-6be7e764-claim-006",
+      "run_id": "run-20260124-192529-6be7e764",
+      "claim_type": "evidence",
+      "statement": "Collected 7 artifacts with SHA256 verification",
+      "evidence_level": "E3",
+      "artifact_refs": [
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/router_decision.json",
+          "sha256": "87cfb85f374f84c021a0e7290f6fa50982178f82031d81c923cd313a1e5e165c"
+        },
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/effort_plan.json",
+          "sha256": "2018d9bbdf2a24f0962d4f942fd2d1bc093380db3ffd09860bf9b3a7844f3171"
+        },
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/budget_plan.json",
+          "sha256": "fb320885a8645a31e66f805b35e9a028266e3c86c1b8e7e8a2f240abec585996"
+        },
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/process_trace_summary.md",
+          "sha256": "de5111383fdf9c1a5c01daf93e124855991470cc20b97c4fbc9bdc2c3cd04f4d"
+        },
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/monitor_report.json",
+          "sha256": "5ed8e8986ccadff0581553942e164dec5c694ad3d39b722b598d9bca20fcfff0"
+        },
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/monitor_findings.md",
+          "sha256": "e77ba1789211949d474f6e26912d1fd968db1b21c55f5cd0a6edc510fd358cc8"
+        },
+        {
+          "path": "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/mode_run.json",
+          "sha256": "04b031f1b7e0e94b49f9fba7bcceb9bd5cff0ef60db24417a7c7c6e0ce4ac379"
+        }
+      ],
+      "created_at": "2026-01-24T19:25:29.168147+00:00"
+    }
+  ],
+  "scorecard": {
+    "run_id": "run-20260124-192529-6be7e764",
+    "status": "completed",
+    "routing": {
+      "path": "think",
+      "thinking_strategy": "chain_of_thought",
+      "effort_level": "medium"
+    },
+    "phases": {
+      "planned": 6,
+      "completed": 6,
+      "failed": 0
+    },
+    "evidence": {
+      "artifacts_collected": 6,
+      "level_achieved": "E3"
+    },
+    "monitor": {
+      "verdict": "pass",
+      "scores": {
+        "completeness": 0.9,
+        "coherence": 0.75,
+        "evidence": 0.9,
+        "risk": 0.75
+      }
+    },
+    "budget_used": {
+      "llm_calls": 0,
+      "tool_calls": 0,
+      "tokens": 0,
+      "thinking_tokens": 0,
+      "cost_usd": 0.0
+    },
+    "timing": {
+      "started_at": "2026-01-24T19:25:29.165198+00:00",
+      "completed_at": "2026-01-24T19:25:29.168306+00:00",
+      "duration_ms": 0
+    },
+    "claims_count": 6
+  },
+  "monitor_report": {
+    "run_id": "run-20260124-192529-6be7e764",
+    "verdict": "pass",
+    "scores": {
+      "completeness": 0.9,
+      "logical_coherence": 0.75,
+      "evidence_coverage": 0.9,
+      "risk_assessment": 0.75
+    },
+    "findings": [],
+    "warnings": [
+      "No risks identified - was risk assessment thorough?"
+    ],
+    "errors": [],
+    "followup": {
+      "questions": [
+        "Were there any potential risks that should be considered?"
+      ],
+      "responses": [],
+      "iterations": 0,
+      "max_iterations": 3
+    },
+    "recommendations": [
+      "Strengthen reasoning chain: add explicit justifications for decisions",
+      "Enhance risk handling: identify and mitigate potential issues"
+    ],
+    "monitor_info": {
+      "model": "tier_monitor",
+      "prompt_version": "1.0.0"
+    },
+    "created_at": "2026-01-24T19:25:29.167104+00:00"
+  },
+  "hash_index": {
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/router_decision.json": "87cfb85f374f84c021a0e7290f6fa50982178f82031d81c923cd313a1e5e165c",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/effort_plan.json": "2018d9bbdf2a24f0962d4f942fd2d1bc093380db3ffd09860bf9b3a7844f3171",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/budget_plan.json": "fb320885a8645a31e66f805b35e9a028266e3c86c1b8e7e8a2f240abec585996",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/process_trace_summary.md": "de5111383fdf9c1a5c01daf93e124855991470cc20b97c4fbc9bdc2c3cd04f4d",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/monitor_report.json": "5ed8e8986ccadff0581553942e164dec5c694ad3d39b722b598d9bca20fcfff0",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/monitor_findings.md": "e77ba1789211949d474f6e26912d1fd968db1b21c55f5cd0a6edc510fd358cc8",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/mode_run.json": "04b031f1b7e0e94b49f9fba7bcceb9bd5cff0ef60db24417a7c7c6e0ce4ac379",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_input_processing.json": "5d4229922c85ae8598ea62153300d992bdacde503dc8061478caf8718de11f1d",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_exploration.json": "f14c86c7d915791ddd165ba58bc3e61e77c0864265d787eada3766f4e4fdf1af",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_analysis.json": "b79eb8772adcf9152817701f11f198b5d49f727b72db160d8799c84927588f7f",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_verification.json": "0670f60a34e035a4012d9a3e36bb336fe65fdddd99cc9572f8c4c498904982bc",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_conclusion.json": "465efaaf5a2fbd3b4b42f748b667c5936771fdb433e288d733c0e8c8ee08bcc5",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/phase_output_generation.json": "85ae451a1619b4076991bde1595b5cfa6044004c75334fb858f5ff224a94aad0",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/process_trace_summary.json": "7fc531fb7235e1d9265bc2bf4d2d2cb048d0ba21761b3278653f9876fecc8e8f",
+    "/home/ubuntu/dive_coder_v14_state_of_the_art/.vibe/runs/run-20260124-192529-6be7e764/scorecard.json": "f1f0e3eebb7f664e130f52004655888e043bafb58a154aa9400154888ee64ae5"
+  }
+}

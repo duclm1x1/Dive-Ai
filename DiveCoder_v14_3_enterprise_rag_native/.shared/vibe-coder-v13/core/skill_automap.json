@@ -1,0 +1,1082 @@
+{
+  "version": "auto",
+  "generated_at": "2026-01-26T09:55:40.912168Z",
+  "skills": [
+    {
+      "skill_id": "dive-engine-v1-thinking-runtime",
+      "rel_path": ".agent/skills/dive-engine-v1-thinking-runtime.md",
+      "repo": "",
+      "kind": "config",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "spec"
+      ],
+      "group_id": "dive-engine-v1-thinking-runtime",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:spec",
+        "kind:config"
+      ],
+      "content_sha256": "bfc87d0ef0c28cae1d25a8c6f448ee9f201e0b1b149dae9620f4407e52a49c40"
+    },
+    {
+      "skill_id": "cost_optimization",
+      "rel_path": ".agent/skills/expo_production/cost_optimization.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "agent_runtime",
+      "tags": [
+        "agent_runtime"
+      ],
+      "group_id": "cost_optimization",
+      "base_score": 20,
+      "triggers": [
+        "kind:skillpack"
+      ],
+      "content_sha256": "b7a2485a80f5e75dd1ec7b0d2c318978b9c1089c5a88df0d1a575060f644af3e"
+    },
+    {
+      "skill_id": "data_migrations",
+      "rel_path": ".agent/skills/expo_production/data_migrations.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "agent_runtime",
+      "tags": [
+        "agent_runtime"
+      ],
+      "group_id": "data_migrations",
+      "base_score": 20,
+      "triggers": [
+        "kind:skillpack"
+      ],
+      "content_sha256": "b17bdd97fdf885e7eec0ff2f003bef1f05bec20ac81bee4c3e34091a8f92b862"
+    },
+    {
+      "skill_id": "incident_response",
+      "rel_path": ".agent/skills/expo_production/incident_response.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "agent_runtime",
+      "tags": [
+        "agent_runtime"
+      ],
+      "group_id": "incident_response",
+      "base_score": 20,
+      "triggers": [
+        "kind:skillpack"
+      ],
+      "content_sha256": "f45314f95a965d6dd1f9a202c621442ae57636e9a2b80528f32e1ee96c811f6b"
+    },
+    {
+      "skill_id": "observability",
+      "rel_path": ".agent/skills/expo_production/observability.md",
+      "repo": "",
+      "kind": "registry",
+      "primary": "devtools",
+      "tags": [
+        "agent_runtime",
+        "devtools",
+        "spec"
+      ],
+      "group_id": "observability",
+      "base_score": 20,
+      "triggers": [
+        "category:devtools",
+        "category:spec",
+        "kind:registry",
+        "need:discovery"
+      ],
+      "content_sha256": "d10a274560defbdf574f567ddeef271b4179c36dc41a56753fd5593962af4a33"
+    },
+    {
+      "skill_id": "release_management",
+      "rel_path": ".agent/skills/expo_production/release_management.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "testing",
+      "tags": [
+        "agent_runtime",
+        "testing"
+      ],
+      "group_id": "release_management",
+      "base_score": 20,
+      "triggers": [
+        "category:testing",
+        "kind:skillpack"
+      ],
+      "content_sha256": "3ecb2fed6e12bf3a2c2e070ec77447a6431a93e7e616d73d5b4a667786fcf9cb"
+    },
+    {
+      "skill_id": "expo_skills_integration",
+      "rel_path": ".agent/skills/expo_skills_integration.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "devtools",
+      "tags": [
+        "agent_runtime",
+        "devtools"
+      ],
+      "group_id": "expo_skills_integration",
+      "base_score": 20,
+      "triggers": [
+        "category:devtools",
+        "kind:skillpack"
+      ],
+      "content_sha256": "b912e7e3512b16e45315570b360dbcadfa1e56cda4ce429d05b391aa40fb0b32"
+    },
+    {
+      "skill_id": "ext-agent-skills-ddaakk",
+      "rel_path": ".agent/skills/ext-agent-skills-ddaakk.md",
+      "repo": "https://github.com/ddaakk/agent-skills",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/ddaakk/agent-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "1bb4e46bf5285cca44f794c1d425cf3fc309c6937d869d6560ad816997f3eff9"
+    },
+    {
+      "skill_id": "ext-agentskills-spec",
+      "rel_path": ".agent/skills/ext-agentskills-spec.md",
+      "repo": "https://github.com/agentskills/agentskills",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "devtools",
+        "spec"
+      ],
+      "group_id": "https://github.com/agentskills/agentskills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:devtools",
+        "category:spec",
+        "kind:skillpack"
+      ],
+      "content_sha256": "7a51f7f9aabd5b7f4e6b107c32f8ae5233a53d3157b8ff1a4c24c72a3810378d"
+    },
+    {
+      "skill_id": "ext-ai-skills-strativd",
+      "rel_path": ".agent/skills/ext-ai-skills-strativd.md",
+      "repo": "https://github.com/strativd/ai-skills",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/strativd/ai-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "7c12f0577f976fa5388fbc28db7e6dbffb11da9674af9a4f73e74c3d47b12a36"
+    },
+    {
+      "skill_id": "ext-aiclient2api",
+      "rel_path": ".agent/skills/ext-aiclient2api.md",
+      "repo": "https://github.com/justlovemaki/AIClient-2-API",
+      "kind": "cli",
+      "primary": "devtools",
+      "tags": [
+        "agent_runtime",
+        "devtools"
+      ],
+      "group_id": "https://github.com/justlovemaki/AIClient-2-API",
+      "base_score": 20,
+      "triggers": [
+        "category:devtools",
+        "kind:cli"
+      ],
+      "content_sha256": "f08c5b68eb68c7604e7b5760bfe6df14bf395243776b0939611e01eafe07b94c"
+    },
+    {
+      "skill_id": "ext-anthropic-skills",
+      "rel_path": ".agent/skills/ext-anthropic-skills.md",
+      "repo": "https://github.com/anthropics/skills",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/anthropics/skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "b52328c4649c466749c5b7239c0981d70d76cdbddd5bb8e10d56924214689849"
+    },
+    {
+      "skill_id": "ext-anthropic-webapp-testing",
+      "rel_path": ".agent/skills/ext-anthropic-webapp-testing.md",
+      "repo": "https://github.com/anthropics/webapp-testing",
+      "kind": "testing",
+      "primary": "testing",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "testing"
+      ],
+      "group_id": "https://github.com/anthropics/webapp-testing",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:testing",
+        "kind:testing"
+      ],
+      "content_sha256": "9bc9faf0d388e0832eff4bd295523cd26d94dfd47c79a1ca9bcbd8c6bfa6f618"
+    },
+    {
+      "skill_id": "ext-awesome-agent-skills-heilcheng",
+      "rel_path": ".agent/skills/ext-awesome-agent-skills-heilcheng.md",
+      "repo": "https://github.com/heilcheng/awesome-agent-skills",
+      "kind": "registry",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "skills_registry"
+      ],
+      "group_id": "https://github.com/heilcheng/awesome-agent-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:skills_registry",
+        "kind:registry",
+        "need:discovery"
+      ],
+      "content_sha256": "a2f6210c557c3b74d635e7253c63c3899359f19c121a13e4aa0d55c53107c0ef"
+    },
+    {
+      "skill_id": "ext-awesome-agent-skills-skillmatic",
+      "rel_path": ".agent/skills/ext-awesome-agent-skills-skillmatic.md",
+      "repo": "https://github.com/skillmatic-ai/awesome-agent-skills",
+      "kind": "registry",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "skills_registry"
+      ],
+      "group_id": "https://github.com/skillmatic-ai/awesome-agent-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:skills_registry",
+        "kind:registry",
+        "need:discovery"
+      ],
+      "content_sha256": "aacd36182c289e9b070984073269d79daac66923ad3f97d577da840800d1dcb2"
+    },
+    {
+      "skill_id": "ext-awesome-antigravity-zhangyu",
+      "rel_path": ".agent/skills/ext-awesome-antigravity-zhangyu.md",
+      "repo": "https://github.com/ZhangYu-zjut/awesome-Antigravity",
+      "kind": "registry",
+      "primary": "skills_registry",
+      "tags": [
+        "agent_runtime",
+        "skills_registry"
+      ],
+      "group_id": "https://github.com/ZhangYu-zjut/awesome-Antigravity",
+      "base_score": 20,
+      "triggers": [
+        "category:skills_registry",
+        "kind:registry",
+        "need:discovery"
+      ],
+      "content_sha256": "9c0af4cda57a39d175d7ac5ecb99781888d6d2d705431b231c5a4761fb4a6913"
+    },
+    {
+      "skill_id": "ext-claude-agents-skills",
+      "rel_path": ".agent/skills/ext-claude-agents-skills.md",
+      "repo": "https://github.com/agentsoflearning/claude-agents-skills",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/agentsoflearning/claude-agents-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "c5ac55e8702df7416605267c61d24016f3d7b47acf86b5061fd9acb68f60d28a"
+    },
+    {
+      "skill_id": "ext-context-engineering-skills",
+      "rel_path": ".agent/skills/ext-context-engineering-skills.md",
+      "repo": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "kind": "engine",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:engine"
+      ],
+      "content_sha256": "a9ed585532f4212840648e7b743bc205d6f38f9916e460b3084146644e39316f"
+    },
+    {
+      "skill_id": "ext-cursor-skills",
+      "rel_path": ".agent/skills/ext-cursor-skills.md",
+      "repo": "https://github.com/chrisboden/cursor-skills",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/chrisboden/cursor-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "cc8f913dc66ff2ef6521c2e52e5db04328c3b531c215fd51b915620b233bc390"
+    },
+    {
+      "skill_id": "ext-getsentry-agents-md",
+      "rel_path": ".agent/skills/ext-getsentry-agents-md.md",
+      "repo": "https://github.com/getsentry/agents-md",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/getsentry/agents-md",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "a9aa615a1ed8f8ceabd438e846d799c0439d0b4d61c37a2e29abc5c002563c5a"
+    },
+    {
+      "skill_id": "ext-getsentry-code-review",
+      "rel_path": ".agent/skills/ext-getsentry-code-review.md",
+      "repo": "https://github.com/getsentry/code-review",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/getsentry/code-review",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "24079dda32d76d7ef54b15b3aa889566cbb623959f570b088f56c05abca29940"
+    },
+    {
+      "skill_id": "ext-getsentry-commit",
+      "rel_path": ".agent/skills/ext-getsentry-commit.md",
+      "repo": "https://github.com/getsentry/commit",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/getsentry/commit",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "1335f203a66b4592ff189bba0c9d0787edbff19e61a1e0f75f6b7ed27d56a282"
+    },
+    {
+      "skill_id": "ext-getsentry-create-pr",
+      "rel_path": ".agent/skills/ext-getsentry-create-pr.md",
+      "repo": "https://github.com/getsentry/create-pr",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/getsentry/create-pr",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "b5f17a1586edb2507dbbf043f83770c861d29d4bbafaa56fddf9bbb07e4951c1"
+    },
+    {
+      "skill_id": "ext-getsentry-deslop",
+      "rel_path": ".agent/skills/ext-getsentry-deslop.md",
+      "repo": "https://github.com/getsentry/deslop",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/getsentry/deslop",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "d7ad3f20b064d4d341a0da8acbdd6180cba74e93406fd32aa8d71b29d2d8df27"
+    },
+    {
+      "skill_id": "ext-getsentry-find-bugs",
+      "rel_path": ".agent/skills/ext-getsentry-find-bugs.md",
+      "repo": "https://github.com/getsentry/find-bugs",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/getsentry/find-bugs",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "abda7bd2edcc445a5ee11166bd1fbe975f580ad11112754fdc184f2cffa99ec0"
+    },
+    {
+      "skill_id": "ext-n8n-skills",
+      "rel_path": ".agent/skills/ext-n8n-skills.md",
+      "repo": "https://github.com/czlonkowski/n8n-skills",
+      "kind": "registry",
+      "primary": "n8n",
+      "tags": [
+        "agent_runtime",
+        "devtools",
+        "n8n"
+      ],
+      "group_id": "https://github.com/czlonkowski/n8n-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:devtools",
+        "kind:registry",
+        "need:discovery",
+        "stack:n8n"
+      ],
+      "content_sha256": "621463fe5e83912b51c9cd8dfacaaedcdf00cf63fd230af60c7f1204e46d5366"
+    },
+    {
+      "skill_id": "ext-react-agent-skills",
+      "rel_path": ".agent/skills/ext-react-agent-skills.md",
+      "repo": "https://github.com/jturner421/react-agent-skills",
+      "kind": "skillpack",
+      "primary": "react",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "react"
+      ],
+      "group_id": "https://github.com/jturner421/react-agent-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack",
+        "stack:react"
+      ],
+      "content_sha256": "dc4735dd00bff733295cff279d224473b1f85910e2f3a0e719be0879ab2aaf4a"
+    },
+    {
+      "skill_id": "ext-skillport",
+      "rel_path": ".agent/skills/ext-skillport.md",
+      "repo": "https://github.com/gotalab/skillport",
+      "kind": "registry",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/gotalab/skillport",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:registry",
+        "need:discovery"
+      ],
+      "content_sha256": "41f9a9099b171083ad685d7f0fffd0d47658900a45e1f105a7d8bb72222449b1"
+    },
+    {
+      "skill_id": "ext-trailofbits-differential-review",
+      "rel_path": ".agent/skills/ext-trailofbits-differential-review.md",
+      "repo": "https://github.com/trailofbits/differential-review",
+      "kind": "security",
+      "primary": "security",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "security"
+      ],
+      "group_id": "https://github.com/trailofbits/differential-review",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:security",
+        "kind:security"
+      ],
+      "content_sha256": "b86b59c40d8738466b78a7ac043a3043523ddb1d6852e1521a67e359109eea3b"
+    },
+    {
+      "skill_id": "ext-trailofbits-property-based-testing",
+      "rel_path": ".agent/skills/ext-trailofbits-property-based-testing.md",
+      "repo": "https://github.com/trailofbits/property-based-testing",
+      "kind": "testing",
+      "primary": "security",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "security"
+      ],
+      "group_id": "https://github.com/trailofbits/property-based-testing",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:security",
+        "kind:testing"
+      ],
+      "content_sha256": "48de0d8579fe857aa2bf49a5ddf43ae066229c42c1c8645e795838dff7301776"
+    },
+    {
+      "skill_id": "ext-trailofbits-semgrep-rule-creator",
+      "rel_path": ".agent/skills/ext-trailofbits-semgrep-rule-creator.md",
+      "repo": "https://github.com/trailofbits/semgrep-rule-creator",
+      "kind": "security",
+      "primary": "security",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "security"
+      ],
+      "group_id": "https://github.com/trailofbits/semgrep-rule-creator",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:security",
+        "kind:security"
+      ],
+      "content_sha256": "959fc88f948147dbb7fc59c8bb6bd49b05ef669e9fed10eb47632729351e6d17"
+    },
+    {
+      "skill_id": "ext-trailofbits-sharp-edges",
+      "rel_path": ".agent/skills/ext-trailofbits-sharp-edges.md",
+      "repo": "https://github.com/trailofbits/sharp-edges",
+      "kind": "registry",
+      "primary": "security",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "security"
+      ],
+      "group_id": "https://github.com/trailofbits/sharp-edges",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:security",
+        "kind:registry",
+        "need:discovery"
+      ],
+      "content_sha256": "22e5bd158eb8a19cea22a0969ff49af3389d41e4bfe35b3725195f4c3935fabe"
+    },
+    {
+      "skill_id": "ext-trailofbits-static-analysis",
+      "rel_path": ".agent/skills/ext-trailofbits-static-analysis.md",
+      "repo": "https://github.com/trailofbits/static-analysis",
+      "kind": "security",
+      "primary": "security",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "security"
+      ],
+      "group_id": "https://github.com/trailofbits/static-analysis",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:security",
+        "kind:security"
+      ],
+      "content_sha256": "7a2dd75e685f150b1c783f6615ca3ecd1944cdb4424e6720f63e0506b6033cc9"
+    },
+    {
+      "skill_id": "ext-ui-ux-pro-max-skill",
+      "rel_path": ".agent/skills/ext-ui-ux-pro-max-skill.md",
+      "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "kind": "skillpack",
+      "primary": "nextjs",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "nextjs",
+        "react"
+      ],
+      "group_id": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack",
+        "stack:nextjs",
+        "stack:react"
+      ],
+      "content_sha256": "c0e861a7c70cd4e868c485ec175e182ced70c570181b43c29512d5182b260e41"
+    },
+    {
+      "skill_id": "ext-vercel-add-skill",
+      "rel_path": ".agent/skills/ext-vercel-add-skill.md",
+      "repo": "https://github.com/vercel-labs/add-skill",
+      "kind": "cli",
+      "primary": "nextjs",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "devtools",
+        "nextjs",
+        "react"
+      ],
+      "group_id": "https://github.com/vercel-labs/add-skill",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "category:devtools",
+        "kind:cli",
+        "stack:nextjs",
+        "stack:react"
+      ],
+      "content_sha256": "cd6f0584682e57ea5e341e5310a0ecca50d8e76209daf49337474c58dcb9ee83"
+    },
+    {
+      "skill_id": "ext-vercel-agent-skills",
+      "rel_path": ".agent/skills/ext-vercel-agent-skills.md",
+      "repo": "https://github.com/vercel-labs/agent-skills",
+      "kind": "engine",
+      "primary": "nextjs",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "nextjs",
+        "react"
+      ],
+      "group_id": "https://github.com/vercel-labs/agent-skills",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:engine",
+        "stack:nextjs",
+        "stack:react"
+      ],
+      "content_sha256": "ef3bd1394b02d26bc0e995a5b2a46039888810f482053d08ceda0f5c269035cd"
+    },
+    {
+      "skill_id": "ext-wshobson-agents",
+      "rel_path": ".agent/skills/ext-wshobson-agents.md",
+      "repo": "https://github.com/wshobson/agents",
+      "kind": "skillpack",
+      "primary": "ci",
+      "tags": [
+        "agent_runtime",
+        "ci"
+      ],
+      "group_id": "https://github.com/wshobson/agents",
+      "base_score": 20,
+      "triggers": [
+        "category:ci",
+        "kind:skillpack"
+      ],
+      "content_sha256": "93f4b0597fcb445fd742308bd02265054d9974af0cc29c8298fe1d8a6d7cdbb1"
+    },
+    {
+      "skill_id": "kitwork_engine",
+      "rel_path": ".agent/skills/kitwork_engine.md",
+      "repo": "",
+      "kind": "engine",
+      "primary": "agent_runtime",
+      "tags": [
+        "agent_runtime"
+      ],
+      "group_id": "kitwork_engine",
+      "base_score": 20,
+      "triggers": [
+        "kind:engine"
+      ],
+      "content_sha256": "bcf7e6e2fef8e7473b441dc2c7d027190e3f089c87b761a42fbbb085c703f7d2"
+    },
+    {
+      "skill_id": "vercel-react-best-practices",
+      "rel_path": ".agent/skills/vercel-react-best-practices.md",
+      "repo": "",
+      "kind": "cli",
+      "primary": "nextjs",
+      "tags": [
+        "agent_runtime",
+        "devtools",
+        "nextjs",
+        "react"
+      ],
+      "group_id": "vercel-react-best-practices",
+      "base_score": 20,
+      "triggers": [
+        "category:devtools",
+        "kind:cli",
+        "stack:nextjs",
+        "stack:react"
+      ],
+      "content_sha256": "6215c795d6a36ac6de8a7a420c911301691b00a91adf6c4ea61ca7c380ed0a55"
+    },
+    {
+      "skill_id": "vibe-add-skill-develop",
+      "rel_path": ".agent/skills/vibe-add-skill-develop.md",
+      "repo": "",
+      "kind": "cli",
+      "primary": "security",
+      "tags": [
+        "agent_runtime",
+        "devtools",
+        "docs",
+        "security",
+        "spec",
+        "testing"
+      ],
+      "group_id": "vibe-add-skill-develop",
+      "base_score": 80,
+      "triggers": [
+        "category:devtools",
+        "category:docs",
+        "category:security",
+        "category:spec",
+        "category:testing",
+        "kind:cli"
+      ],
+      "content_sha256": "e9284d9d25f26931a896b6049a77a97bf0924bd78e56b7028dfcd008e8520396"
+    },
+    {
+      "skill_id": "vibe-advanced-rag",
+      "rel_path": ".agent/skills/vibe-advanced-rag.md",
+      "repo": "https://github.com/NirDiamant/RAG_Techniques",
+      "kind": "skillpack",
+      "primary": "spec",
+      "tags": [
+        "agent_runtime",
+        "spec"
+      ],
+      "group_id": "https://github.com/NirDiamant/RAG_Techniques",
+      "base_score": 80,
+      "triggers": [
+        "category:spec",
+        "kind:skillpack"
+      ],
+      "content_sha256": "5e931346033b795e0a164b11f86da6f405880e06c8052762c20707c941072b27"
+    },
+    {
+      "skill_id": "vibe-advanced-searching",
+      "rel_path": ".agent/skills/vibe-advanced-searching.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "agent_runtime",
+      "tags": [
+        "agent_runtime"
+      ],
+      "group_id": "vibe-advanced-searching",
+      "base_score": 80,
+      "triggers": [
+        "kind:skillpack"
+      ],
+      "content_sha256": "2a30d97b12a5d6d7316b242ec6ffee619c4761854cd21ee1532d79dc508096f4"
+    },
+    {
+      "skill_id": "vibe-agent-scope",
+      "rel_path": ".agent/skills/vibe-agent-scope.md",
+      "repo": "https://github.com/agentscope-ai/agentscope",
+      "kind": "cli",
+      "primary": "security",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "devtools",
+        "security",
+        "spec"
+      ],
+      "group_id": "https://github.com/agentscope-ai/agentscope",
+      "base_score": 80,
+      "triggers": [
+        "category:ci",
+        "category:devtools",
+        "category:security",
+        "category:spec",
+        "kind:cli"
+      ],
+      "content_sha256": "8d57a28c15d90c86d7bdbbe520a6c9c1d24a96b6115b93854e1d40f2e27c4d58"
+    },
+    {
+      "skill_id": "vibe-cache-design",
+      "rel_path": ".agent/skills/vibe-cache-design.md",
+      "repo": "",
+      "kind": "cli",
+      "primary": "devtools",
+      "tags": [
+        "agent_runtime",
+        "devtools",
+        "spec"
+      ],
+      "group_id": "vibe-cache-design",
+      "base_score": 80,
+      "triggers": [
+        "category:devtools",
+        "category:spec",
+        "kind:cli"
+      ],
+      "content_sha256": "d3fa05994424cae15a8ca8cd688fac83c22685b08086394aaac3b9b8b3269cab"
+    },
+    {
+      "skill_id": "vibe-design-intelligence",
+      "rel_path": ".agent/skills/vibe-design-intelligence.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "ux_ui",
+      "tags": [
+        "agent_runtime",
+        "ux_ui"
+      ],
+      "group_id": "vibe-design-intelligence",
+      "base_score": 80,
+      "triggers": [
+        "category:ux_ui",
+        "kind:skillpack"
+      ],
+      "content_sha256": "86718c12e41add53822e780aa93f696fadebf2d556e9ec37f90ec541cb4af136"
+    },
+    {
+      "skill_id": "vibe-documentation-auto",
+      "rel_path": ".agent/skills/vibe-documentation-auto.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "docs",
+      "tags": [
+        "agent_runtime",
+        "docs"
+      ],
+      "group_id": "vibe-documentation-auto",
+      "base_score": 100,
+      "triggers": [
+        "category:docs",
+        "kind:skillpack",
+        "need:base"
+      ],
+      "content_sha256": "582eaefda481ffb01494fc52415711044c5631dbeee8b623df5acbb581a74310"
+    },
+    {
+      "skill_id": "vibe-external-integrations",
+      "rel_path": ".agent/skills/vibe-external-integrations.md",
+      "repo": "https://github.com/ZhangYu-zjut/awesome-Antigravity",
+      "kind": "registry",
+      "primary": "n8n",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "devtools",
+        "docs",
+        "n8n",
+        "security",
+        "skills_registry"
+      ],
+      "group_id": "https://github.com/ZhangYu-zjut/awesome-Antigravity",
+      "base_score": 80,
+      "triggers": [
+        "category:ci",
+        "category:devtools",
+        "category:docs",
+        "category:security",
+        "category:skills_registry",
+        "kind:registry",
+        "need:discovery",
+        "stack:n8n"
+      ],
+      "content_sha256": "6658e0e56c53e6a2d34fcbf92d18a9e120254db752aa5a96e9c5a66c16bac03c"
+    },
+    {
+      "skill_id": "vibe-external-skills-catalog",
+      "rel_path": ".agent/skills/vibe-external-skills-catalog.md",
+      "repo": "https://github.com/agentscope-ai/agentscope",
+      "kind": "registry",
+      "primary": "n8n",
+      "tags": [
+        "agent_runtime",
+        "devtools",
+        "n8n",
+        "nextjs",
+        "react",
+        "security",
+        "skills_registry",
+        "spec",
+        "testing"
+      ],
+      "group_id": "https://github.com/agentscope-ai/agentscope",
+      "base_score": 80,
+      "triggers": [
+        "category:devtools",
+        "category:security",
+        "category:skills_registry",
+        "category:spec",
+        "category:testing",
+        "kind:registry",
+        "need:discovery",
+        "stack:n8n",
+        "stack:nextjs",
+        "stack:react"
+      ],
+      "content_sha256": "618e2f57924359317d70d62cd17ebd8fb4d786f154829aa8226e437113b08cdd"
+    },
+    {
+      "skill_id": "vibe-qa-debugging",
+      "rel_path": ".agent/skills/vibe-qa-debugging.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "testing",
+      "tags": [
+        "agent_runtime",
+        "testing"
+      ],
+      "group_id": "vibe-qa-debugging",
+      "base_score": 100,
+      "triggers": [
+        "category:testing",
+        "kind:skillpack",
+        "need:base"
+      ],
+      "content_sha256": "57a3dbac2dc565e5b814354c31885220a3fb3477a88d6c80fb616c12c267bc2a"
+    },
+    {
+      "skill_id": "vibe-rlm-knowledge-lifecycle",
+      "rel_path": ".agent/skills/vibe-rlm-knowledge-lifecycle.md",
+      "repo": "",
+      "kind": "config",
+      "primary": "spec",
+      "tags": [
+        "agent_runtime",
+        "spec"
+      ],
+      "group_id": "vibe-rlm-knowledge-lifecycle",
+      "base_score": 100,
+      "triggers": [
+        "category:spec",
+        "kind:config",
+        "need:base",
+        "need:knowledge",
+        "need:rlm"
+      ],
+      "content_sha256": "290f594d22fe936c13c4dd4b57819a8df94777213bf2ca99acef304c68aa4495"
+    },
+    {
+      "skill_id": "vibe-super-coder-skills",
+      "rel_path": ".agent/skills/vibe-super-coder-skills.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "testing",
+      "tags": [
+        "agent_runtime",
+        "testing"
+      ],
+      "group_id": "vibe-super-coder-skills",
+      "base_score": 100,
+      "triggers": [
+        "category:testing",
+        "kind:skillpack",
+        "need:base"
+      ],
+      "content_sha256": "9122077d8b76e8502da082b4d280b10dac66fab098692d7ca38adf66d5c2337b"
+    },
+    {
+      "skill_id": "vibe-tech-stack-modern-web",
+      "rel_path": ".agent/skills/vibe-tech-stack-modern-web.md",
+      "repo": "",
+      "kind": "cli",
+      "primary": "devtools",
+      "tags": [
+        "agent_runtime",
+        "devtools",
+        "spec",
+        "ux_ui"
+      ],
+      "group_id": "vibe-tech-stack-modern-web",
+      "base_score": 80,
+      "triggers": [
+        "category:devtools",
+        "category:spec",
+        "category:ux_ui",
+        "kind:cli"
+      ],
+      "content_sha256": "38c17492945d2638c0e68e99214391dbf7cce7f79f38ab2383e488d45eb61173"
+    },
+    {
+      "skill_id": "vibe-v11-feature-matrix",
+      "rel_path": ".agent/skills/vibe-v11-feature-matrix.md",
+      "repo": "",
+      "kind": "skillpack",
+      "primary": "agent_runtime",
+      "tags": [
+        "agent_runtime"
+      ],
+      "group_id": "vibe-v11-feature-matrix",
+      "base_score": 80,
+      "triggers": [
+        "kind:skillpack"
+      ],
+      "content_sha256": "7411df3d59d7006076ea6278a11ea034e366f4974f0822bf826d17ae741948fe"
+    },
+    {
+      "skill_id": "vibe-v13-feature-matrix",
+      "rel_path": ".agent/skills/vibe-v13-feature-matrix.md",
+      "repo": "",
+      "kind": "registry",
+      "primary": "security",
+      "tags": [
+        "agent_runtime",
+        "ci",
+        "devtools",
+        "docs",
+        "security",
+        "spec",
+        "ux_ui"
+      ],
+      "group_id": "vibe-v13-feature-matrix",
+      "base_score": 80,
+      "triggers": [
+        "category:ci",
+        "category:devtools",
+        "category:docs",
+        "category:security",
+        "category:spec",
+        "category:ux_ui",
+        "kind:registry",
+        "need:discovery"
+      ],
+      "content_sha256": "2d05aea96602a7e96baa3bf337520df3aef6399ed31834a3128c14a6670eba29"
+    }
+  ]
+}

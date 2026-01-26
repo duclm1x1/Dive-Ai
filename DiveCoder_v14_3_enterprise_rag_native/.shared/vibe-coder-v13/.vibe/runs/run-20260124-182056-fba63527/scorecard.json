@@ -1,0 +1,40 @@
+{
+  "run_id": "run-20260124-182056-fba63527",
+  "status": "completed",
+  "routing": {
+    "path": "fast",
+    "thinking_strategy": "single_pass",
+    "effort_level": "low"
+  },
+  "phases": {
+    "planned": 3,
+    "completed": 3,
+    "failed": 0
+  },
+  "evidence": {
+    "artifacts_collected": 6,
+    "level_achieved": "E3"
+  },
+  "monitor": {
+    "verdict": "pass",
+    "scores": {
+      "completeness": 0.89,
+      "coherence": 0.75,
+      "evidence": 0.89,
+      "risk": 0.75
+    }
+  },
+  "budget_used": {
+    "llm_calls": 0,
+    "tool_calls": 0,
+    "tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0
+  },
+  "timing": {
+    "started_at": "2026-01-24T18:20:56.066237+00:00",
+    "completed_at": "2026-01-24T18:20:56.069300+00:00",
+    "duration_ms": 0
+  },
+  "claims_count": 6
+}

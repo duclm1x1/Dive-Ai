@@ -1,0 +1,31 @@
+{
+  "phase": "input_processing",
+  "run_id": "run-20260124-190046-abbd8c2a",
+  "blocks": [
+    {
+      "block_id": "run-20260124-190046-abbd8c2a-input_processing-001",
+      "phase": "input_processing",
+      "content": "\nAnalyzing input for run run-20260124-190046-abbd8c2a:\n- Task type: generic\n- Mode: debug\n- Evidence required: E2\n- Context files: 0\n\nNormalized task specification created.\n",
+      "signature": "sig_8677",
+      "tokens_used": 0,
+      "is_redacted": false,
+      "redacted_data": null,
+      "created_at": "2026-01-24T19:00:46.143044+00:00"
+    }
+  ],
+  "status": "running",
+  "tool_interactions": {
+    "tool_calls": [],
+    "tool_results": []
+  },
+  "self_correction": {
+    "corrections_made": 0,
+    "correction_details": []
+  },
+  "artifacts": [],
+  "timing": {
+    "started_at": "2026-01-24T19:00:46.143003+00:00",
+    "completed_at": null,
+    "duration_ms": 0
+  }
+}

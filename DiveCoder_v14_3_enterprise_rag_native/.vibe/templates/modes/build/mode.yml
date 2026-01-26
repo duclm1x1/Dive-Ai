@@ -1,0 +1,28 @@
+version: 1
+steps:
+  - id: doctor
+    type: doctor
+    evidence: E2
+  - id: preflight
+    type: v13-preflight
+    evidence: E1
+    optional: true
+  - id: cache-design
+    type: cache-design
+    evidence: E3
+  - id: gate-lint
+    type: gate
+    gate: lint
+    evidence: E2
+  - id: gate-test
+    type: gate
+    gate: test
+    evidence: E2
+  - id: gate-build
+    type: gate
+    gate: build
+    evidence: E2
+  - id: baseline-compare
+    type: baseline-compare
+    evidence: E3
+    optional: true

@@ -1,0 +1,20 @@
+version: 1
+steps:
+  - id: doctor
+    type: doctor
+    evidence: E2
+  - id: preflight
+    type: v13-preflight
+    evidence: E1
+    optional: true
+  - id: cache-design
+    type: cache-design
+    evidence: E3
+  - id: gate-benchmark
+    type: gate
+    gate: benchmark
+    evidence: E2
+  - id: perf-compare
+    type: perf-compare
+    evidence: E3
+    optional: true
