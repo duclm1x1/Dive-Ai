@@ -1,0 +1,404 @@
+{
+  "pack_id": "ep-run-20260126-155429-c9499cfd-1155",
+  "run_id": "run-20260126-155429-c9499cfd",
+  "created_at": "2026-01-26T15:54:29.276893+00:00",
+  "git": {
+    "sha": null,
+    "branch": null
+  },
+  "ci": {
+    "run_id": null,
+    "job_name": null
+  },
+  "run_summary": {
+    "run_spec": {
+      "run_id": "run-20260126-155429-c9499cfd",
+      "mode": "debug",
+      "task_type": "generic",
+      "repo_root": ".",
+      "inputs": {
+        "prompt": "Calculate 2 + 2 and explain your reasoning.",
+        "references": [],
+        "context_files": []
+      },
+      "constraints": {
+        "required_evidence_level": "E2",
+        "latency_budget_ms": 300000,
+        "cost_budget_usd": 1.0,
+        "max_tool_calls": 20,
+        "max_llm_calls": 10,
+        "privacy": {
+          "store_scratchpad": false,
+          "redact_logs": true
+        }
+      },
+      "provider_preferences": {
+        "provider_route": null,
+        "preferred_model": null
+      },
+      "created_at": "2026-01-26T15:54:29.224554+00:00",
+      "tags": {}
+    },
+    "router_decision": {
+      "run_id": "run-20260126-155429-c9499cfd",
+      "path": "think",
+      "decision_factors": {
+        "task_type": "generic",
+        "risk_class": "medium",
+        "required_evidence": "E2",
+        "complexity_score": 0.2586
+      },
+      "routing": {
+        "policy_branch": "high_evidence_required",
+        "rationale": "High evidence requirements need structured reasoning chain",
+        "selected_tier": "tier_think",
+        "fallback_tiers": [
+          "tier_fast"
+        ],
+        "thinking_strategy": "chain_of_thought"
+      },
+      "meta": {
+        "created_at": "2026-01-26T15:54:29.225568+00:00",
+        "router_version": "2.0.0"
+      }
+    },
+    "effort_plan": {
+      "run_id": "run-20260126-155429-c9499cfd",
+      "effort_level": "medium",
+      "budget": {
+        "budget_tokens": 10000,
+        "budget_used": 0
+      },
+      "inference_scaling": {
+        "num_samples": 2,
+        "use_self_consistency": true,
+        "use_search_beam": false,
+        "beam_width": 1
+      },
+      "tool_verification": {
+        "max_iterations": 3,
+        "enabled": true
+      },
+      "thinking": {
+        "interleaved_enabled": false,
+        "preserve_blocks": true
+      },
+      "phases": [
+        "input_processing",
+        "exploration",
+        "analysis",
+        "verification",
+        "conclusion",
+        "output_generation"
+      ],
+      "rationale": "Effort level: medium | Routing path: think | Thinking strategy: chain_of_thought | Risk class: medium | Required evidence: E2",
+      "created_at": "2026-01-26T15:54:29.262564+00:00"
+    }
+  },
+  "artifacts": [
+    {
+      "name": "router_decision",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/router_decision.json",
+      "sha256": "593c8dc2730d7182987a1727932897b3f85e937e45121ca6dd6b9bb61444a7d3",
+      "size_bytes": 587,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "effort_plan",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/effort_plan.json",
+      "sha256": "943afa4cfdbedc4968599b3b5e8a4d4d753a0a7acb3f25edb180efdf45d27977",
+      "size_bytes": 772,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "budget_plan",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/budget_plan.json",
+      "sha256": "e4bea70adc482b43469c09afca5bda7afd9b15779731661cec8db8c563ca8f4e",
+      "size_bytes": 530,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "process_trace",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/process_trace_summary.md",
+      "sha256": "d489ddc501290a41e1a2917e5b4c7aba5eab89f3bba5fd9db694653113d39123",
+      "size_bytes": 3675,
+      "evidence_level": "E1"
+    },
+    {
+      "name": "monitor_report",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/monitor_report.json",
+      "sha256": "8f27575bd58818f21030abe170f67b8ac48271eb538a6ba30475f426c6790152",
+      "size_bytes": 801,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "monitor_findings",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/monitor_findings.md",
+      "sha256": "b871b0efef70554eb3c878cd7197e14470d31f883b3888224c853b1781327093",
+      "size_bytes": 525,
+      "evidence_level": "E1"
+    },
+    {
+      "name": "mode_run",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/mode_run.json",
+      "sha256": "8ecdf19dc29d653e1d2b43dc841ee6fd0d02a771d6522267e506ee6101380c45",
+      "size_bytes": 11730,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_input_processing",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_input_processing.json",
+      "sha256": "dd90ace9517ffb45e295c1f18e7c48ded048c1452f2126a63e298890eabfde2d",
+      "size_bytes": 904,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_exploration",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_exploration.json",
+      "sha256": "f9ab495f1cc23cce9ed68cbcdcad01a35ffa54db3e76908e24cc5139a1174741",
+      "size_bytes": 1005,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_analysis",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_analysis.json",
+      "sha256": "9c26987c4b4c4c44f799ef67f4c3fec03f26ade54a477fdb1d424cf5e82b61d3",
+      "size_bytes": 1015,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_verification",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_verification.json",
+      "sha256": "3d3ffe055d1673cf6b0be5ab4bcdddcbcc2c7fcc7b81d1668637d5b2bbc173e5",
+      "size_bytes": 908,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_conclusion",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_conclusion.json",
+      "sha256": "c37be2f87d6fce4171386a91d2db43d88ab7a3a285b94db875c91757ff41a716",
+      "size_bytes": 867,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_output_generation",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_output_generation.json",
+      "sha256": "4a257e668effc07f8722d781449e97dd9a7d5d0cb1b7b2b0663241681c9b18c0",
+      "size_bytes": 896,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "process_trace_summary",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/process_trace_summary.json",
+      "sha256": "f4233c9442855c551aadea414917779bc5002215ed7710b8b8a45883fd6ee1ae",
+      "size_bytes": 4454,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "scorecard",
+      "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/scorecard.json",
+      "sha256": "167b060f0480b2a0d3ec3a41b29ec7f02b1c9b040999eb2c58fa1e35f10d634c",
+      "size_bytes": 795,
+      "evidence_level": "E2"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "run-20260126-155429-c9499cfd-claim-001",
+      "run_id": "run-20260126-155429-c9499cfd",
+      "claim_type": "routing",
+      "statement": "Task routed to think path with chain_of_thought strategy",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/router_decision.json",
+          "sha256": "593c8dc2730d7182987a1727932897b3f85e937e45121ca6dd6b9bb61444a7d3"
+        }
+      ],
+      "created_at": "2026-01-26T15:54:29.270365+00:00"
+    },
+    {
+      "claim_id": "run-20260126-155429-c9499cfd-claim-002",
+      "run_id": "run-20260126-155429-c9499cfd",
+      "claim_type": "effort",
+      "statement": "Effort level set to medium with 10000 thinking tokens",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/effort_plan.json",
+          "sha256": "943afa4cfdbedc4968599b3b5e8a4d4d753a0a7acb3f25edb180efdf45d27977"
+        }
+      ],
+      "created_at": "2026-01-26T15:54:29.270523+00:00"
+    },
+    {
+      "claim_id": "run-20260126-155429-c9499cfd-claim-003",
+      "run_id": "run-20260126-155429-c9499cfd",
+      "claim_type": "execution",
+      "statement": "Completed 6/6 cognitive phases",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/mode_run.json",
+          "sha256": "8ecdf19dc29d653e1d2b43dc841ee6fd0d02a771d6522267e506ee6101380c45"
+        }
+      ],
+      "created_at": "2026-01-26T15:54:29.270750+00:00"
+    },
+    {
+      "claim_id": "run-20260126-155429-c9499cfd-claim-004",
+      "run_id": "run-20260126-155429-c9499cfd",
+      "claim_type": "monitoring",
+      "statement": "Process monitoring verdict: pass",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/monitor_report.json",
+          "sha256": "8f27575bd58818f21030abe170f67b8ac48271eb538a6ba30475f426c6790152"
+        }
+      ],
+      "created_at": "2026-01-26T15:54:29.270874+00:00"
+    },
+    {
+      "claim_id": "run-20260126-155429-c9499cfd-claim-005",
+      "run_id": "run-20260126-155429-c9499cfd",
+      "claim_type": "traceability",
+      "statement": "Process trace generated with 3 key decisions documented",
+      "evidence_level": "E1",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/process_trace_summary.md",
+          "sha256": "d489ddc501290a41e1a2917e5b4c7aba5eab89f3bba5fd9db694653113d39123"
+        }
+      ],
+      "created_at": "2026-01-26T15:54:29.270986+00:00"
+    },
+    {
+      "claim_id": "run-20260126-155429-c9499cfd-claim-006",
+      "run_id": "run-20260126-155429-c9499cfd",
+      "claim_type": "evidence",
+      "statement": "Collected 7 artifacts with SHA256 verification",
+      "evidence_level": "E3",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/router_decision.json",
+          "sha256": "593c8dc2730d7182987a1727932897b3f85e937e45121ca6dd6b9bb61444a7d3"
+        },
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/effort_plan.json",
+          "sha256": "943afa4cfdbedc4968599b3b5e8a4d4d753a0a7acb3f25edb180efdf45d27977"
+        },
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/budget_plan.json",
+          "sha256": "e4bea70adc482b43469c09afca5bda7afd9b15779731661cec8db8c563ca8f4e"
+        },
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/process_trace_summary.md",
+          "sha256": "d489ddc501290a41e1a2917e5b4c7aba5eab89f3bba5fd9db694653113d39123"
+        },
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/monitor_report.json",
+          "sha256": "8f27575bd58818f21030abe170f67b8ac48271eb538a6ba30475f426c6790152"
+        },
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/monitor_findings.md",
+          "sha256": "b871b0efef70554eb3c878cd7197e14470d31f883b3888224c853b1781327093"
+        },
+        {
+          "path": "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/mode_run.json",
+          "sha256": "8ecdf19dc29d653e1d2b43dc841ee6fd0d02a771d6522267e506ee6101380c45"
+        }
+      ],
+      "created_at": "2026-01-26T15:54:29.272503+00:00"
+    }
+  ],
+  "scorecard": {
+    "run_id": "run-20260126-155429-c9499cfd",
+    "status": "completed",
+    "routing": {
+      "path": "think",
+      "thinking_strategy": "chain_of_thought",
+      "effort_level": "medium"
+    },
+    "phases": {
+      "planned": 6,
+      "completed": 6,
+      "failed": 0
+    },
+    "evidence": {
+      "artifacts_collected": 6,
+      "level_achieved": "E3"
+    },
+    "monitor": {
+      "verdict": "pass",
+      "scores": {
+        "completeness": 0.9,
+        "coherence": 0.75,
+        "evidence": 0.9,
+        "risk": 0.75
+      }
+    },
+    "budget_used": {
+      "llm_calls": 0,
+      "tool_calls": 0,
+      "tokens": 0,
+      "thinking_tokens": 0,
+      "cost_usd": 0.0
+    },
+    "timing": {
+      "started_at": "2026-01-26T15:54:29.224554+00:00",
+      "completed_at": "2026-01-26T15:54:29.273000+00:00",
+      "duration_ms": 0
+    },
+    "claims_count": 6
+  },
+  "monitor_report": {
+    "run_id": "run-20260126-155429-c9499cfd",
+    "verdict": "pass",
+    "scores": {
+      "completeness": 0.9,
+      "logical_coherence": 0.75,
+      "evidence_coverage": 0.9,
+      "risk_assessment": 0.75
+    },
+    "findings": [],
+    "warnings": [
+      "No risks identified - was risk assessment thorough?"
+    ],
+    "errors": [],
+    "followup": {
+      "questions": [
+        "Were there any potential risks that should be considered?"
+      ],
+      "responses": [],
+      "iterations": 0,
+      "max_iterations": 3
+    },
+    "recommendations": [
+      "Strengthen reasoning chain: add explicit justifications for decisions",
+      "Enhance risk handling: identify and mitigate potential issues"
+    ],
+    "monitor_info": {
+      "model": "tier_monitor",
+      "prompt_version": "1.0.0"
+    },
+    "created_at": "2026-01-26T15:54:29.268417+00:00"
+  },
+  "hash_index": {
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/router_decision.json": "593c8dc2730d7182987a1727932897b3f85e937e45121ca6dd6b9bb61444a7d3",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/effort_plan.json": "943afa4cfdbedc4968599b3b5e8a4d4d753a0a7acb3f25edb180efdf45d27977",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/budget_plan.json": "e4bea70adc482b43469c09afca5bda7afd9b15779731661cec8db8c563ca8f4e",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/process_trace_summary.md": "d489ddc501290a41e1a2917e5b4c7aba5eab89f3bba5fd9db694653113d39123",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/monitor_report.json": "8f27575bd58818f21030abe170f67b8ac48271eb538a6ba30475f426c6790152",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/monitor_findings.md": "b871b0efef70554eb3c878cd7197e14470d31f883b3888224c853b1781327093",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/mode_run.json": "8ecdf19dc29d653e1d2b43dc841ee6fd0d02a771d6522267e506ee6101380c45",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_input_processing.json": "dd90ace9517ffb45e295c1f18e7c48ded048c1452f2126a63e298890eabfde2d",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_exploration.json": "f9ab495f1cc23cce9ed68cbcdcad01a35ffa54db3e76908e24cc5139a1174741",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_analysis.json": "9c26987c4b4c4c44f799ef67f4c3fec03f26ade54a477fdb1d424cf5e82b61d3",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_verification.json": "3d3ffe055d1673cf6b0be5ab4bcdddcbcc2c7fcc7b81d1668637d5b2bbc173e5",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_conclusion.json": "c37be2f87d6fce4171386a91d2db43d88ab7a3a285b94db875c91757ff41a716",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/phase_output_generation.json": "4a257e668effc07f8722d781449e97dd9a7d5d0cb1b7b2b0663241681c9b18c0",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/process_trace_summary.json": "f4233c9442855c551aadea414917779bc5002215ed7710b8b8a45883fd6ee1ae",
+    "/mnt/data/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters_work/dive_coder_v14_enterprise_rag_final_graphrag_raptor_crag_adapters/.vibe/runs/run-20260126-155429-c9499cfd/scorecard.json": "167b060f0480b2a0d3ec3a41b29ec7f02b1c9b040999eb2c58fa1e35f10d634c"
+  }
+}

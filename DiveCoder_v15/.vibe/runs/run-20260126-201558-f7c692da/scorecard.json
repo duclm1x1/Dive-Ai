@@ -1,0 +1,40 @@
+{
+  "run_id": "run-20260126-201558-f7c692da",
+  "status": "completed",
+  "routing": {
+    "path": "think",
+    "thinking_strategy": "chain_of_thought",
+    "effort_level": "medium"
+  },
+  "phases": {
+    "planned": 6,
+    "completed": 6,
+    "failed": 0
+  },
+  "evidence": {
+    "artifacts_collected": 6,
+    "level_achieved": "E3"
+  },
+  "monitor": {
+    "verdict": "pass",
+    "scores": {
+      "completeness": 0.9,
+      "coherence": 0.75,
+      "evidence": 0.9,
+      "risk": 0.75
+    }
+  },
+  "budget_used": {
+    "llm_calls": 0,
+    "tool_calls": 0,
+    "tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0
+  },
+  "timing": {
+    "started_at": "2026-01-26T20:15:58.334421+00:00",
+    "completed_at": "2026-01-26T20:15:58.347078+00:00",
+    "duration_ms": 0
+  },
+  "claims_count": 6
+}

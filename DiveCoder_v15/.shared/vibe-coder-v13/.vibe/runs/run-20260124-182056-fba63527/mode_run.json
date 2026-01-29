@@ -1,0 +1,190 @@
+{
+  "run_id": "run-20260124-182056-fba63527",
+  "status": "completed",
+  "started_at": "2026-01-24T18:20:56.066350+00:00",
+  "completed_at": "2026-01-24T18:20:56.068482+00:00",
+  "routing": {
+    "run_id": "run-20260124-182056-fba63527",
+    "path": "fast",
+    "decision_factors": {
+      "task_type": "generic",
+      "risk_class": "low",
+      "required_evidence": "E0",
+      "complexity_score": 0.20640000000000003
+    },
+    "routing": {
+      "policy_branch": "simple_fast_path",
+      "rationale": "Simple low-risk tasks can use fast path for speed/cost efficiency",
+      "selected_tier": "tier_fast",
+      "fallback_tiers": [
+        "tier_think"
+      ],
+      "thinking_strategy": "single_pass"
+    },
+    "meta": {
+      "created_at": "2026-01-24T18:20:56.066882+00:00",
+      "router_version": "2.0.0"
+    }
+  },
+  "effort": {
+    "run_id": "run-20260124-182056-fba63527",
+    "effort_level": "low",
+    "budget": {
+      "budget_tokens": 2000,
+      "budget_used": 0
+    },
+    "inference_scaling": {
+      "num_samples": 1,
+      "use_self_consistency": false,
+      "use_search_beam": false,
+      "beam_width": 1
+    },
+    "tool_verification": {
+      "max_iterations": 1,
+      "enabled": true
+    },
+    "thinking": {
+      "interleaved_enabled": false,
+      "preserve_blocks": false
+    },
+    "phases": [
+      "input_processing",
+      "analysis",
+      "output_generation"
+    ],
+    "rationale": "Effort level: low | Routing path: fast | Thinking strategy: single_pass | Risk class: low | Required evidence: E0",
+    "created_at": "2026-01-24T18:20:56.067042+00:00"
+  },
+  "budget": {
+    "run_id": "run-20260124-182056-fba63527",
+    "budgets": {
+      "input_token_budget": 2008,
+      "output_token_budget": 2000,
+      "thinking_token_budget": 2000,
+      "latency_budget_ms": 300000,
+      "cost_budget_usd": 1.0,
+      "estimated_cost_usd": 0.066,
+      "max_llm_calls": 10,
+      "max_tool_calls": 20
+    },
+    "usage": {
+      "llm_calls_used": 0,
+      "tool_calls_used": 0,
+      "tokens_used": 0,
+      "thinking_tokens_used": 0,
+      "elapsed_ms": 0,
+      "actual_cost_usd": 0.0
+    },
+    "created_at": "2026-01-24T18:20:56.067066+00:00"
+  },
+  "phases": {
+    "input_processing": {
+      "phase": "input_processing",
+      "run_id": "run-20260124-182056-fba63527",
+      "blocks": [
+        {
+          "block_id": "run-20260124-182056-fba63527-input_processing-001",
+          "phase": "input_processing",
+          "content": "\nAnalyzing input for run run-20260124-182056-fba63527:\n- Task type: generic\n- Mode: generic\n- Evidence required: E0\n- Context files: 1\n\nNormalized task specification created.\n",
+          "signature": "sig_3757",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-24T18:20:56.067307+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/phase_input_processing.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-24T18:20:56.067281+00:00",
+        "completed_at": "2026-01-24T18:20:56.067405+00:00",
+        "duration_ms": 1000
+      }
+    },
+    "analysis": {
+      "phase": "analysis",
+      "run_id": "run-20260124-182056-fba63527",
+      "blocks": [
+        {
+          "block_id": "run-20260124-182056-fba63527-analysis-001",
+          "phase": "analysis",
+          "content": "\nDetailed analysis:\n\n1. Problem decomposition:\n   - Core requirement: Add a comment to the README file...\n   - Dependencies identified: 0\n   \n2. Risk assessment:\n   - Risk class: low\n   - Complexity score: 0.21\n\n3. Plan:\n   - Execute with low effort\n   - Budget: 2000 thinking tokens\n",
+          "signature": "sig_4188",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-24T18:20:56.067428+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/phase_analysis.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-24T18:20:56.067413+00:00",
+        "completed_at": "2026-01-24T18:20:56.067516+00:00",
+        "duration_ms": 1000
+      }
+    },
+    "output_generation": {
+      "phase": "output_generation",
+      "run_id": "run-20260124-182056-fba63527",
+      "blocks": [
+        {
+          "block_id": "run-20260124-182056-fba63527-output_generation-001",
+          "phase": "output_generation",
+          "content": "\nGenerating final output:\n\n1. Synthesizing findings\n2. Formatting response\n3. Attaching evidence artifacts\n4. Creating claims ledger\n\nOutput ready for delivery.\n",
+          "signature": "sig_3273",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-24T18:20:56.067534+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/phase_output_generation.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-24T18:20:56.067522+00:00",
+        "completed_at": "2026-01-24T18:20:56.067747+00:00",
+        "duration_ms": 1000
+      }
+    }
+  },
+  "artifacts": {
+    "router_decision": "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/router_decision.json",
+    "effort_plan": "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/effort_plan.json",
+    "budget_plan": "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/budget_plan.json",
+    "process_trace": "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/process_trace_summary.md",
+    "monitor_report": "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/monitor_report.json",
+    "monitor_findings": "/home/ubuntu/dive_coder_v14/.shared/vibe-coder-v13/.vibe/runs/run-20260124-182056-fba63527/monitor_findings.md"
+  },
+  "error": null
+}

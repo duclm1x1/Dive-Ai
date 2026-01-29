@@ -1,0 +1,58 @@
+# Dive Coder / V13 - RAG KB spec (offline-first)
+#
+# Each source supports:
+# - source: stable id
+# - type: label (markdown, text, code, ...)
+# - path: local file path (relative to repo root or absolute)
+# - content: inline text (optional alternative to path)
+# - meta: optional metadata (dict)
+
+sources:
+  - source: repo:README
+    type: markdown
+    path: README.md
+    meta:
+      scope: repo
+
+  - source: repo:VIBE_OVERVIEW
+    type: markdown
+    path: VIBE_CODER_V13_OVERVIEW.md
+    meta:
+      scope: repo
+
+  - source: repo:SKILLS_AUDIT
+    type: markdown
+    path: docs/SKILLS_AUDIT.md
+    meta:
+      scope: docs
+
+# Engine settings (offline-first preset)
+settings:
+  dense_backend: scan
+  preset: 1
+  enable_graphrag: true
+  enable_raptor: true
+  enable_crag: true
+  crag_max_passes: 1
+  graphrag_expand_k: 6
+  raptor_summary_k: 4
+
+  # Adapter skeleton (production-ready wiring; disabled by default)
+  enable_dense: false
+  dense:
+    provider: stub_hash
+    model: hash-256
+    dim: 256
+    topk: 24
+
+  fusion:
+    mode: rrf   # rrf | weighted | none
+    rrf_k: 60
+    w_bm25: 1.0
+    w_dense: 1.0
+
+  enable_rerank: false
+  rerank:
+    provider: stub
+    model: noop
+    topk: 12

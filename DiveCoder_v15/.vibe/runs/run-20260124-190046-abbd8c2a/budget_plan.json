@@ -1,0 +1,22 @@
+{
+  "run_id": "run-20260124-190046-abbd8c2a",
+  "budgets": {
+    "input_token_budget": 10,
+    "output_token_budget": 8000,
+    "thinking_token_budget": 10000,
+    "latency_budget_ms": 300000,
+    "cost_budget_usd": 1.0,
+    "estimated_cost_usd": 0.27,
+    "max_llm_calls": 10,
+    "max_tool_calls": 20
+  },
+  "usage": {
+    "llm_calls_used": 0,
+    "tool_calls_used": 0,
+    "tokens_used": 0,
+    "thinking_tokens_used": 0,
+    "elapsed_ms": 0,
+    "actual_cost_usd": 0.0
+  },
+  "created_at": "2026-01-24T19:00:46.142738+00:00"
+}

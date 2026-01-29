@@ -1,0 +1,292 @@
+{
+  "run_id": "run-20260127-032638-84864ae3",
+  "status": "completed",
+  "started_at": "2026-01-27T03:26:38.541041+00:00",
+  "completed_at": "2026-01-27T03:26:38.545096+00:00",
+  "routing": {
+    "run_id": "run-20260127-032638-84864ae3",
+    "path": "think",
+    "decision_factors": {
+      "task_type": "generic",
+      "risk_class": "medium",
+      "required_evidence": "E2",
+      "complexity_score": 0.2586
+    },
+    "routing": {
+      "policy_branch": "high_evidence_required",
+      "rationale": "High evidence requirements need structured reasoning chain",
+      "selected_tier": "tier_think",
+      "fallback_tiers": [
+        "tier_fast"
+      ],
+      "thinking_strategy": "chain_of_thought"
+    },
+    "meta": {
+      "created_at": "2026-01-27T03:26:38.541847+00:00",
+      "router_version": "2.0.0"
+    }
+  },
+  "effort": {
+    "run_id": "run-20260127-032638-84864ae3",
+    "effort_level": "medium",
+    "budget": {
+      "budget_tokens": 10000,
+      "budget_used": 0
+    },
+    "inference_scaling": {
+      "num_samples": 2,
+      "use_self_consistency": true,
+      "use_search_beam": false,
+      "beam_width": 1
+    },
+    "tool_verification": {
+      "max_iterations": 3,
+      "enabled": true
+    },
+    "thinking": {
+      "interleaved_enabled": false,
+      "preserve_blocks": true
+    },
+    "phases": [
+      "input_processing",
+      "exploration",
+      "analysis",
+      "verification",
+      "conclusion",
+      "output_generation"
+    ],
+    "rationale": "Effort level: medium | Routing path: think | Thinking strategy: chain_of_thought | Risk class: medium | Required evidence: E2",
+    "created_at": "2026-01-27T03:26:38.542244+00:00"
+  },
+  "budget": {
+    "run_id": "run-20260127-032638-84864ae3",
+    "budgets": {
+      "input_token_budget": 10,
+      "output_token_budget": 8000,
+      "thinking_token_budget": 10000,
+      "latency_budget_ms": 300000,
+      "cost_budget_usd": 1.0,
+      "estimated_cost_usd": 0.27,
+      "max_llm_calls": 10,
+      "max_tool_calls": 20
+    },
+    "usage": {
+      "llm_calls_used": 0,
+      "tool_calls_used": 0,
+      "tokens_used": 0,
+      "thinking_tokens_used": 0,
+      "elapsed_ms": 0,
+      "actual_cost_usd": 0.0
+    },
+    "created_at": "2026-01-27T03:26:38.542272+00:00"
+  },
+  "phases": {
+    "input_processing": {
+      "phase": "input_processing",
+      "run_id": "run-20260127-032638-84864ae3",
+      "blocks": [
+        {
+          "block_id": "run-20260127-032638-84864ae3-input_processing-001",
+          "phase": "input_processing",
+          "content": "\nAnalyzing input for run run-20260127-032638-84864ae3:\n- Task type: generic\n- Mode: debug\n- Evidence required: E2\n- Context files: 0\n\nNormalized task specification created.\n",
+          "signature": "sig_4150",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-27T03:26:38.542735+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/phase_input_processing.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-27T03:26:38.542698+00:00",
+        "completed_at": "2026-01-27T03:26:38.542921+00:00",
+        "duration_ms": 1000
+      }
+    },
+    "exploration": {
+      "phase": "exploration",
+      "run_id": "run-20260127-032638-84864ae3",
+      "blocks": [
+        {
+          "block_id": "run-20260127-032638-84864ae3-exploration-001",
+          "phase": "exploration",
+          "content": "\nExploring candidate approaches for generic:\n\nApproach 1: Direct implementation\n- Pros: Fast, straightforward\n- Cons: May miss edge cases\n\nApproach 2: Systematic analysis first\n- Pros: Thorough, catches issues early\n- Cons: Takes more time\n\nSelected: Approach 2 (based on medium risk)\n",
+          "signature": "sig_9717",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-27T03:26:38.542946+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/phase_exploration.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-27T03:26:38.542930+00:00",
+        "completed_at": "2026-01-27T03:26:38.543083+00:00",
+        "duration_ms": 1000
+      }
+    },
+    "analysis": {
+      "phase": "analysis",
+      "run_id": "run-20260127-032638-84864ae3",
+      "blocks": [
+        {
+          "block_id": "run-20260127-032638-84864ae3-analysis-001",
+          "phase": "analysis",
+          "content": "\nDetailed analysis:\n\n1. Problem decomposition:\n   - Core requirement: Calculate 2 + 2 and explain your reasoning....\n   - Dependencies identified: 0\n   \n2. Risk assessment:\n   - Risk class: medium\n   - Complexity score: 0.26\n\n3. Plan:\n   - Execute with medium effort\n   - Budget: 10000 thinking tokens\n",
+          "signature": "sig_6782",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-27T03:26:38.543104+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/phase_analysis.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-27T03:26:38.543090+00:00",
+        "completed_at": "2026-01-27T03:26:38.543273+00:00",
+        "duration_ms": 1000
+      }
+    },
+    "verification": {
+      "phase": "verification",
+      "run_id": "run-20260127-032638-84864ae3",
+      "blocks": [
+        {
+          "block_id": "run-20260127-032638-84864ae3-verification-001",
+          "phase": "verification",
+          "content": "\nVerification phase:\n\n1. Static checks: PENDING\n2. Build verification: PENDING\n3. Test execution: PENDING\n4. Security scan: PENDING (if required)\n\nTool verification loop: 3 iterations max\n",
+          "signature": "sig_397",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-27T03:26:38.543295+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/phase_verification.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-27T03:26:38.543280+00:00",
+        "completed_at": "2026-01-27T03:26:38.543421+00:00",
+        "duration_ms": 1000
+      }
+    },
+    "conclusion": {
+      "phase": "conclusion",
+      "run_id": "run-20260127-032638-84864ae3",
+      "blocks": [
+        {
+          "block_id": "run-20260127-032638-84864ae3-conclusion-001",
+          "phase": "conclusion",
+          "content": "\nConclusion:\n\nBased on analysis and verification:\n- Primary approach validated\n- No blocking issues found\n- Ready for output generation\n\nConfidence: 85%\n",
+          "signature": "sig_4373",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-27T03:26:38.543441+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/phase_conclusion.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-27T03:26:38.543427+00:00",
+        "completed_at": "2026-01-27T03:26:38.543617+00:00",
+        "duration_ms": 1000
+      }
+    },
+    "output_generation": {
+      "phase": "output_generation",
+      "run_id": "run-20260127-032638-84864ae3",
+      "blocks": [
+        {
+          "block_id": "run-20260127-032638-84864ae3-output_generation-001",
+          "phase": "output_generation",
+          "content": "\nGenerating final output:\n\n1. Synthesizing findings\n2. Formatting response\n3. Attaching evidence artifacts\n4. Creating claims ledger\n\nOutput ready for delivery.\n",
+          "signature": "sig_7141",
+          "tokens_used": 0,
+          "is_redacted": false,
+          "redacted_data": null,
+          "created_at": "2026-01-27T03:26:38.543653+00:00"
+        }
+      ],
+      "status": "completed",
+      "tool_interactions": {
+        "tool_calls": [],
+        "tool_results": []
+      },
+      "self_correction": {
+        "corrections_made": 0,
+        "correction_details": []
+      },
+      "artifacts": [
+        "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/phase_output_generation.json"
+      ],
+      "timing": {
+        "started_at": "2026-01-27T03:26:38.543629+00:00",
+        "completed_at": "2026-01-27T03:26:38.543825+00:00",
+        "duration_ms": 1000
+      }
+    }
+  },
+  "artifacts": {
+    "router_decision": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/router_decision.json",
+    "effort_plan": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/effort_plan.json",
+    "budget_plan": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/budget_plan.json",
+    "process_trace": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/process_trace_summary.md",
+    "monitor_report": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/monitor_report.json",
+    "monitor_findings": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-032638-84864ae3/monitor_findings.md"
+  },
+  "error": null
+}

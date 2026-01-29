@@ -1,0 +1,44 @@
+{
+  "id": "IKO-DEMO",
+  "title": "Demo IKO",
+  "description": "Demo",
+  "state": "EVIDENCE_READY",
+  "created_at": "2026-01-21T07:07:42.501671+00:00",
+  "updated_at": "2026-01-21T07:09:24.543510+00:00",
+  "labels": [],
+  "links": [],
+  "evidence_packs": [
+    ".vibe/evidence/ep-IKO-DEMO-1023.evidencepack.json"
+  ],
+  "investigations": [],
+  "events": [
+    {
+      "ts": "2026-01-21T07:07:42.501714+00:00",
+      "actor": "test",
+      "action": "IKO_CREATED",
+      "detail": {}
+    },
+    {
+      "ts": "2026-01-21T07:09:14.515055+00:00",
+      "actor": "gatekeeper",
+      "action": "GATEKEEPER_TRANSITION",
+      "detail": {
+        "from_state": "NEW",
+        "to_state": "INVESTIGATING",
+        "reason": "start",
+        "evidencepack": ""
+      }
+    },
+    {
+      "ts": "2026-01-21T07:09:24.543470+00:00",
+      "actor": "gatekeeper",
+      "action": "GATEKEEPER_TRANSITION",
+      "detail": {
+        "from_state": "INVESTIGATING",
+        "to_state": "EVIDENCE_READY",
+        "reason": "attach",
+        "evidencepack": ".vibe/evidence/ep-IKO-DEMO-1023.evidencepack.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+project:
+  name: TODO
+workflow:
+  trigger: TODO
+  steps:
+    - TODO
+  success_criteria: TODO
+  error_handling: TODO
+secrets:
+  placeholders:
+    EXAMPLE_SECRET: ${{REPLACE_ME}}

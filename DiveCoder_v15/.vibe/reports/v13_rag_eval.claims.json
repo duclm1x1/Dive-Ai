@@ -1,0 +1,26 @@
+{
+  "version": "v13",
+  "run_id": "v13-rag-eval",
+  "claims": [
+    {
+      "claim": "RAG KB ingested successfully",
+      "evidence_level": "E2",
+      "tool": "v13-rag",
+      "artifact": "/mnt/data/dive_coder_v14/dive_coder_v14_state_of_the_art/.vibe/kb/v13_rag_v2.json",
+      "sha256": "7e8cc03e1e7f41f658c1714d944b6e9b3ebc59112f4060235e0cd09b0d349465",
+      "meta": {
+        "spec": ".vibe/inputs/v13/rag_spec.yml"
+      }
+    },
+    {
+      "claim": "RAG eval report generated",
+      "evidence_level": "E2",
+      "tool": "v13-rag",
+      "artifact": "/mnt/data/dive_coder_v14/dive_coder_v14_state_of_the_art/.vibe/reports/v13_rag_eval.json",
+      "sha256": "30932430d1648d8e40e85b02ee8b875e65e1d05407cc0f9163ca83c0b180adcd",
+      "meta": {
+        "eval": ".vibe/inputs/v13/rag_eval.yml"
+      }
+    }
+  ]
+}
