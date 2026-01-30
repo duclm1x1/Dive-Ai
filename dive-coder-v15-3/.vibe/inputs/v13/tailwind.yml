@@ -1,0 +1,10 @@
+project:
+  name: TODO
+  description: TODO
+ui:
+  style: TODO
+content:
+  pages:
+    - TODO
+non_functional:
+  seo: TODO

@@ -1,0 +1,404 @@
+{
+  "pack_id": "ep-run-20260127-033505-349d26aa-837",
+  "run_id": "run-20260127-033505-349d26aa",
+  "created_at": "2026-01-27T03:35:05.920893+00:00",
+  "git": {
+    "sha": null,
+    "branch": null
+  },
+  "ci": {
+    "run_id": null,
+    "job_name": null
+  },
+  "run_summary": {
+    "run_spec": {
+      "run_id": "run-20260127-033505-349d26aa",
+      "mode": "general",
+      "task_type": "generic",
+      "repo_root": ".",
+      "inputs": {
+        "prompt": "What is 2+2? Explain briefly.",
+        "references": [],
+        "context_files": []
+      },
+      "constraints": {
+        "required_evidence_level": "E2",
+        "latency_budget_ms": 300000,
+        "cost_budget_usd": 1.0,
+        "max_tool_calls": 20,
+        "max_llm_calls": 10,
+        "privacy": {
+          "store_scratchpad": false,
+          "redact_logs": true
+        }
+      },
+      "provider_preferences": {
+        "provider_route": null,
+        "preferred_model": null
+      },
+      "created_at": "2026-01-27T03:35:05.913614+00:00",
+      "tags": {}
+    },
+    "router_decision": {
+      "run_id": "run-20260127-033505-349d26aa",
+      "path": "think",
+      "decision_factors": {
+        "task_type": "generic",
+        "risk_class": "medium",
+        "required_evidence": "E2",
+        "complexity_score": 0.2558
+      },
+      "routing": {
+        "policy_branch": "high_evidence_required",
+        "rationale": "High evidence requirements need structured reasoning chain",
+        "selected_tier": "tier_think",
+        "fallback_tiers": [
+          "tier_fast"
+        ],
+        "thinking_strategy": "chain_of_thought"
+      },
+      "meta": {
+        "created_at": "2026-01-27T03:35:05.913794+00:00",
+        "router_version": "2.0.0"
+      }
+    },
+    "effort_plan": {
+      "run_id": "run-20260127-033505-349d26aa",
+      "effort_level": "medium",
+      "budget": {
+        "budget_tokens": 10000,
+        "budget_used": 0
+      },
+      "inference_scaling": {
+        "num_samples": 2,
+        "use_self_consistency": true,
+        "use_search_beam": false,
+        "beam_width": 1
+      },
+      "tool_verification": {
+        "max_iterations": 3,
+        "enabled": true
+      },
+      "thinking": {
+        "interleaved_enabled": false,
+        "preserve_blocks": true
+      },
+      "phases": [
+        "input_processing",
+        "exploration",
+        "analysis",
+        "verification",
+        "conclusion",
+        "output_generation"
+      ],
+      "rationale": "Effort level: medium | Routing path: think | Thinking strategy: chain_of_thought | Risk class: medium | Required evidence: E2",
+      "created_at": "2026-01-27T03:35:05.914100+00:00"
+    }
+  },
+  "artifacts": [
+    {
+      "name": "router_decision",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/router_decision.json",
+      "sha256": "08ebe2436d7b6510db8a80bb00f93662cbc33eddc16e542a485afa1a730a7574",
+      "size_bytes": 587,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "effort_plan",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/effort_plan.json",
+      "sha256": "a396459557d5fb65ad7569b522f6475c281a1a9ea8da5f1859854afe2ec75f66",
+      "size_bytes": 772,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "budget_plan",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/budget_plan.json",
+      "sha256": "3e2b68f0940f8a79c82b44478816760b7f8ae1cfeab03c4a2a6072d302e7fce4",
+      "size_bytes": 529,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "process_trace",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/process_trace_summary.md",
+      "sha256": "2bc84c4a129963452d78a5671bd86255a1a44438d33ca07923a96cbf76814e23",
+      "size_bytes": 3649,
+      "evidence_level": "E1"
+    },
+    {
+      "name": "monitor_report",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/monitor_report.json",
+      "sha256": "7d5dcf57f856b99fe7d888b880710547bacbb17bb221126e482131b46b413e5d",
+      "size_bytes": 801,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "monitor_findings",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/monitor_findings.md",
+      "sha256": "6ddb8ee18b5ed304393c657c92a66ad3381a1b2e0b90e80c8dda3c2646b3719d",
+      "size_bytes": 525,
+      "evidence_level": "E1"
+    },
+    {
+      "name": "mode_run",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/mode_run.json",
+      "sha256": "211df769a4ec6a71aca0333845c2ad2e03ed63366453ee7efebb787c56f3c900",
+      "size_bytes": 10300,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_input_processing",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_input_processing.json",
+      "sha256": "f86e7c4fb8bb3cee2ecf62a1de8827ed0180be25f07e8c62bd95096a8b58c40a",
+      "size_bytes": 906,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_exploration",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_exploration.json",
+      "sha256": "83c824f6b751e2034098f0d62d0e194890e31cb5cdf7d1a3b8d1f1881d4ed349",
+      "size_bytes": 1005,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_analysis",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_analysis.json",
+      "sha256": "5e609cdf48be5e593e533a3ab785bad613e95b5802b5a59881a8e677e78eb6e0",
+      "size_bytes": 1000,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_verification",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_verification.json",
+      "sha256": "8513f9e8b58c4fb41f1250e274097f456c579591ad371e0bf581c79f25bfa9cd",
+      "size_bytes": 908,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_conclusion",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_conclusion.json",
+      "sha256": "015be4fae3f68377577291194b25cf94ae06ecb787e795dd3d118b1fc574aa30",
+      "size_bytes": 867,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "phase_output_generation",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_output_generation.json",
+      "sha256": "5a950bc1fe80d839fddb35c18f59204ce3d10481320a8bdede9e723284dc5690",
+      "size_bytes": 896,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "process_trace_summary",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/process_trace_summary.json",
+      "sha256": "0b538f86df433c64f1242aa2e882f65adbc1188b1dc73e7e3ba394ad0e39dcf8",
+      "size_bytes": 4428,
+      "evidence_level": "E2"
+    },
+    {
+      "name": "scorecard",
+      "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/scorecard.json",
+      "sha256": "b8e1aad79f84f9fbddb78a8220a94dc1cba561b6f87f7d0ed9c2394f097e65e1",
+      "size_bytes": 795,
+      "evidence_level": "E2"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "run-20260127-033505-349d26aa-claim-001",
+      "run_id": "run-20260127-033505-349d26aa",
+      "claim_type": "routing",
+      "statement": "Task routed to think path with chain_of_thought strategy",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/router_decision.json",
+          "sha256": "08ebe2436d7b6510db8a80bb00f93662cbc33eddc16e542a485afa1a730a7574"
+        }
+      ],
+      "created_at": "2026-01-27T03:35:05.917203+00:00"
+    },
+    {
+      "claim_id": "run-20260127-033505-349d26aa-claim-002",
+      "run_id": "run-20260127-033505-349d26aa",
+      "claim_type": "effort",
+      "statement": "Effort level set to medium with 10000 thinking tokens",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/effort_plan.json",
+          "sha256": "a396459557d5fb65ad7569b522f6475c281a1a9ea8da5f1859854afe2ec75f66"
+        }
+      ],
+      "created_at": "2026-01-27T03:35:05.917303+00:00"
+    },
+    {
+      "claim_id": "run-20260127-033505-349d26aa-claim-003",
+      "run_id": "run-20260127-033505-349d26aa",
+      "claim_type": "execution",
+      "statement": "Completed 6/6 cognitive phases",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/mode_run.json",
+          "sha256": "211df769a4ec6a71aca0333845c2ad2e03ed63366453ee7efebb787c56f3c900"
+        }
+      ],
+      "created_at": "2026-01-27T03:35:05.917443+00:00"
+    },
+    {
+      "claim_id": "run-20260127-033505-349d26aa-claim-004",
+      "run_id": "run-20260127-033505-349d26aa",
+      "claim_type": "monitoring",
+      "statement": "Process monitoring verdict: pass",
+      "evidence_level": "E2",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/monitor_report.json",
+          "sha256": "7d5dcf57f856b99fe7d888b880710547bacbb17bb221126e482131b46b413e5d"
+        }
+      ],
+      "created_at": "2026-01-27T03:35:05.917511+00:00"
+    },
+    {
+      "claim_id": "run-20260127-033505-349d26aa-claim-005",
+      "run_id": "run-20260127-033505-349d26aa",
+      "claim_type": "traceability",
+      "statement": "Process trace generated with 3 key decisions documented",
+      "evidence_level": "E1",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/process_trace_summary.md",
+          "sha256": "2bc84c4a129963452d78a5671bd86255a1a44438d33ca07923a96cbf76814e23"
+        }
+      ],
+      "created_at": "2026-01-27T03:35:05.917596+00:00"
+    },
+    {
+      "claim_id": "run-20260127-033505-349d26aa-claim-006",
+      "run_id": "run-20260127-033505-349d26aa",
+      "claim_type": "evidence",
+      "statement": "Collected 7 artifacts with SHA256 verification",
+      "evidence_level": "E3",
+      "artifact_refs": [
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/router_decision.json",
+          "sha256": "08ebe2436d7b6510db8a80bb00f93662cbc33eddc16e542a485afa1a730a7574"
+        },
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/effort_plan.json",
+          "sha256": "a396459557d5fb65ad7569b522f6475c281a1a9ea8da5f1859854afe2ec75f66"
+        },
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/budget_plan.json",
+          "sha256": "3e2b68f0940f8a79c82b44478816760b7f8ae1cfeab03c4a2a6072d302e7fce4"
+        },
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/process_trace_summary.md",
+          "sha256": "2bc84c4a129963452d78a5671bd86255a1a44438d33ca07923a96cbf76814e23"
+        },
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/monitor_report.json",
+          "sha256": "7d5dcf57f856b99fe7d888b880710547bacbb17bb221126e482131b46b413e5d"
+        },
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/monitor_findings.md",
+          "sha256": "6ddb8ee18b5ed304393c657c92a66ad3381a1b2e0b90e80c8dda3c2646b3719d"
+        },
+        {
+          "path": "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/mode_run.json",
+          "sha256": "211df769a4ec6a71aca0333845c2ad2e03ed63366453ee7efebb787c56f3c900"
+        }
+      ],
+      "created_at": "2026-01-27T03:35:05.918172+00:00"
+    }
+  ],
+  "scorecard": {
+    "run_id": "run-20260127-033505-349d26aa",
+    "status": "completed",
+    "routing": {
+      "path": "think",
+      "thinking_strategy": "chain_of_thought",
+      "effort_level": "medium"
+    },
+    "phases": {
+      "planned": 6,
+      "completed": 6,
+      "failed": 0
+    },
+    "evidence": {
+      "artifacts_collected": 6,
+      "level_achieved": "E3"
+    },
+    "monitor": {
+      "verdict": "pass",
+      "scores": {
+        "completeness": 0.9,
+        "coherence": 0.75,
+        "evidence": 0.9,
+        "risk": 0.75
+      }
+    },
+    "budget_used": {
+      "llm_calls": 0,
+      "tool_calls": 0,
+      "tokens": 0,
+      "thinking_tokens": 0,
+      "cost_usd": 0.0
+    },
+    "timing": {
+      "started_at": "2026-01-27T03:35:05.913614+00:00",
+      "completed_at": "2026-01-27T03:35:05.918378+00:00",
+      "duration_ms": 0
+    },
+    "claims_count": 6
+  },
+  "monitor_report": {
+    "run_id": "run-20260127-033505-349d26aa",
+    "verdict": "pass",
+    "scores": {
+      "completeness": 0.9,
+      "logical_coherence": 0.75,
+      "evidence_coverage": 0.9,
+      "risk_assessment": 0.75
+    },
+    "findings": [],
+    "warnings": [
+      "No risks identified - was risk assessment thorough?"
+    ],
+    "errors": [],
+    "followup": {
+      "questions": [
+        "Were there any potential risks that should be considered?"
+      ],
+      "responses": [],
+      "iterations": 0,
+      "max_iterations": 3
+    },
+    "recommendations": [
+      "Strengthen reasoning chain: add explicit justifications for decisions",
+      "Enhance risk handling: identify and mitigate potential issues"
+    ],
+    "monitor_info": {
+      "model": "tier_monitor",
+      "prompt_version": "1.0.0"
+    },
+    "created_at": "2026-01-27T03:35:05.916117+00:00"
+  },
+  "hash_index": {
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/router_decision.json": "08ebe2436d7b6510db8a80bb00f93662cbc33eddc16e542a485afa1a730a7574",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/effort_plan.json": "a396459557d5fb65ad7569b522f6475c281a1a9ea8da5f1859854afe2ec75f66",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/budget_plan.json": "3e2b68f0940f8a79c82b44478816760b7f8ae1cfeab03c4a2a6072d302e7fce4",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/process_trace_summary.md": "2bc84c4a129963452d78a5671bd86255a1a44438d33ca07923a96cbf76814e23",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/monitor_report.json": "7d5dcf57f856b99fe7d888b880710547bacbb17bb221126e482131b46b413e5d",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/monitor_findings.md": "6ddb8ee18b5ed304393c657c92a66ad3381a1b2e0b90e80c8dda3c2646b3719d",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/mode_run.json": "211df769a4ec6a71aca0333845c2ad2e03ed63366453ee7efebb787c56f3c900",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_input_processing.json": "f86e7c4fb8bb3cee2ecf62a1de8827ed0180be25f07e8c62bd95096a8b58c40a",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_exploration.json": "83c824f6b751e2034098f0d62d0e194890e31cb5cdf7d1a3b8d1f1881d4ed349",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_analysis.json": "5e609cdf48be5e593e533a3ab785bad613e95b5802b5a59881a8e677e78eb6e0",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_verification.json": "8513f9e8b58c4fb41f1250e274097f456c579591ad371e0bf581c79f25bfa9cd",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_conclusion.json": "015be4fae3f68377577291194b25cf94ae06ecb787e795dd3d118b1fc574aa30",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/phase_output_generation.json": "5a950bc1fe80d839fddb35c18f59204ce3d10481320a8bdede9e723284dc5690",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/process_trace_summary.json": "0b538f86df433c64f1242aa2e882f65adbc1188b1dc73e7e3ba394ad0e39dcf8",
+    "/mnt/data/work_v14_4_patched/.vibe/runs/run-20260127-033505-349d26aa/scorecard.json": "b8e1aad79f84f9fbddb78a8220a94dc1cba561b6f87f7d0ed9c2394f097e65e1"
+  }
+}

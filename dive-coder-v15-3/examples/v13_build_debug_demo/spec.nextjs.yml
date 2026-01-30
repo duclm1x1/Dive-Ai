@@ -1,0 +1,17 @@
+project:
+  name: vibe-v13-demo
+  description: "Demo scaffold to test Vibe Coder v13 build + baseline gate"
+product:
+  users:
+    - "developers"
+  core_flows:
+    - "open app"
+    - "see home page"
+ui:
+  style: "minimal"
+data:
+  sources:
+    - "none"
+non_functional:
+  slo: "p95 < 200ms"
+  security: "no eval; no secrets in repo"

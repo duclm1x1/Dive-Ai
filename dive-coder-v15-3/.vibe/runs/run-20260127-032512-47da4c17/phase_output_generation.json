@@ -1,0 +1,31 @@
+{
+  "phase": "output_generation",
+  "run_id": "run-20260127-032512-47da4c17",
+  "blocks": [
+    {
+      "block_id": "run-20260127-032512-47da4c17-output_generation-001",
+      "phase": "output_generation",
+      "content": "\nGenerating final output:\n\n1. Synthesizing findings\n2. Formatting response\n3. Attaching evidence artifacts\n4. Creating claims ledger\n\nOutput ready for delivery.\n",
+      "signature": "sig_73",
+      "tokens_used": 0,
+      "is_redacted": false,
+      "redacted_data": null,
+      "created_at": "2026-01-27T03:25:12.722402+00:00"
+    }
+  ],
+  "status": "running",
+  "tool_interactions": {
+    "tool_calls": [],
+    "tool_results": []
+  },
+  "self_correction": {
+    "corrections_made": 0,
+    "correction_details": []
+  },
+  "artifacts": [],
+  "timing": {
+    "started_at": "2026-01-27T03:25:12.722369+00:00",
+    "completed_at": null,
+    "duration_ms": 0
+  }
+}

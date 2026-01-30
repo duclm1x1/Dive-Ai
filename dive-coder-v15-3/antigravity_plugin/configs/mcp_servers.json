@@ -1,0 +1,13 @@
+[
+  {
+    "name": "dive-coder",
+    "enabled": true,
+    "transport": "stdio",
+    "command": "python3",
+    "args": ["antigravity_plugin/mcp/server.py", "--transport", "stdio"],
+    "env": {
+      "PYTHONPATH": "${PYTHONPATH}",
+      "DIVE_MCP_LOG": ".vibe/logs/dive_mcp_events.jsonl"
+    }
+  }
+]

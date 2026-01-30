@@ -1,0 +1,16 @@
+{
+  "v98api": [
+    {
+      "account_id": "v98_account_1",
+      "api_key": "sk-dBWRD0cFgIBLf36nPAeuMRNSeFvvLfDtYS1mbR3RIpVSoR7y",
+      "base_url": "https://v98store.com/v1"
+    }
+  ],
+  "aicoding": [
+    {
+      "account_id": "aicoding_account_1",
+      "api_key": "sk-dev-0kgTls1jmGOn3K4Fdl7Rdudkl7QSCJCk",
+      "base_url": "https://aicoding.io.vn/v1"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "repo": "/mnt/data/vibe_v13_work",
+  "overall": "WARN",
+  "checks": [
+    {
+      "name": "node_project",
+      "status": "WARN",
+      "message": "No Node signals found (package.json/lock).",
+      "details": null
+    },
+    {
+      "name": "python_project",
+      "status": "WARN",
+      "message": "No Python signals found (pyproject/reqs).",
+      "details": null
+    },
+    {
+      "name": "index_db",
+      "status": "WARN",
+      "message": "Index DB missing (run v13-search index).",
+      "details": null
+    },
+    {
+      "name": "v13_templates",
+      "status": "OK",
+      "message": "Found 5 templates.",
+      "details": {
+        "templates": [
+          "n8n.yml",
+          "nestjs.yml",
+          "nextjs.yml",
+          "tailwind.yml",
+          "website.yml"
+        ]
+      }
+    },
+    {
+      "name": "spec",
+      "status": "WARN",
+      "message": "No --spec provided. Skipping spec validation.",
+      "details": null
+    },
+    {
+      "name": "baseline",
+      "status": "WARN",
+      "message": "Baseline missing (build can auto-init unless --require-baseline).",
+      "details": {
+        "path": "/mnt/data/vibe_v13_work/.vibe/baseline.json"
+      }
+    },
+    {
+      "name": "tools",
+      "status": "OK",
+      "message": "Common tools look available.",
+      "details": null
+    }
+  ],
+  "stacks": [],
+  "tool_versions": {
+    "python3": "Python 3.11.2",
+    "git": "git version 2.39.5"
+  }
+}

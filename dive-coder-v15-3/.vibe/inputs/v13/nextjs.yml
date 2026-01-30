@@ -1,0 +1,21 @@
+project:
+  name: TODO
+  description: TODO
+product:
+  users:
+    - TODO
+  core_flows:
+    - TODO
+ui:
+  style: TODO
+data:
+  sources:
+    - TODO
+non_functional:
+  slo:
+    availability: 99.9%
+    latency_p95_ms: 300
+  security:
+    auth: TODO
+    secrets: TODO
+    threat_model: TODO
