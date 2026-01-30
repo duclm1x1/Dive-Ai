@@ -1,7 +1,0 @@
-# Optional native-deps profile for enterprise RAG
-numpy>=1.24
-hnswlib>=0.8.0
-sentence-transformers>=2.6.0
-# Optional:
-# openai>=1.40.0
-# faiss-cpu>=1.7.4
