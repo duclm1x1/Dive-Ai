@@ -1,0 +1,31 @@
+{
+  "name": "dive-sync-bridge",
+  "version": "1.0.0",
+  "description": "Dive Coder V15.3 + Dive Monitor 2 Real-time Sync Bridge",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dive-coder",
+    "dive-monitor",
+    "sync",
+    "websocket",
+    "real-time"
+  ],
+  "author": "Dive Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
