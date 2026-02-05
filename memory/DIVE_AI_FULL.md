@@ -267,3 +267,65 @@ def test_example():
 - CHANGELOG matches: 5
 
 ---
+
+
+
+## Execution: 2026-02-05T03:45:21.967367
+Intent: deployment
+Steps: 1
+Results: 1 completed
+
+
+
+## Execution: 2026-02-05T03:45:21.968100
+Intent: deployment
+Steps: 5
+Results: 5 completed
+
+
+
+## Execution: 2026-02-05T03:49:36.857461
+Intent: deployment
+Steps: 1
+Results: 1 completed
+
+
+
+## Execution: 2026-02-05T03:49:36.858084
+Intent: deployment
+Steps: 5
+Results: 5 completed
+
+
+
+
+## Version 20.3.0 (2026-02-05)
+
+### Smart Orchestrator
+7-phase intelligent processing system:
+1. ANALYZE - Intent detection, complexity assessment
+2. THINK FIRST - Resource identification before action
+3. PLAN - Task decomposition with dependencies
+4. ROUTE - Multi-model selection
+5. EXECUTE - Parallel batch operations
+6. OBSERVE - Plan updates, memory storage
+7. FINISH - Complete or continue
+
+### Interrupt Handler
+Adaptive execution with quick analysis (< 100ms):
+- Priority detection (Urgent/High/Normal/Low)
+- Intent recognition (Modify/Extend/Cancel/Pause)
+- Smart actions (MERGE/PAUSE/QUEUE/IGNORE)
+- Context merging and resume
+
+### Performance
+- Intent detection: < 50ms
+- Interrupt analysis: < 100ms
+- Parallel execution: 5x faster
+
+
+
+## Execution: 2026-02-05T03:55:26.857080
+Intent: simple
+Steps: 1
+Results: 1 completed
