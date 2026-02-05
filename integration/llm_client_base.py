@@ -4,6 +4,12 @@ Fully Functional V98API LLM Client
 Real connection to V98API with Claude and GPT support
 """
 
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
 import requests
 import json
 from datetime import datetime
@@ -26,7 +32,7 @@ class V98APILLMClient:
     """Fully functional LLM client with real V98API integration"""
     
     def __init__(self):
-        self.api_key = "sk-dBWRD0cFgIBLf36nPAeuMRNSeFvvLfDtYS1mbR3RIpVSoR7y"
+        self.api_key = os.getenv("V98API_KEY", "sk-dBWRD0cFgIBLf36nPAeuMRNSeFvvLfDtYS1mbR3RIpVSoR7y")
         self.claude_base_url = "https://v98store.com"
         self.gpt_base_url = "https://v98store.com/v1"
         

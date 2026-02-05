@@ -15,6 +15,12 @@ Features:
 
 from __future__ import annotations
 
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
 import asyncio
 import json
 import os
@@ -131,7 +137,7 @@ DEFAULT_PROVIDERS = [
     ProviderConfig(
         name=Provider.V98API,
         base_url="https://v98store.com/v1",
-        api_key="sk-dBWRD0cFgIBLf36nPAeuMRNSeFvvLfDtYS1mbR3RIpVSoR7y",
+        api_key=os.getenv("V98API_KEY", "sk-dBWRD0cFgIBLf36nPAeuMRNSeFvvLfDtYS1mbR3RIpVSoR7y"),
         models={
             "tier_fast": "gpt-4.1-mini",
             "tier_think": "gpt-4.1",
@@ -151,7 +157,7 @@ DEFAULT_PROVIDERS = [
     ProviderConfig(
         name=Provider.AICODING,
         base_url="https://aicoding.io.vn/v1",
-        api_key="sk-dev-0kgTls1jmGOn3K4Fdl7Rdudkl7QSCJCk",
+        api_key=os.getenv("AICODING_API_KEY", "sk-dev-0kgTls1jmGOn3K4Fdl7Rdudkl7QSCJCk"),
         models={
             "tier_fast": "gpt-4.1-mini",
             "tier_think": "gpt-4.1",

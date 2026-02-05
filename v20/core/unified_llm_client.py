@@ -5,6 +5,12 @@ Equal providers with automatic failover and parallel execution
 """
 
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+import os
 import requests
 from datetime import datetime
 from typing import Dict, List, Any, Optional
@@ -39,11 +45,11 @@ class UnifiedLLMClient:
     
     def __init__(self):
         # V98API Configuration
-        self.v98api_key = "sk-dBWRD0cFgIBLf36nPAeuMRNSeFvvLfDtYS1mbR3RIpVSoR7y"
+        self.v98api_key = os.getenv("V98API_KEY", "sk-dBWRD0cFgIBLf36nPAeuMRNSeFvvLfDtYS1mbR3RIpVSoR7y")
         self.v98api_base_url = "https://v98store.com"
         
         # AICoding Configuration
-        self.aicoding_key = "sk-dev-0kgTls1jmGOn3K4Fdl7Rdudkl7QSCJCk"
+        self.aicoding_key = os.getenv("AICODING_API_KEY", "sk-dev-0kgTls1jmGOn3K4Fdl7Rdudkl7QSCJCk")
         self.aicoding_base_url = "https://aicoding.io.vn"
         
         # OpenAI Codex Configuration (using v98api/aicoding as proxy)

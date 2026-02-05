@@ -48,11 +48,18 @@ venv.bak/
 .DS_Store
 
 # =============================================================================
-# Environment Variables
+# Environment Variables & API Keys (CRITICAL - NEVER COMMIT)
 # =============================================================================
 .env
 .env.local
 .env.*.local
+.env.production
+.env.development
+.env.test
+*.env
+config.json
+config.local.json
+account_pools.json
 
 # =============================================================================
 # Logs
@@ -183,11 +190,16 @@ output/
 tmp/
 temp/
 
-# API keys and secrets
+# API keys and secrets (CRITICAL - NEVER COMMIT)
 secrets/
 *.key
 *.pem
 *.crt
+*.secret
+*.credentials
+api_keys.txt
+api_keys.json
+credentials.json
 
 # Large files
 *.tar.gz
