@@ -1,0 +1,4 @@
+#!/bin/bash
+# Dive Coder v19.7 - First Run Command
+cd "$(dirname "$0")"
+python3 v19.7-integration/deployment/first_run.py

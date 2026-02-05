@@ -1,0 +1,47 @@
+{
+  "version": "20.0.0",
+  "created": "2026-02-03T08:42:28.407064",
+  "routing": {
+    "legacy_paths": {},
+    "skill_aliases": {},
+    "orchestrator_aliases": [
+      {
+        "legacy": "coder/core/engine/vibe-coder-v13/core/orchestrator.py",
+        "canonical": "v20/coder/orchestrator/orchestrator.py",
+        "type": "redirect"
+      },
+      {
+        "legacy": "coder/core/engine/vibe-coder-v13/dive_engine/orchestrator.py",
+        "canonical": "v20/coder/orchestrator/orchestrator.py",
+        "type": "redirect"
+      },
+      {
+        "legacy": "coder/infrastructure/orchestrator/orchestrator.py",
+        "canonical": "v20/coder/orchestrator/orchestrator.py",
+        "type": "redirect"
+      },
+      {
+        "legacy": "coder/src/core/orchestration/orchestrator.py",
+        "canonical": "v20/coder/orchestrator/orchestrator.py",
+        "type": "redirect"
+      },
+      {
+        "legacy": "orchestrator/orchestration/infra_orchestrator/orchestrator.py",
+        "canonical": "v20/coder/orchestrator/orchestrator.py",
+        "type": "redirect"
+      },
+      {
+        "legacy": "orchestrator/orchestration/src_core_orchestration/orchestrator.py",
+        "canonical": "v20/coder/orchestrator/orchestrator.py",
+        "type": "redirect"
+      }
+    ],
+    "replication_aliases": [
+      {
+        "legacy": "coder/infrastructure/replication/replication_manager.py",
+        "canonical": "v20/coder/replication/replication_manager.py",
+        "type": "redirect"
+      }
+    ]
+  }
+}
