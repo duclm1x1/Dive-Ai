@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "98f1d626-a51a-4fcd-b09e-6cda5ee17f34",
+      "content": "# Dive AI V21.0 - Unified Brain System - Full Documentation\n\n**Project ID**: dive-ai-v21\n**Created**...",
+      "section": "documents",
+      "importance": 10,
+      "tags": [
+        "project",
+        "dive-ai-v21",
+        "full-doc"
+      ]
+    },
+    {
+      "id": "aa0b8d77-2b49-4ee9-9220-3b2381f76d42",
+      "content": "# Dive AI V21.0 - Unified Brain System - Criteria & Checklist\n\n**Project ID**: dive-ai-v21\n**Created...",
+      "section": "documents",
+      "importance": 9,
+      "tags": [
+        "project",
+        "dive-ai-v21",
+        "criteria"
+      ]
+    },
+    {
+      "id": "d76cef98-a04b-4bb1-85e8-33c6c570570f",
+      "content": "# Dive AI V21.0 - Unified Brain System - Full Documentation\n\n**Project ID**: dive-ai-v21\n**Created**...",
+      "section": "documents",
+      "importance": 10,
+      "tags": [
+        "project",
+        "dive-ai-v21",
+        "full-doc"
+      ]
+    },
+    {
+      "id": "c3a492aa-b685-460e-a537-93b8568d15d2",
+      "content": "# Dive AI V21.0 - Unified Brain System - Criteria & Checklist\n\n**Project ID**: dive-ai-v21\n**Created...",
+      "section": "documents",
+      "importance": 9,
+      "tags": [
+        "project",
+        "dive-ai-v21",
+        "criteria"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "aa0b8d77-2b49-4ee9-9220-3b2381f76d42",
+      "target": "98f1d626-a51a-4fcd-b09e-6cda5ee17f34",
+      "relationship": "related_to",
+      "strength": 0.7912440175768863
+    },
+    {
+      "source": "d76cef98-a04b-4bb1-85e8-33c6c570570f",
+      "target": "98f1d626-a51a-4fcd-b09e-6cda5ee17f34",
+      "relationship": "related_to",
+      "strength": 0.7919383844472352
+    },
+    {
+      "source": "c3a492aa-b685-460e-a537-93b8568d15d2",
+      "target": "98f1d626-a51a-4fcd-b09e-6cda5ee17f34",
+      "relationship": "related_to",
+      "strength": 0.7757634924235122
+    },
+    {
+      "source": "c3a492aa-b685-460e-a537-93b8568d15d2",
+      "target": "aa0b8d77-2b49-4ee9-9220-3b2381f76d42",
+      "relationship": "related_to",
+      "strength": 0.8199241526913295
+    }
+  ]
+}

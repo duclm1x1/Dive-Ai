@@ -1,0 +1,93 @@
+{
+  "timestamp": 1770277674.6268573,
+  "total_duration": 0.36578369140625,
+  "passed": 7,
+  "failed": 0,
+  "total": 7,
+  "results": [
+    {
+      "name": "Dive Memory v3",
+      "status": "passed",
+      "duration": 0.3253498077392578,
+      "details": {
+        "memories_added": 100,
+        "add_duration": 0.30924201011657715,
+        "add_rate": 323.37132966605117,
+        "search_duration": 9.974956512451172,
+        "search_results": 10,
+        "total_memories": 100
+      }
+    },
+    {
+      "name": "Self-Aware Memory",
+      "status": "passed",
+      "duration": 0.01786327362060547,
+      "details": {
+        "history_results": 5,
+        "total_memories": 12,
+        "sections": 7
+      }
+    },
+    {
+      "name": "Dive Context",
+      "status": "passed",
+      "duration": 0.00011539459228515625,
+      "details": {
+        "path": "/home/ubuntu/Dive-Ai-GitHub/dive-context",
+        "package_json_exists": true,
+        "built": true
+      }
+    },
+    {
+      "name": "Antigravity Plugin",
+      "status": "passed",
+      "duration": 6.866455078125e-05,
+      "details": {
+        "path": "/home/ubuntu/Dive-Ai-GitHub/antigravity_plugin",
+        "server_exists": true,
+        "subdirs_found": [
+          "mcp",
+          "dashboard",
+          "extension"
+        ]
+      }
+    },
+    {
+      "name": "Monitor UI",
+      "status": "passed",
+      "duration": 4.076957702636719e-05,
+      "details": {
+        "monitor_server_path": "/home/ubuntu/Dive-Ai-GitHub/monitor_server",
+        "ui_path": "/home/ubuntu/Dive-Ai-GitHub/ui/dive-monitor",
+        "monitor_server_exists": true,
+        "ui_exists": true
+      }
+    },
+    {
+      "name": "Skills Integration",
+      "status": "passed",
+      "duration": 0.001542806625366211,
+      "details": {
+        "v20_skills": 1,
+        "v15_3_skills": 63,
+        "total_skills": 64
+      }
+    },
+    {
+      "name": "V15.3 Core Engine",
+      "status": "passed",
+      "duration": 0.0027806758880615234,
+      "details": {
+        "path": "/home/ubuntu/Dive-Ai-GitHub/v15.3-core",
+        "modules_found": [
+          "dive_engine",
+          "advanced_searching",
+          "builder",
+          "dag",
+          "debate"
+        ],
+        "python_files": 147
+      }
+    }
+  ]
+}
