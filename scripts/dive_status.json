@@ -1,0 +1,9 @@
+{
+  "status": "root_complete",
+  "message": "Root directory restored: 5192 files",
+  "progress": 100,
+  "files_processed": 5192,
+  "files_total": 5192,
+  "duration": 1.00311,
+  "errors": 0
+}

@@ -1,0 +1,25 @@
+run:
+  enable_p0: true
+  enable_p1: true
+
+# Gates are shell commands executed in repo root (policy-gated).
+# Split by tier so enterprise can dial in strictness.
+gates:
+  p0:
+    - "python3 -m compileall ."
+  p1:
+    - "semgrep --version"
+
+skills:
+  enforce_lock: true
+  max_selected: 12
+
+index:
+  enabled: true
+  vector: true
+  vector_dim: 256
+
+knowledge_base:
+  enabled: false
+  # Requires policy.allow_network = true
+  sources: []

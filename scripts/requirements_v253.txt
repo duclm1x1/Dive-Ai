@@ -1,0 +1,44 @@
+# Dive AI V25.3 - Requirements
+# Multimodal Voice + Vision Assistant
+
+# Core dependencies
+openai>=1.10.0
+anthropic>=0.18.0
+
+# Voice processing
+pyaudio>=0.2.13
+websockets>=12.0
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+
+# Vision processing
+Pillow>=10.0.0
+mss>=9.0.0
+pyautogui>=0.9.54
+opencv-python>=4.8.0
+
+# Async and networking
+asyncio-mqtt>=0.16.1
+aiohttp>=3.9.0
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+requests>=2.31.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Optional: UI-TARS dependencies
+selenium>=4.15.0
+playwright>=1.40.0
+
+# Optional: Enhanced features
+torch>=2.1.0  # For local models
+transformers>=4.35.0  # For local models
+sounddevice>=0.4.6  # Alternative audio backend

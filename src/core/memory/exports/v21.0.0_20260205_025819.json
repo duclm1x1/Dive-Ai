@@ -1,0 +1,47 @@
+{
+  "version": "21.0.0",
+  "description": "Initial release with unified brain architecture and doc-first workflow",
+  "timestamp": "2026-02-05T02:58:19.723990",
+  "stats": {
+    "total_memories": 2,
+    "avg_importance": 9.5,
+    "total_accesses": 6,
+    "total_sections": 1,
+    "total_links": 1,
+    "avg_links_per_memory": 1.0
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "18e2acc1-9bf3-4ef5-8c72-81ba3513d360",
+        "content": "# Dive AI V21.0 - Unified Brain System - Full Documentation\n\n**Project ID**: dive-ai-v21\n**Created**...",
+        "section": "documents",
+        "importance": 10,
+        "tags": [
+          "project",
+          "dive-ai-v21",
+          "full-doc"
+        ]
+      },
+      {
+        "id": "e5371b44-e3ff-4438-80d0-3a609199b0b8",
+        "content": "# Dive AI V21.0 - Unified Brain System - Criteria & Checklist\n\n**Project ID**: dive-ai-v21\n**Created...",
+        "section": "documents",
+        "importance": 9,
+        "tags": [
+          "project",
+          "dive-ai-v21",
+          "criteria"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "e5371b44-e3ff-4438-80d0-3a609199b0b8",
+        "target": "18e2acc1-9bf3-4ef5-8c72-81ba3513d360",
+        "relationship": "related_to",
+        "strength": 0.7600489687758237
+      }
+    ]
+  }
+}

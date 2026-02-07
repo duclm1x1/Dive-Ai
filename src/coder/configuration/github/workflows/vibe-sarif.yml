@@ -1,0 +1,33 @@
+name: Vibe Coder (SARIF)
+
+on:
+  pull_request:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  vibe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      pull-requests: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Vibe Coder
+        run: |
+          python3 .shared/vibe-coder-v13/vibe.py review --repo . --mode balanced \
+            --out .vibe/reports/vibe-report.json \
+            --sarif-out .vibe/reports/vibe-report.sarif.json
+
+      - name: Upload SARIF
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: .vibe/reports/vibe-report.sarif.json

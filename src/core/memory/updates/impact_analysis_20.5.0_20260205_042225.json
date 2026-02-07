@@ -1,0 +1,9 @@
+{
+  "changed_files": [
+    "VERSION"
+  ],
+  "version_from": "20.4.0",
+  "version_to": "20.5.0",
+  "impacts": [],
+  "total_affected": 0
+}

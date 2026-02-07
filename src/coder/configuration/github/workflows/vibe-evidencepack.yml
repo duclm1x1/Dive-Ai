@@ -1,0 +1,49 @@
+name: vibe-evidencepack
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  evidencepack:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Vibe Review (accuracy)
+        run: |
+          python3 .shared/vibe-coder-v13/vibe.py review --repo . --mode accuracy --run-gates \
+            --out .vibe/reports/vibe-report.json \
+            --md-out .vibe/reports/vibe-report.md \
+            --sarif-out .vibe/reports/vibe.sarif.json
+
+      - name: Collect EvidencePack
+        env:
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 .shared/vibe-coder-v13/vibe.py evidencepack --repo . --issue-id IKO-UNKNOWN \
+            --outdir .vibe/evidence --ci-run-id "$GITHUB_RUN_ID"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vibe-evidencepack
+          path: |
+            .vibe/reports
+            .vibe/evidence
+
+      - name: Upload SARIF
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: .vibe/reports/vibe.sarif.json

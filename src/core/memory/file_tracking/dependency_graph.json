@@ -1,0 +1,6144 @@
+{
+  "nodes": [
+    {
+      "id": "deploy_dive_ai_128_agents.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "dive_ai_complete_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "dive_ai_complete_workflow.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "first_run_complete.py",
+      "type": "other",
+      "version": "21.0.0",
+      "functions": 2
+    },
+    {
+      "id": "phase1_foundational_loop.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "phase2_reliability_trust.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "replace_hardcoded_keys.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "setup.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "setup_api_keys.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "stress_test_complete.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "stress_test_memory.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 22
+    },
+    {
+      "id": "stress_test_v21.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "test_complete_3file_workflow.py",
+      "type": "test",
+      "version": "1.0",
+      "functions": 4
+    },
+    {
+      "id": "test_dive_memory_scale.py",
+      "type": "test",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "track_integration.py",
+      "type": "other",
+      "version": "20.2.1",
+      "functions": 1
+    },
+    {
+      "id": "dive_update_cli.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "agents/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "agents/dive_coder_agent.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "antigravity_plugin/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "antigravity_plugin/server.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "antigravity_plugin/mcp/server.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "coder/advanced_gpqa_solver.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 35
+    },
+    {
+      "id": "coder/advanced_numerical_token_predictor.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 30
+    },
+    {
+      "id": "coder/advanced_reasoning_model.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 27
+    },
+    {
+      "id": "coder/cognitive_limitation_detector.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "coder/compute_marketplace_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 20
+    },
+    {
+      "id": "coder/deliberate_practice_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 35
+    },
+    {
+      "id": "coder/distributed_inference_server.py",
+      "type": "other",
+      "version": "1.0",
+      "functions": 8
+    },
+    {
+      "id": "coder/dive-setup-helper.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 16
+    },
+    {
+      "id": "coder/dive_coder_v19_5_enhanced.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 34
+    },
+    {
+      "id": "coder/huggingface_data_integration.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 25
+    },
+    {
+      "id": "coder/llm_optimizer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 16
+    },
+    {
+      "id": "coder/lmarena_live_update_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 22
+    },
+    {
+      "id": "coder/model_benchmark_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 27
+    },
+    {
+      "id": "coder/multi_model_ensemble_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 26
+    },
+    {
+      "id": "coder/multi_task_learning_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 22
+    },
+    {
+      "id": "coder/rlhf_ppo_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 23
+    },
+    {
+      "id": "coder/self_supervised_token_learning.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 25
+    },
+    {
+      "id": "coder/smartest_base_model.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 28
+    },
+    {
+      "id": "coder/sota_next_word_models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 20
+    },
+    {
+      "id": "coder/sota_next_word_prediction_model.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 25
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/vibe.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 47
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/advanced_searching/api.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/builder/scaffold.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/builder/specs.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/baseline.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/cache.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/claims.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/cruel_runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/dependency_graph.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/external_tools.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/hooks.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/n8n.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/python_ast.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/repo_scanner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/rules_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/skill_index.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/skill_router.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/skills_lock.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/stack_detector.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/core/vibe_config.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/cruel/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/cruel/cruel_system.py",
+      "type": "other",
+      "version": "1.0",
+      "functions": 26
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dag/engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/debate/runtime.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/__init__.py",
+      "type": "other",
+      "version": "2.0.0",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/artifacts/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/artifacts/evidence_packer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 21
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/artifacts/process_trace.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/core/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/core/models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/daemon/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/daemon/runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/account_pool.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/gateway.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/performance_tracker.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 16
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/test_real_api.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/oauth/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/oauth/base.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/oauth/gemini_oauth.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/oauth/kiro_oauth.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/llm/oauth/qwen_oauth.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/monitor/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/monitor/faithfulness_checker.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/monitor/tier_monitor.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 15
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/tests/test_orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/thinking/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/thinking/dual_router.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/thinking/effort_controller.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/thinking/inference_scaling.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/thinking/streaming_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/tools/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/dive_engine/tools/rag_context.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/evidencepack/collector.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/evidencepack/models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/evidencepack/runtime.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/exporters/markdown.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/exporters/sarif.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/flows/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/flows/cache_design.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/flows/doctor.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/flows/explain.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/flows/fix.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/flows/mode_runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 16
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/gatekeeper/runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/gatekeeper/state.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/gates/runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/gates/semgrep.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/graph/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/graph/import_graph.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/graph/store.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/graph/test_selection.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/iko/models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/iko/store.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/index/db.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/index/indexer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/kb/updater.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/learning/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/learning/store.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/patch/autopatch.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 10
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/patch/golden_config.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/patch/resolve_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/patch/safety.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/plugins/base.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/plugins/common.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/plugins/nestjs.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/plugins/nextjs.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/plugins/registry.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/plugins/tailwind.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/engine_v1.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/engine_v2.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 25
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/report.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/embedding.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/rerank.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/providers/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/providers/cross_encoder.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/providers/llm_judge.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/providers/llm_judge_rerank.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/providers/openai.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/providers/openai_embeddings.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/adapters/providers/sentence_transformers_embeddings.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/retrieval/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/retrieval/ann.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/retrieval/dense_index.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rag/retrieval/fusion.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/rlm/investigator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/search/hybrid.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/search/semantic.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/search/vector.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/tools/skills_reindex.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/tools/ci/validate_evidencepack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/utils/hash_utils.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/utils/n8n_sanitize.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/utils/policy.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/utils/sanitize.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/utils/tracing.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/utils/yaml_lite.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/v13/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/v13/preflight.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/v13/self_review.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/core/engine/vibe-coder-v13/v13/templates.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/development/examples/v13_build_debug_demo/mutate_add_eval.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/development/examples/v13_build_debug_demo/run_demo.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/development/examples/v13_eval_harness/run_eval.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/development/tests/agents/test_handoff.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 24
+    },
+    {
+      "id": "coder/development/tests/communication/test_protocol.py",
+      "type": "other",
+      "version": "1.0",
+      "functions": 26
+    },
+    {
+      "id": "coder/development/tests/monitoring/test_metrics.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 24
+    },
+    {
+      "id": "coder/development/tests/orchestration/test_modes.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "coder/development/tests/orchestration/test_orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 21
+    },
+    {
+      "id": "coder/development/tests_v19/test_v19_complete.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 30
+    },
+    {
+      "id": "coder/infrastructure/orchestrator/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/infrastructure/orchestrator/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/infrastructure/replication/replication_manager.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/modules/antigravity/antigravity_plugin/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/modules/antigravity/antigravity_plugin/server.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "coder/modules/antigravity/antigravity_plugin/mcp/server.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "coder/modules/monitor/monitor_server/app/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/modules/monitor/monitor_server/app/main.py",
+      "type": "other",
+      "version": "15.0.0",
+      "functions": 12
+    },
+    {
+      "id": "coder/modules/monitor/monitor_server/app/store.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "coder/src/core/__init__.py",
+      "type": "other",
+      "version": "16.0.0",
+      "functions": 0
+    },
+    {
+      "id": "coder/src/core/divecoder_v15_3.py",
+      "type": "other",
+      "version": "15.3",
+      "functions": 21
+    },
+    {
+      "id": "coder/src/core/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/core/agents/handoff.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 21
+    },
+    {
+      "id": "coder/src/core/coder/coder.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "coder/src/core/communication/protocol.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 19
+    },
+    {
+      "id": "coder/src/core/features/advanced_features.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 41
+    },
+    {
+      "id": "coder/src/core/monitoring/metrics.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "coder/src/core/orchestration/modes.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/core/orchestration/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/src/core/orchestration/orchestrator_enhanced.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "coder/src/core/skills/github_skills.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 37
+    },
+    {
+      "id": "coder/src/core/skills/skill_intelligence.py",
+      "type": "other",
+      "version": "1.0",
+      "functions": 19
+    },
+    {
+      "id": "coder/src/hybrid_prompt_system/hybrid_prompt_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 16
+    },
+    {
+      "id": "coder/src/modules/phase1_foundational_loop.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/phase2_reliability_trust.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/src/modules/phase3_autonomous_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/aeh/src/eda_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/src/modules/aeh/src/logger.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/src/modules/aeh/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/aeh/tests/test_eda_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/base-skill-connection/base_connection.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "coder/src/modules/base-skill-connection/cli_integration.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "coder/src/modules/base-skill-connection/connection_manager.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/base-skill-connection/transmission_optimizer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/src/modules/base-skill-connection/universal_gateway.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "coder/src/modules/cac/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/cac/tests/test_cac.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/ccf/src/ccf_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/ccf/tests/test_ccf_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/ceks/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/src/modules/ceks/tests/test_ceks.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/cllt/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/src/modules/cllt/tests/test_cllt.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/cpcg/src/cpcg_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/cpcg/tests/test_cpcg_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/dac/examples/simple_composition.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/dac/src/dac_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/src/modules/dac/tests/test_dac_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/dca/examples/simple_composition.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/dca/src/dac_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/src/modules/dca/tests/test_dac_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/dnas/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/dnas/tests/test_dnas.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/drc/examples/simple_chain.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/src/modules/drc/src/drc_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/drc/tests/test_drc_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "coder/src/modules/eda/src/eda_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/src/modules/eda/tests/test_eda_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/egfv/src/egfv_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/src/modules/egfv/tests/test_egfv_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/fel/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/fel/tests/test_fel.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/fpv/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/fpv/src/translator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/fpv/src/verifier.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/fpv/tests/test_fpv.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/gar/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/gar/tests/test_gar.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/hds/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/hds/tests/test_hds.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/he/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/he/tests/test_he.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/its/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/its/tests/test_its.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/mvp/examples/simple_verification.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/mvp/src/mvp_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "coder/src/modules/mvp/tests/test_mvp_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/ptd/examples/simple_decomposition.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/ptd/src/ptd_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/ptd/tests/test_ptd_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "coder/src/modules/scw/examples/simple_graph.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/scw/src/scw_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "coder/src/modules/scw/tests/test_scw_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "coder/src/modules/shc/examples/simple_healing.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/shc/src/shc_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/shc/tests/test_shc_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skill-creator/scripts/init_skill.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/src/modules/skill-creator/scripts/quick_validate.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/skills/base_connection.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "coder/src/modules/skills/cli_integration.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "coder/src/modules/skills/connection_manager.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/skills/phase1_foundational_loop.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/skills/phase2_reliability_trust.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/src/modules/skills/phase3_autonomous_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/transmission_optimizer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "coder/src/modules/skills/universal_gateway.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "coder/src/modules/skills/ccf/src/ccf_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/ccf/tests/test_ccf_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/skills/cpcg/src/cpcg_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/skills/cpcg/tests/test_cpcg_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/dac/examples/simple_composition.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/skills/dac/src/dac_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/src/modules/skills/dac/tests/test_dac_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/skills/drc/examples/simple_chain.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/src/modules/skills/drc/src/drc_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "coder/src/modules/skills/drc/tests/test_drc_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "coder/src/modules/skills/eda/src/eda_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/src/modules/skills/eda/tests/test_eda_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/egfv/src/egfv_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "coder/src/modules/skills/egfv/tests/test_egfv_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/mvp/examples/simple_verification.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/skills/mvp/src/mvp_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "coder/src/modules/skills/mvp/tests/test_mvp_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/ptd/examples/simple_decomposition.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/skills/ptd/src/ptd_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/ptd/tests/test_ptd_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "coder/src/modules/skills/scw/examples/simple_graph.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/skills/scw/src/scw_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "coder/src/modules/skills/scw/tests/test_scw_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "coder/src/modules/skills/shc/examples/simple_healing.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "coder/src/modules/skills/shc/src/shc_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/shc/tests/test_shc_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "coder/src/modules/skills/skill-creator/scripts/init_skill.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "coder/src/modules/skills/skill-creator/scripts/quick_validate.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/sr/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/sr/tests/test_sr.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/ta/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/ta/tests/test_ta.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/ufbl/src/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/src/modules/ufbl/tests/test_ufbl.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "coder/v19.7-integration/deployment/first_run.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "coder/v19.7-integration/llm/client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "coder/v19.7-integration/llm/unified_client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "core/dive_coder_complete.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "core/dive_coder_final.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "core/dive_doc_first_workflow.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 10
+    },
+    {
+      "id": "core/dive_enhanced_workflow.py",
+      "type": "core",
+      "version": "21.0",
+      "functions": 7
+    },
+    {
+      "id": "core/dive_interrupt_handler.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 19
+    },
+    {
+      "id": "core/dive_memory_2file_system.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "core/dive_memory_3file_complete.py",
+      "type": "core",
+      "version": "1.0",
+      "functions": 15
+    },
+    {
+      "id": "core/dive_memory_brain.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 15
+    },
+    {
+      "id": "core/dive_orchestrator_brain.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "core/dive_orchestrator_complete.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "core/dive_orchestrator_final.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "core/dive_smart_coder.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "core/dive_smart_orchestrator.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 33
+    },
+    {
+      "id": "core/version.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "core/dive_dependency_tracker.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "core/dive_impact_analyzer.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "core/dive_update_suggester.py",
+      "type": "core",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "core/dive_update_system.py",
+      "type": "core",
+      "version": "21.0.0",
+      "functions": 11
+    },
+    {
+      "id": "core/dive_update_memory_integration.py",
+      "type": "core",
+      "version": "21.0.0",
+      "functions": 10
+    },
+    {
+      "id": "deployment/first_run.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "integration/dive_ai_self_improve.py",
+      "type": "integration",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "integration/dive_ai_self_memory.py",
+      "type": "integration",
+      "version": "unknown",
+      "functions": 16
+    },
+    {
+      "id": "integration/dive_coder_wrapper.py",
+      "type": "integration",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "integration/dive_memory_integration.py",
+      "type": "integration",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "integration/llm_client_base.py",
+      "type": "integration",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "integration/master_orchestrator.py",
+      "type": "integration",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "integration/unified_llm_client.py",
+      "type": "integration",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "integration/unified_llm_client_v197.py",
+      "type": "integration",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "monitor_server/app/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "monitor_server/app/main.py",
+      "type": "other",
+      "version": "15.0.0",
+      "functions": 12
+    },
+    {
+      "id": "monitor_server/app/store.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "orchestrator/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "orchestrator/dive_orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "orchestrator/bin/test_orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 21
+    },
+    {
+      "id": "orchestrator/deployment/first_run.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "orchestrator/llm/client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "orchestrator/llm/unified_client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "orchestrator/llm/v19_7_integration/client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "orchestrator/llm/v19_7_integration/unified_client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "orchestrator/orchestration/infra_orchestrator/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "orchestrator/orchestration/legacy/dive_engine_orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "orchestrator/orchestration/src_core_orchestration/modes.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "orchestrator/orchestration/src_core_orchestration/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "orchestrator/orchestration/src_core_orchestration/orchestrator_enhanced.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "runtime/main.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/aeh/error_handling.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/dca/capacity_allocation.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/dive-memory-v3/scripts/dive_memory.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 25
+    },
+    {
+      "id": "skills/dive-memory-v3/scripts/dive_memory_optimized.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 25
+    },
+    {
+      "id": "skills/dive-memory-v3/scripts/dive_memory_original.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 25
+    },
+    {
+      "id": "skills/dive-memory-v3/scripts/mcp_protocol.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/dive-memory-v3/scripts/mcp_server.py",
+      "type": "other",
+      "version": "3.0.0",
+      "functions": 5
+    },
+    {
+      "id": "skills/dive-memory-v3/scripts/memory_cli.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "skills/dnas/architecture_search.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/scripts/generate_index.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/scripts/skills_manager.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/scripts/update_readme.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/scripts/validate_skills.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/api-design-principles/assets/rest-api-template.py",
+      "type": "other",
+      "version": "1.0.0",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/api-patterns/scripts/api_validator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/app-store-optimization/ab_test_planner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 20
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/app-store-optimization/aso_scorer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/app-store-optimization/competitor_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 22
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/app-store-optimization/keyword_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/app-store-optimization/launch_checklist.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 26
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/app-store-optimization/localization_helper.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/app-store-optimization/metadata_optimizer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/app-store-optimization/review_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 23
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/content-creator/scripts/brand_voice_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/content-creator/scripts/seo_optimizer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 10
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/database-design/scripts/schema_validator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/ooxml/scripts/pack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/ooxml/scripts/unpack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/ooxml/scripts/validate.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/ooxml/scripts/validation/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/ooxml/scripts/validation/base.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 19
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/ooxml/scripts/validation/docx.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/ooxml/scripts/validation/pptx.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/ooxml/scripts/validation/redlining.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/scripts/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/scripts/document.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 50
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx-official/scripts/utilities.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/ooxml/scripts/pack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/ooxml/scripts/unpack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/ooxml/scripts/validate.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/ooxml/scripts/validation/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/ooxml/scripts/validation/base.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 19
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/ooxml/scripts/validation/docx.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/ooxml/scripts/validation/pptx.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/ooxml/scripts/validation/redlining.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/scripts/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/scripts/document.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 50
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/docx/scripts/utilities.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/geo-fundamentals/scripts/geo_checker.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/i18n-localization/scripts/i18n_checker.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/scripts/last30days.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/tests/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/tests/test_cache.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/tests/test_dates.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/tests/test_dedupe.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 15
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/tests/test_models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/tests/test_normalize.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/tests/test_render.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/last30days/tests/test_score.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/lint-and-validate/scripts/lint_runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/lint-and-validate/scripts/type_coverage.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/0.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/1.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/10.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/100.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/101.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/102.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/103.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/104.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/105.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/106.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/107.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/108.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/109.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/11.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/110.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/111.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/112.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/113.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/114.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/115.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/116.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/117.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/118.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/119.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/12.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/120.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/121.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/122.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/123.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/124.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/125.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/126.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/127.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/128.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/129.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/13.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/130.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/131.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/132.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/133.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/134.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/135.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/136.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/137.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/138.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/139.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/14.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/140.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/141.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/142.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/143.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/144.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/145.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/146.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/147.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/148.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/149.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/15.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/150.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/151.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/152.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/153.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/154.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/155.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/156.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/157.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/158.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/159.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/16.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/160.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/161.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/162.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/163.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/17.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/18.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/19.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/2.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/20.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/21.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/22.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/23.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/24.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/25.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/26.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/27.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/28.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/29.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/3.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/30.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/31.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/32.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/33.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/34.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/35.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/36.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/37.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/38.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/39.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/4.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/40.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/41.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/42.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/43.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/44.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/45.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/46.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/47.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/48.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/49.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/5.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/50.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/51.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/52.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/53.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/54.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/55.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/56.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/57.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/58.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/59.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/6.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/60.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/61.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/62.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/63.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/64.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/65.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/66.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/67.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/68.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/69.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/7.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/70.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/71.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/72.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/73.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/74.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/75.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/76.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/77.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/78.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/79.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/8.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/80.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/81.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/82.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/83.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/84.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/85.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/86.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/87.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/88.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/89.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/9.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/90.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/91.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/92.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/93.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/94.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/95.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/96.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/97.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/98.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/2026-01-05-00-49-17/humaneval-solutions/99.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/0.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/1.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/10.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/100.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/101.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/102.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/103.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/104.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/105.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/106.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/107.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/108.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/109.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/11.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/110.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/111.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/112.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/113.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/114.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/115.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/116.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/117.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/118.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/119.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/12.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/120.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/121.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/122.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/123.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/124.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/125.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/126.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/127.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/128.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/129.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/13.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/130.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/131.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/132.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/133.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/134.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/135.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/136.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/137.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/138.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/139.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/14.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/140.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/141.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/142.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/143.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/144.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/145.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/146.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/147.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/148.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/149.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/15.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/150.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/151.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/152.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/153.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/154.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/155.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/156.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/157.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/158.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/159.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/16.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/160.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/161.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/162.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/163.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/17.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/18.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/19.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/2.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/20.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/21.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/22.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/23.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/24.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/25.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/26.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/27.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/28.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/29.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/3.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/30.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/31.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/32.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/33.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/34.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/35.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/36.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/37.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/38.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/39.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/4.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/40.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/41.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/42.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/43.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/44.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/45.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/46.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/47.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/48.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/49.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/5.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/50.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/51.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/52.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/53.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/54.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/55.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/56.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/57.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/58.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/59.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/6.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/60.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/61.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/62.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/63.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/64.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/65.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/66.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/67.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/68.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/69.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/7.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/70.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/71.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/72.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/73.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/74.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/75.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/76.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/77.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/78.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/79.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/8.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/80.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/81.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/82.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/83.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/84.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/85.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/86.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/87.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/88.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/89.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/9.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/90.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/91.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/92.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/93.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/94.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/95.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/96.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/97.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/98.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/loki-mode/benchmarks/results/humaneval-loki-solutions/99.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/mcp-builder/scripts/connections.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/mcp-builder/scripts/evaluation.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/mobile-design/scripts/mobile_audit.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/ask_question.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/auth_manager.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 10
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/browser_session.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 10
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/browser_utils.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/cleanup_manager.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/config.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/notebook_manager.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/run.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/notebooklm/scripts/setup_environment.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf-official/scripts/check_bounding_boxes.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf-official/scripts/check_bounding_boxes_test.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf-official/scripts/check_fillable_fields.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf-official/scripts/convert_pdf_to_images.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf-official/scripts/create_validation_image.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf-official/scripts/extract_form_field_info.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf-official/scripts/fill_fillable_fields.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf-official/scripts/fill_pdf_form_with_annotations.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf/scripts/check_bounding_boxes.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf/scripts/check_bounding_boxes_test.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf/scripts/check_fillable_fields.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf/scripts/convert_pdf_to_images.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf/scripts/create_validation_image.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf/scripts/extract_form_field_info.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf/scripts/fill_fillable_fields.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/performance-profiling/scripts/lighthouse_audit.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/ooxml/scripts/pack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/ooxml/scripts/unpack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/ooxml/scripts/validate.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/ooxml/scripts/validation/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/ooxml/scripts/validation/base.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 19
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/ooxml/scripts/validation/docx.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/ooxml/scripts/validation/pptx.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/ooxml/scripts/validation/redlining.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/scripts/inventory.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 26
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/scripts/rearrange.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/scripts/replace.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx-official/scripts/thumbnail.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/ooxml/scripts/pack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/ooxml/scripts/unpack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/ooxml/scripts/validate.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/ooxml/scripts/validation/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/ooxml/scripts/validation/base.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 19
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/ooxml/scripts/validation/docx.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/ooxml/scripts/validation/pptx.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/ooxml/scripts/validation/redlining.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/scripts/inventory.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 26
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/scripts/rearrange.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/scripts/replace.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/pptx/scripts/thumbnail.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/product-manager-toolkit/scripts/customer_interview_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 19
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/product-manager-toolkit/scripts/rice_prioritizer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/prompt-engineering-patterns/scripts/optimize-prompt.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/senior-architect/scripts/architecture_diagram_generator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/senior-architect/scripts/dependency_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/senior-architect/scripts/project_architect.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/senior-fullstack/scripts/code_quality_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/senior-fullstack/scripts/fullstack_scaffolder.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/senior-fullstack/scripts/project_scaffolder.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/seo-fundamentals/scripts/seo_checker.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/shopify-development/scripts/shopify_graphql.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/shopify-development/scripts/shopify_init.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 15
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/shopify-development/scripts/tests/test_shopify_init.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 30
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/skill-creator/scripts/init_skill.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/skill-creator/scripts/package_skill.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/skill-creator/scripts/quick_validate.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/slack-gif-creator/core/easing.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 20
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/slack-gif-creator/core/frame_composer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/slack-gif-creator/core/gif_builder.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/slack-gif-creator/core/validators.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/typescript-expert/scripts/ts_diagnostic.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 10
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/ui-ux-pro-max/scripts/core.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/ui-ux-pro-max/scripts/search.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/voice-ai-engine-development/examples/complete_voice_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/voice-ai-engine-development/examples/gemini_agent_example.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/voice-ai-engine-development/examples/interrupt_system_example.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/voice-ai-engine-development/templates/base_worker_template.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/voice-ai-engine-development/templates/multi_provider_factory_template.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/vulnerability-scanner/scripts/security_scan.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/webapp-testing/scripts/with_server.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/xlsx-official/recalc.py",
+      "type": "other",
+      "version": "1.0",
+      "functions": 3
+    },
+    {
+      "id": "skills/external/antigravity-awesome-skills-main/skills/xlsx/recalc.py",
+      "type": "other",
+      "version": "1.0",
+      "functions": 3
+    },
+    {
+      "id": "skills/fel/federated_learning.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/fpv/formal_verification.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/he/hierarchical_experts.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "skills/sr/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "skills/sr/semantic_routing.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "skills/ta/temporal_attention.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/vibe.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 47
+    },
+    {
+      "id": "v15.3-core/advanced_searching/api.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "v15.3-core/builder/scaffold.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/builder/specs.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/core/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/core/baseline.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/core/cache.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/core/claims.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/core/cruel_runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/core/dependency_graph.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/core/external_tools.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/core/hooks.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/core/models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "v15.3-core/core/n8n.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "v15.3-core/core/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "v15.3-core/core/python_ast.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "v15.3-core/core/repo_scanner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/core/rules_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/core/skill_index.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/core/skill_router.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/core/skills_lock.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/core/stack_detector.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/core/vibe_config.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/cruel/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/cruel/cruel_system.py",
+      "type": "other",
+      "version": "1.0",
+      "functions": 26
+    },
+    {
+      "id": "v15.3-core/dag/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dag/engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/debate/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/debate/runtime.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/dive_engine/__init__.py",
+      "type": "other",
+      "version": "2.0.0",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "v15.3-core/dive_engine/artifacts/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/artifacts/evidence_packer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 21
+    },
+    {
+      "id": "v15.3-core/dive_engine/artifacts/process_trace.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "v15.3-core/dive_engine/core/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/core/models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "v15.3-core/dive_engine/daemon/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/daemon/runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 18
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/account_pool.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 17
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/gateway.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/performance_tracker.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 16
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/test_real_api.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/oauth/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/oauth/base.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/oauth/gemini_oauth.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/oauth/kiro_oauth.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v15.3-core/dive_engine/llm/oauth/qwen_oauth.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/dive_engine/monitor/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/monitor/faithfulness_checker.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "v15.3-core/dive_engine/monitor/tier_monitor.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 15
+    },
+    {
+      "id": "v15.3-core/dive_engine/tests/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/tests/test_orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/dive_engine/thinking/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/thinking/dual_router.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "v15.3-core/dive_engine/thinking/effort_controller.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "v15.3-core/dive_engine/thinking/inference_scaling.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 13
+    },
+    {
+      "id": "v15.3-core/dive_engine/thinking/streaming_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 14
+    },
+    {
+      "id": "v15.3-core/dive_engine/tools/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/dive_engine/tools/rag_context.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/evidencepack/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/evidencepack/collector.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/evidencepack/models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/evidencepack/runtime.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/exporters/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/exporters/markdown.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/exporters/sarif.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "v15.3-core/flows/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/flows/cache_design.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "v15.3-core/flows/doctor.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "v15.3-core/flows/explain.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/flows/fix.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/flows/mode_runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 16
+    },
+    {
+      "id": "v15.3-core/gatekeeper/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/gatekeeper/runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/gatekeeper/state.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/gates/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/gates/runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/gates/semgrep.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/graph/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/graph/import_graph.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/graph/store.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v15.3-core/graph/test_selection.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/iko/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/iko/models.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "v15.3-core/iko/store.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/index/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/index/db.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/index/indexer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v15.3-core/kb/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/kb/updater.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v15.3-core/learning/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/learning/store.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/patch/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/patch/autopatch.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 10
+    },
+    {
+      "id": "v15.3-core/patch/golden_config.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/patch/resolve_engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/patch/safety.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/plugins/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/plugins/base.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/plugins/common.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v15.3-core/plugins/nestjs.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/plugins/nextjs.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/plugins/registry.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/plugins/tailwind.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/rag/engine.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/rag/engine_v1.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/rag/engine_v2.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 25
+    },
+    {
+      "id": "v15.3-core/rag/report.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/rag/adapters/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/rag/adapters/embedding.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/rag/adapters/rerank.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/rag/adapters/providers/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/rag/adapters/providers/cross_encoder.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/rag/adapters/providers/llm_judge.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/rag/adapters/providers/llm_judge_rerank.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "v15.3-core/rag/adapters/providers/openai.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/rag/adapters/providers/openai_embeddings.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/rag/adapters/providers/sentence_transformers_embeddings.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/rag/retrieval/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/rag/retrieval/ann.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "v15.3-core/rag/retrieval/dense_index.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v15.3-core/rag/retrieval/fusion.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/rlm/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/rlm/investigator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/rules/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/scripts/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/search/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/search/hybrid.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v15.3-core/search/semantic.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/search/vector.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v15.3-core/tools/skills_reindex.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "v15.3-core/tools/ci/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/tools/ci/validate_evidencepack.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v15.3-core/utils/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/utils/hash_utils.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/utils/n8n_sanitize.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/utils/policy.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/utils/sanitize.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 1
+    },
+    {
+      "id": "v15.3-core/utils/tracing.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/utils/yaml_lite.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 2
+    },
+    {
+      "id": "v15.3-core/v13/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v15.3-core/v13/preflight.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 3
+    },
+    {
+      "id": "v15.3-core/v13/self_review.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "v15.3-core/v13/templates.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v19.7-integration/deployment/first_run.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "v19.7-integration/llm/client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v19.7-integration/llm/unified_client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 7
+    },
+    {
+      "id": "v20/coder/orchestrator/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v20/coder/orchestrator/dive_ai_runner.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 8
+    },
+    {
+      "id": "v20/coder/orchestrator/orchestrator.py",
+      "type": "other",
+      "version": "20.0.0",
+      "functions": 9
+    },
+    {
+      "id": "v20/coder/replication/__init__.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 0
+    },
+    {
+      "id": "v20/coder/replication/replication_manager.py",
+      "type": "other",
+      "version": "20.0.0",
+      "functions": 16
+    },
+    {
+      "id": "v20/core/capability_monitor.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "v20/core/complexity_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 19
+    },
+    {
+      "id": "v20/core/dive_orchestrator_monitored.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v20/core/dive_orchestrator_parallel.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v20/core/dive_orchestrator_resilient.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v20/core/dive_orchestrator_v20.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 5
+    },
+    {
+      "id": "v20/core/dive_orchestrator_with_progress.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v20/core/integrated_review_system.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 6
+    },
+    {
+      "id": "v20/core/intelligent_multi_model_reviewer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "v20/core/multi_model_reviewer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 9
+    },
+    {
+      "id": "v20/core/orchestrator.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 11
+    },
+    {
+      "id": "v20/core/progress_monitor.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 4
+    },
+    {
+      "id": "v20/core/prompt_complexity_analyzer.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    },
+    {
+      "id": "v20/core/unified_llm_client.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 15
+    },
+    {
+      "id": "v20/skills/internal/dive-memory-v2/skill.py",
+      "type": "other",
+      "version": "unknown",
+      "functions": 12
+    }
+  ],
+  "edges": [
+    {
+      "from": "deploy_dive_ai_128_agents.py",
+      "to": "orchestrator/__init__.py",
+      "type": "imports"
+    },
+    {
+      "from": "dive_ai_complete_system.py",
+      "to": "core/dive_smart_orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "dive_ai_complete_system.py",
+      "to": "core/dive_smart_coder.py",
+      "type": "imports"
+    },
+    {
+      "from": "dive_ai_complete_system.py",
+      "to": "core/dive_memory_3file_complete.py",
+      "type": "imports"
+    },
+    {
+      "from": "phase1_foundational_loop.py",
+      "to": "orchestrator/dive_orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "phase1_foundational_loop.py",
+      "to": "agents/dive_coder_agent.py",
+      "type": "imports"
+    },
+    {
+      "from": "phase1_foundational_loop.py",
+      "to": "skills/sr/semantic_routing.py",
+      "type": "imports"
+    },
+    {
+      "from": "coder/core/engine/vibe-coder-v13/core/orchestrator.py",
+      "to": "v20/coder/orchestrator/orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "coder/core/engine/vibe-coder-v13/dive_engine/orchestrator.py",
+      "to": "v20/coder/orchestrator/orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "coder/infrastructure/orchestrator/__init__.py",
+      "to": "v20/coder/orchestrator/orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "coder/infrastructure/orchestrator/orchestrator.py",
+      "to": "v20/coder/orchestrator/orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "coder/infrastructure/replication/replication_manager.py",
+      "to": "v20/coder/replication/replication_manager.py",
+      "type": "imports"
+    },
+    {
+      "from": "coder/src/core/orchestration/orchestrator.py",
+      "to": "v20/coder/orchestrator/orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "coder/src/modules/phase2_reliability_trust.py",
+      "to": "phase1_foundational_loop.py",
+      "type": "imports"
+    },
+    {
+      "from": "coder/src/modules/skills/phase2_reliability_trust.py",
+      "to": "phase1_foundational_loop.py",
+      "type": "imports"
+    },
+    {
+      "from": "orchestrator/orchestration/infra_orchestrator/orchestrator.py",
+      "to": "v20/coder/orchestrator/orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "orchestrator/orchestration/src_core_orchestration/orchestrator.py",
+      "to": "v20/coder/orchestrator/orchestrator.py",
+      "type": "imports"
+    },
+    {
+      "from": "v20/core/integrated_review_system.py",
+      "to": "orchestrator/__init__.py",
+      "type": "imports"
+    }
+  ]
+}

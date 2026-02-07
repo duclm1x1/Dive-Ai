@@ -1,0 +1,60 @@
+{
+  "version": "20.0.0",
+  "generated": "2026-02-03",
+  "report": "DEDUP_REPORT.md",
+  "summary": {
+    "status": "OPTIMIZED",
+    "message": "Codebase successfully deduplicated and optimized.",
+    "total_files_after_optimization": 3857,
+    "total_size_after_optimization_mb": 63.21,
+    "space_saved_mb": 32.79
+  },
+  "manifest": {
+    "canonical_skills": {
+      "internal": "v20/skills/internal",
+      "external": "v20/skills/external"
+    },
+    "registry": "v20/runtime/skills_registry.yml",
+    "alias_map": "v20/coder/configuration/skill_aliases.yml",
+    "canonical_orchestrator": "v20/coder/orchestrator/orchestrator.py",
+    "canonical_replication_manager": "v20/coder/replication/replication_manager.py"
+  },
+  "actions_taken": [
+    {
+      "action": "DEDUPE_SKILLS",
+      "source": [
+        "coder/configuration/agent/skills",
+        "coder/configuration/agent/skills_external",
+        "docs/v19.7/configuration/agent/skills"
+      ],
+      "destination": "v20/skills",
+      "status": "COMPLETED"
+    },
+    {
+      "action": "CREATE_REGISTRY",
+      "path": "v20/runtime/skills_registry.yml",
+      "status": "COMPLETED"
+    },
+    {
+      "action": "CREATE_ALIASES",
+      "path": "v20/coder/configuration/skill_aliases.yml",
+      "status": "COMPLETED"
+    },
+    {
+      "action": "CREATE_SHIMS",
+      "targets": [
+        "orchestrator.py",
+        "replication_manager.py"
+      ],
+      "status": "COMPLETED"
+    },
+    {
+      "action": "CLEANUP_CACHE",
+      "targets": [
+        "__pycache__",
+        "*.pyc"
+      ],
+      "status": "COMPLETED"
+    }
+  ]
+}

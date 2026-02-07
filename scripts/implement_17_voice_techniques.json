@@ -1,0 +1,259 @@
+{
+  "results": [
+    {
+      "input": "Technique #4: Streaming TTS - Sentence-level streaming with first audio <500ms. Support OpenAI TTS, ElevenLabs. Implement StreamingTTSEngine with chunk-based generation, buffer management, multiple providers. File: core/voice/streaming_tts_engine.py",
+      "output": {
+        "technique_number": 4,
+        "technique_name": "Streaming TTS - Sentence-level streaming with first audio <500ms",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 32511,
+        "key_classes": "StreamingTTSEngine, OpenAIProvider, ElevenLabsProvider, StreamingTTSEngineConfig, OpenAIConfig, ElevenLabsConfig, TTSProviderConfig, StreamingTTSProvider",
+        "key_methods": "stream_sentence(), measure_first_audio_latency(), stream_audio(), get_first_audio_latency(), _initialize_providers(), _get_provider(), _split_into_sentences()",
+        "dependencies": "openai==2.3.0, elevenlabs==2.34.0",
+        "performance_target": "<500ms latency",
+        "integration_notes": "The `StreamingTTSEngine` class can be initialized with `StreamingTTSEngineConfig` which takes `OpenAIConfig` and `ElevenLabsConfig` objects. API keys should be loaded from environment variables. The `stream_sentence` method can be used to stream audio for a given text, and `measure_first_audio_latency` can be used to check performance. Unit tests are included and can be run with `python -m unittest core/voice/streaming_tts_engine.py`."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #5: Semantic Caching - Vector-based similarity with 50ms cache hits. Use sentence-transformers for embeddings, FAISS for vector search. Cache both text and audio. Implement SemanticCache with add(), query(), eviction policy, TTL management. File: core/caching/semantic_cache.py",
+      "output": {
+        "technique_number": 5,
+        "technique_name": "Semantic Caching - Vector-based similarity with 50ms cache hits",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 13963,
+        "key_classes": "SemanticCacheConfig, SemanticCache",
+        "key_methods": "add(), query(), _evict_lru(), _is_expired()",
+        "dependencies": "faiss-cpu==1.13.2, numpy==2.3.3, sentence-transformers==5.2.2",
+        "performance_target": "<50ms cache hits",
+        "integration_notes": "To integrate, import `SemanticCache` and `SemanticCacheConfig` from `core.caching.semantic_cache`. Initialize `SemanticCache` with a `SemanticCacheConfig` instance. Use `cache.add()` to store data with text/audio features and `cache.query()` to retrieve semantically similar items. Ensure `sentence-transformers`, `faiss-cpu`, and `numpy` are installed."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #6: WebRTC Browser Integration - Low-latency streaming with built-in echo cancellation. Implement WebRTC server in Python (aiortc) and client in JavaScript. Support peer-to-peer, adaptive bitrate, STUN/TURN. Files: core/voice/webrtc_server.py, desktop/webrtc_client.js",
+      "output": {
+        "technique_number": 6,
+        "technique_name": "WebRTC Browser Integration - Low-latency streaming with built-in echo cancellation",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 12214,
+        "key_classes": "WebRTCConfig, WebRTCServer",
+        "key_methods": "WebRTCServer.__init__(), WebRTCServer._offer(), WebRTCServer.start(), WebRTCServer.stop()",
+        "dependencies": "aiortc>=1.14.0, aiohttp>=3.13.3",
+        "performance_target": "<100ms latency",
+        "integration_notes": "To integrate, run the Python server (core/voice/webrtc_server.py). The JavaScript client (desktop/webrtc_client.js) can be served via a simple HTTP server (e.g., `python3 -m http.server` from the `desktop` directory) and accessed in a browser. The client will automatically attempt to connect to the Python server at `http://localhost:8080/offer`."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #7: Enhanced Wake Word Detection - 95%+ accuracy with phonetic matching. Support Porcupine, OpenWakeWord. Handle variations like 'hay day' for 'hey dive'. Implement WakeWordDetector with custom training, sensitivity control, false positive reduction. File: core/voice/wake_word_detector.py",
+      "output": {
+        "technique_number": 7,
+        "technique_name": "Enhanced Wake Word Detection",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 17340,
+        "key_classes": "WakeWordConfig, WakeWordDetector",
+        "key_methods": "__init__(), _initialize_detector(), _initialize_porcupine(), _initialize_openwakeword(), process_audio_frame(), _process_porcupine_frame(), _process_openwakeword_frame(), release()",
+        "dependencies": "pvporcupine>=4.0.1, openwakeword>=0.6.0, numpy",
+        "performance_target": "<100ms per operation",
+        "integration_notes": "To integrate, import WakeWordDetector and WakeWordConfig from core.voice.wake_word_detector. Create a WakeWordConfig instance with desired engine (porcupine or openwakeword), keywords, and sensitivities. Instantiate WakeWordDetector with this config. Call process_audio_frame with 16-bit PCM audio frames. Ensure PICOVOICE_ACCESS_KEY is set as an environment variable for Porcupine. Install required libraries: pip install pvporcupine openwakeword numpy."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #8: Acoustic Echo Cancellation - DTLN-AEC integration for real-time echo removal. Support full-duplex operation. Implement EchoCanceller with adaptive filtering, speaker reference input, residual echo suppression. File: core/audio/echo_canceller.py",
+      "output": {
+        "technique_number": 8,
+        "technique_name": "Acoustic Echo Cancellation - DTLN-AEC integration",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 17214,
+        "key_classes": "EchoCancellerConfig, EchoCanceller",
+        "key_methods": "EchoCancellerConfig.__post_init__(), EchoCanceller.__init__(), EchoCanceller._load_models(), EchoCanceller.process_frame(), EchoCanceller.process_audio_file()",
+        "dependencies": "soundfile>=0.12.1, numpy>=1.26.4, tensorflow>=2.15.0",
+        "performance_target": "<100ms per operation",
+        "integration_notes": "To integrate the DTLN-AEC Echo Canceller into the Dive AI V25.5 Hear Model, follow these steps:\n\n1.  **Model Placement**: Ensure the pre-trained DTLN-AEC TensorFlow Lite models (e.g., `dtln_aec_512_1.tflite` and `dtln_aec_512_2.tflite`) are placed in a directory accessible by the `EchoCanceller` class. The `model_path` in `EchoCancellerConfig` should point to the base name (e.g., `pretrained_models/dtln_aec_512`).\n\n2.  **Installation**: Install the required Python dependencies: `soundfile`, `numpy`, and `tensorflow`.\n\n3.  **Initialization**: Instantiate the `EchoCancellerConfig` with the appropriate `model_path` and other parameters. Then, create an instance of `EchoCanceller`.\n\n    ```python\n    from core.audio.echo_canceller import EchoCancellerConfig, EchoCanceller\n\n    config = EchoCancellerConfig(model_path='path/to/your/pretrained_models/dtln_aec_512')\n    canceller = EchoCanceller(config)\n    ```\n\n4.  **Real-time Processing**: For real-time full-duplex operation, feed `block_shift` sized audio frames (128 samples at 16kHz) from the near-end microphone and far-end loudspeaker reference to the `process_frame` method. The output will be the echo-cancelled audio frame.\n\n    ```python\n    # Assuming near_end_audio_stream and far_end_audio_stream provide audio frames\n    near_end_frame = get_near_end_audio_frame() # np.ndarray of shape (128,)\n    far_end_frame = get_far_end_audio_frame()   # np.ndarray of shape (128,)\n\n    processed_frame = canceller.process_frame(near_end_frame, far_end_frame)\n    # Use processed_frame for further processing (e.g., speech recognition, transmission)\n    ```\n\n5.  **File Processing**: For batch processing of audio files, use the `process_audio_file` method.\n\n    ```python\n    canceller.process_audio_file(\n        'path/to/near_end_mic.wav',\n        'path/to/far_end_lpb.wav',\n        'path/to/output_aec.wav'\n    )\n    ```\n\n6.  **Error Handling**: Implement robust error handling around the `EchoCanceller` operations, particularly for `FileNotFoundError` during model loading and `ValueError` during audio processing, as demonstrated in the provided code and unit tests.\n\n7.  **Performance**: The `process_frame` method is optimized for real-time performance. Monitor its execution time to ensure it meets the <100ms per operation target, adjusting `block_len` and `block_shift` if necessary based on your specific hardware and model complexity."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #9: RNNoise Integration - Neural noise suppression with low CPU usage (<5%). Support multiple noise types (white, pink, babble). Implement NoiseSuppressor with adjustable aggressiveness, real-time processing, statistics tracking. File: core/audio/noise_suppressor.py",
+      "output": {
+        "technique_number": 9,
+        "technique_name": "RNNoise Integration",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 15995,
+        "key_classes": "NoiseSuppressorConfig, NoiseSuppressorStatistics, NoiseSuppressor",
+        "key_methods": "__init__(), _setup_logger(), _create_rnnoise_states(), destroy_rnnoise_states(), reset(), process_frame(), process_chunk(), get_statistics(), __del__()",
+        "dependencies": "numpy>=1.20.0",
+        "performance_target": "<100ms per operation",
+        "integration_notes": "To integrate the RNNoise noise suppressor, import the NoiseSuppressor and NoiseSuppressorConfig classes. Initialize NoiseSuppressor with a configuration object, ensuring the sample rate is 48000Hz. Process audio data either frame by frame using `process_frame(frame)` or in chunks using `process_chunk(chunk)`. Ensure input audio is a NumPy array of type `np.int16`. Statistics can be retrieved using `get_statistics()`."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #10: Prompt Optimization - Rolling context window with automatic summarization. Implement PromptOptimizer with token counting, context compression, RAG for retrieval, history management, smart truncation. File: core/llm/prompt_optimizer.py",
+      "output": {
+        "technique_number": 10,
+        "technique_name": "Prompt Optimization - Rolling context window with automatic summarization",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 22860,
+        "key_classes": "PromptOptimizerConfig, PromptOptimizer",
+        "key_methods": "__init__(), _count_tokens(), _summarize_content(), _compress_context(), _apply_rag(), add_message(), _manage_history(), get_optimized_prompt()",
+        "dependencies": "tiktoken>=0.12.0",
+        "performance_target": "<100ms latency",
+        "integration_notes": "To integrate, import `PromptOptimizer` and `PromptOptimizerConfig` from `core.llm.prompt_optimizer`. Initialize `PromptOptimizerConfig` with desired parameters (e.g., `max_tokens`, `summary_max_tokens`, `rag_enabled`). Create an instance of `PromptOptimizer` with the config. Use `add_message(role, content)` to add conversation turns. Call `get_optimized_prompt(current_query)` to retrieve the optimized list of messages ready for an LLM API call."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #11: Streaming ASR - Real-time transcription with Whisper/Nemotron. Implement StreamingASR with incremental results, confidence scores, language detection, punctuation, word timestamps. File: core/voice/streaming_asr.py",
+      "output": {
+        "technique_number": 11,
+        "technique_name": "Streaming ASR - Real-time transcription with Whisper/Nemotron",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 18575,
+        "key_classes": "StreamingASR, StreamingASRConfig, V98API",
+        "key_methods": "start(), stop(), _process_audio(), _audio_callback()",
+        "dependencies": "transformers>=4.0.0, sounddevice>=0.4.0, numpy>=1.20.0, torch>=1.9.0",
+        "performance_target": "<100ms per operation",
+        "integration_notes": "To integrate the StreamingASR module, instantiate the StreamingASR class with a configuration object and callback functions for results and errors. The module can be run in two modes: local pipeline (e.g., Whisper) or API mode (simulated V98 API). For local mode, ensure the specified model from Hugging Face is available. The current implementation defaults to CPU due to environment constraints; for GPU usage, the device selection logic may need to be adjusted based on the specific production environment."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #12: Audio Buffer Management - Ring buffer with dynamic sizing. Implement BufferManager with overflow/underflow prevention, double buffering, jitter handling, statistics (fill rate, drops). File: core/audio/buffer_manager.py",
+      "output": {
+        "technique_number": 12,
+        "technique_name": "Audio Buffer Management - Ring buffer with dynamic sizing",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 14832,
+        "key_classes": "BufferManagerConfig, BufferManager",
+        "key_methods": "put(), get(), _dynamic_resize(), _resize_buffer(), _switch_buffers(), get_statistics()",
+        "dependencies": "None",
+        "performance_target": "<100ms per operation",
+        "integration_notes": "Integrate BufferManager by importing BufferManager and BufferManagerConfig from core.audio.buffer_manager. Create a BufferManagerConfig instance and then a BufferManager instance with the config. Use put() to add items and get() to retrieve them. Monitor statistics with get_statistics()."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #13: Turn Detection - Hybrid silence-based and model-based approach. Implement TurnDetector with configurable silence threshold, end-of-turn prediction, false positive reduction, context awareness. File: core/voice/turn_detector.py",
+      "output": {
+        "technique_number": 13,
+        "technique_name": "Turn Detection - Hybrid silence-based and model-based approach",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 22043,
+        "key_classes": "TurnDetectorConfig, TurnDetector",
+        "key_methods": "__init__(), _load_vad_model(), _calculate_dbfs(), _is_silent(), _predict_end_of_turn_model(), process_audio_chunk(), reset()",
+        "dependencies": "numpy>=1.20.0",
+        "performance_target": "<100ms latency",
+        "integration_notes": "To integrate the TurnDetector into the Dive AI V25.5 Hear Model, follow these steps:\n1.  **Installation:** Ensure `numpy` is installed (`pip install numpy`). If using a specific VAD model (e.g., Silero VAD or WebRTC VAD), install the corresponding libraries.\n2.  **Configuration:** Create an instance of `TurnDetectorConfig`. Adjust parameters like `silence_threshold_db`, `min_silence_duration_ms`, `max_turn_duration_ms`, and `sample_rate` to match your audio input characteristics and desired turn detection behavior.\n3.  **Initialization:** Instantiate `TurnDetector` with your `TurnDetectorConfig` object.\n4.  **Audio Processing Loop:** In your audio processing pipeline, feed audio chunks (normalized to -1.0 to 1.0 float values) to the `process_audio_chunk` method.\n5.  **Event Handling:** Monitor the `is_end_of_turn` boolean returned by `process_audio_chunk`. When `True`, it indicates the end of a speech turn, triggering actions like transcription processing or agent response generation.\n6.  **Reset:** Call the `reset()` method when starting a new interaction or session to clear the detector's internal state.\n7.  **VAD Model Integration (Optional):** If a VAD model is to be used, replace the placeholder in `_load_vad_model` with actual model loading and inference logic in `_predict_end_of_turn_model`. Ensure the model is optimized for low-latency inference."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #14: Multimodal Integration - Voice + Vision coordination with context sharing. Implement VoiceVisionCoordinator with parallel processing, result fusion, shared state, cross-modal attention. File: core/multimodal/voice_vision_coordinator.py",
+      "output": {
+        "technique_number": 14,
+        "technique_name": "Multimodal Integration - Voice + Vision coordination with context sharing",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 14889,
+        "key_classes": "MultimodalConfig, MultimodalContext, VoiceVisionCoordinator",
+        "key_methods": "coordinate(), _process_voice(), _process_vision(), _share_context(), _retrieve_shared_context(), _apply_cross_modal_attention(), _fuse_results(), get_context_status()",
+        "dependencies": "Python 3.11+",
+        "performance_target": "<100ms latency",
+        "integration_notes": "To integrate, import `VoiceVisionCoordinator` and `MultimodalConfig` from `core.multimodal.voice_vision_coordinator`. Initialize with a `MultimodalConfig` instance and call the `coordinate` async method with voice and vision inputs along with a unique context ID. Ensure an asyncio event loop is running."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #15: Conversation State Management - Session persistence with context window management. Implement StateManager with user profiles, conversation history, state recovery, memory limits, pruning strategies. File: core/conversation/state_manager.py",
+      "output": {
+        "technique_number": 15,
+        "technique_name": "Conversation State Management - Session persistence with context window management",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 25553,
+        "key_classes": "StateManager, StateManagerConfig, ConversationMessage, UserProfile, ConversationState",
+        "key_methods": "StateManager.__init__(), StateManager.get_user_profile(), StateManager.create_or_update_user_profile(), StateManager.get_conversation_state(), StateManager.create_or_update_conversation_state(), StateManager.delete_conversation_state(), StateManager.get_conversation_history(), StateManager.prune_history(), StateManager.save_state(), StateManager.load_state()",
+        "dependencies": "No specific versions required for standard libraries",
+        "performance_target": "<100ms per operation",
+        "integration_notes": "To integrate the StateManager, initialize it with an optional StateManagerConfig. Use `create_or_update_user_profile` to manage user data and `create_or_update_conversation_state` to handle conversation history. The manager automatically handles state persistence and pruning based on the configuration. Ensure that the `state_persistence_path` in StateManagerConfig is set to a writable location if state recovery is enabled."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #16: Latency Monitoring - Component-level metrics with real-time tracking. Implement LatencyTracker with per-component timing, statistical analysis (mean, p50, p95, p99), dashboard data export. File: core/monitoring/latency_tracker.py",
+      "output": {
+        "technique_number": 16,
+        "technique_name": "Latency Monitoring - Component-level metrics with real-time tracking",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 9256,
+        "key_classes": "LatencyTracker",
+        "key_methods": "start_timer(), stop_timer(), get_statistics(), get_all_statistics(), export_for_dashboard(), reset()",
+        "dependencies": "None",
+        "performance_target": "<100ms per operation",
+        "integration_notes": "To integrate LatencyTracker, instantiate the class and use `start_timer` and `stop_timer` around operations. Use `export_for_dashboard` to get JSON data for visualization. Ensure proper logging configuration for monitoring warnings and errors."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #17: Error Recovery & Retry - Exponential backoff with circuit breaker pattern. Implement ErrorRecovery with fallback strategies, graceful degradation, retry policies, error classification, recovery actions. File: core/resilience/error_recovery.py",
+      "output": {
+        "technique_number": 17,
+        "technique_name": "Error Recovery & Retry - Exponential backoff with circuit breaker pattern",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 14635,
+        "key_classes": "ErrorRecoveryManager, CircuitBreaker, ExponentialBackoffRetry, ErrorRecoveryConfig",
+        "key_methods": "execute(), _classify_error(), _handle_fallback()",
+        "dependencies": "asyncio, logging, random, time, datetime, enum",
+        "performance_target": "<100ms per operation",
+        "integration_notes": "To integrate the ErrorRecoveryManager, instantiate it with a custom or default ErrorRecoveryConfig. Then, wrap the function call that needs protection with the manager's `execute` method. The manager will handle circuit breaking, retries, and fallbacks as configured. Ensure that the event loop is running in your application, as this module relies on asyncio."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #18: Speculative TTS - Response prediction with pre-generation. Implement SpeculativeTTS with cache management, hit/miss tracking, confidence scoring, abort on mismatch, learning from patterns. File: core/voice/speculative_tts.py",
+      "output": {
+        "technique_number": 18,
+        "technique_name": "Speculative TTS - Response prediction with pre-generation",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 15612,
+        "key_classes": "SpeculativeTTSConfig, TTSCacheEntry, SpeculativeTTSManager",
+        "key_methods": "_initialize_tts_model(), _get_from_cache(), _add_to_cache(), _update_prediction_patterns(), _calculate_confidence(), generate_speculative_tts(), get_cache_stats(), get_prediction_pattern_stats()",
+        "dependencies": "dataclasses, logging, typing, unittest",
+        "performance_target": "<100ms latency",
+        "integration_notes": "To integrate SpeculativeTTS into the Dive AI V25.5 Hear Model:\n1. Ensure 'core/voice/speculative_tts.py' is accessible in your project path.\n2. Replace `DRAFT_MODEL_API_KEY` and `TARGET_MODEL_API_KEY` in `SpeculativeTTSConfig` with actual API keys for your chosen high-tier TTS models (e.g., OpenAI, Gemini, Claude). These models should be capable of generating speech from text.\n3. Modify the `_initialize_tts_model` method to integrate with your specific TTS provider's SDKs or APIs. This will involve replacing the `MockTTSModel` with actual API calls.\n4. Instantiate `SpeculativeTTSManager` with your desired configuration:\n   `config = SpeculativeTTSConfig(...)`\n   `tts_manager = SpeculativeTTSManager(config)`\n5. Call `tts_manager.generate_speculative_tts(text)` whenever speech generation is required. The method returns the audio data (bytes) and a boolean indicating if it was a speculative hit.\n6. Monitor cache statistics and prediction patterns using `get_cache_stats()` and `get_prediction_pattern_stats()` for performance tuning.\n7. Ensure proper error handling around `generate_speculative_tts` calls to manage potential API failures or timeouts.\n8. Dependencies: `dataclasses` (built-in Python 3.7+), `logging` (built-in), `typing` (built-in), `unittest` (built-in). External TTS model SDKs will be required based on your chosen providers."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #19: Adaptive Bitrate - Network monitoring with dynamic quality adjustment. Implement AdaptiveBitrate with bandwidth estimation, quality/latency trade-off, smooth transitions, buffer-based adaptation. File: core/audio/adaptive_bitrate.py",
+      "output": {
+        "technique_number": 19,
+        "technique_name": "Adaptive Bitrate - Network monitoring with dynamic quality adjustment",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 15693,
+        "key_classes": "AdaptiveBitrateConfig, BandwidthEstimator, AdaptiveBitrateManager",
+        "key_methods": "add_data_point(), estimate_bandwidth_kbps(), update_network_metrics(), _adjust_bitrate(), get_current_bitrate()",
+        "dependencies": "No external dependencies beyond standard Python libraries (time, logging, dataclasses, typing).",
+        "performance_target": "<100ms latency per operation",
+        "integration_notes": "Instantiate `AdaptiveBitrateManager` with `AdaptiveBitrateConfig`. Periodically call `update_network_metrics()` with network data. Retrieve current bitrate using `get_current_bitrate()`. Refer to the `if __name__ == \"__main__\":` block in `core/audio/adaptive_bitrate.py` for detailed examples."
+      },
+      "error": ""
+    },
+    {
+      "input": "Technique #20: Voice Profiles - User-specific settings with preference storage. Implement VoiceProfile with accent adaptation, custom wake words, TTS voice selection, speaking rate, profile management (save/load). File: core/user/voice_profile.py",
+      "output": {
+        "technique_number": 20,
+        "technique_name": "Voice Profiles - User-specific settings with preference storage",
+        "implementation_status": "COMPLETE",
+        "code_size_bytes": 14275,
+        "key_classes": "VoiceProfileConfig, VoiceProfileManager",
+        "key_methods": "save_profile(), load_profile(), delete_profile(), list_profiles(), apply_profile()",
+        "dependencies": "json, logging, os, time, dataclasses, typing",
+        "performance_target": "<100ms latency per operation",
+        "integration_notes": "To integrate Voice Profiles, import VoiceProfileManager and VoiceProfileConfig from core.user.voice_profile. Create an instance of VoiceProfileManager. Use save_profile() to store user preferences and load_profile() to retrieve them. Apply settings using apply_profile(). Ensure the ~/.dive_ai/voice_profiles directory is accessible for read/write operations. The apply_profile method simulates API calls to Dive AI V98; replace with actual API calls as needed."
+      },
+      "error": ""
+    }
+  ]
+}

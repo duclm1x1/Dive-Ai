@@ -1,0 +1,59 @@
+{
+  "VIBE_REGEX_EVAL_JS": [
+    "ext-trailofbits-differential-review",
+    "ext-trailofbits-property-based-testing",
+    "ext-trailofbits-semgrep-rule-creator"
+  ],
+  "VIBE_REGEX_REACT_DANGEROUS_HTML": [
+    "ext-trailofbits-differential-review",
+    "ext-trailofbits-property-based-testing",
+    "ext-trailofbits-semgrep-rule-creator"
+  ],
+  "VIBE_REGEX_DEBUGGER": [
+    "vibe-super-coder-skills",
+    "vibe-qa-debugging"
+  ],
+  "VIBE_REGEX_CONSOLE_LOG": [
+    "vibe-super-coder-skills",
+    "vibe-qa-debugging"
+  ],
+  "VIBE_REGEX_TYPESCRIPT_ANY": [
+    "vibe-super-coder-skills",
+    "vibe-qa-debugging"
+  ],
+  "VIBE_REGEX_TS_IGNORE": [
+    "vibe-add-skill-develop",
+    "vibe-documentation-auto",
+    "vibe-external-integrations"
+  ],
+  "VIBE_REGEX_ESLINT_DISABLE": [
+    "vibe-super-coder-skills",
+    "vibe-qa-debugging"
+  ],
+  "VIBE_REGEX_HARDCODED_SECRET": [
+    "ext-trailofbits-differential-review",
+    "ext-trailofbits-property-based-testing",
+    "ext-trailofbits-semgrep-rule-creator"
+  ],
+  "VIBE_REGEX_PY_PRINT": [
+    "vibe-super-coder-skills",
+    "vibe-qa-debugging"
+  ],
+  "VIBE_REGEX_TODO_FIXME": [
+    "vibe-add-skill-develop",
+    "vibe-documentation-auto",
+    "vibe-external-integrations"
+  ],
+  "N8N.*": [
+    "vibe-tech-stack-modern-web",
+    "vibe-rlm-knowledge-lifecycle"
+  ],
+  "REACT.*": [
+    "vibe-tech-stack-modern-web",
+    "vibe-super-coder-skills"
+  ],
+  "NEXTJS.*": [
+    "vibe-tech-stack-modern-web",
+    "vibe-super-coder-skills"
+  ]
+}

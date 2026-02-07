@@ -1,0 +1,47 @@
+{
+  "version": "21.0",
+  "description": "Unified Brain Architecture with full Dive Memory V3 integration",
+  "timestamp": "2026-02-05T02:57:26.509675",
+  "stats": {
+    "total_memories": 2,
+    "avg_importance": 9.5,
+    "total_accesses": 4,
+    "total_sections": 1,
+    "total_links": 1,
+    "avg_links_per_memory": 1.0
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "8074192a-aa34-4cbc-8b44-e974829eb8a3",
+        "content": "# Dive AI V21 - Unified Brain Architecture - Full Documentation\n\n**Project ID**: dive-ai-v21-unified...",
+        "section": "documents",
+        "importance": 10,
+        "tags": [
+          "project",
+          "dive-ai-v21-unified-brain",
+          "full-doc"
+        ]
+      },
+      {
+        "id": "7b267315-3c8c-493a-b273-e96c9495b59e",
+        "content": "# Dive AI V21 - Unified Brain Architecture - Criteria & Checklist\n\n**Project ID**: dive-ai-v21-unifi...",
+        "section": "documents",
+        "importance": 9,
+        "tags": [
+          "project",
+          "dive-ai-v21-unified-brain",
+          "criteria"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "7b267315-3c8c-493a-b273-e96c9495b59e",
+        "target": "8074192a-aa34-4cbc-8b44-e974829eb8a3",
+        "relationship": "related_to",
+        "strength": 0.7806752270298428
+      }
+    ]
+  }
+}
