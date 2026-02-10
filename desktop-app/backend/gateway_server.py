@@ -52,7 +52,7 @@ import uvicorn
 # Import LLM connections
 from llm.connections import (
     V98ConnectionManager, get_manager, quick_chat,
-    ALL_MODELS, print_summary
+    ALL_MODELS, print_summary, stream_chat_generator
 )
 
 # Import agent modules
@@ -61,7 +61,8 @@ from action_executor import ActionExecutor
 from agent_loop import AgentLoop
 
 # Import storage and memory
-from local_storage import LocalStorage, get_storage
+from database import DiveDatabase, get_database
+from local_storage import LocalStorage, get_storage  # kept for migration
 from memory_manager import MemoryManager
 
 # Import Algorithm Service (central algorithm + skill registry)
@@ -177,7 +178,7 @@ APP_PATH = Path(__file__).parent.parent
 # ============================================================
 
 # Global storage and memory
-storage: Optional[LocalStorage] = None
+storage: Optional[DiveDatabase] = None
 memory: Optional[MemoryManager] = None
 
 @app.on_event("startup")
@@ -185,8 +186,20 @@ async def startup():
     global llm_manager, supabase_client, action_exec, agent, storage, memory
     llm_manager = get_manager()
     
-    # Initialize local storage and memory
-    storage = get_storage()
+    # Initialize SQLite database (replaces JSON storage)
+    storage = get_database()
+    
+    # Auto-migrate from JSON if this is the first run with SQLite
+    if len(storage.list_conversations()) == 0:
+        try:
+            old_storage = get_storage()  # JSON-based
+            old_convs = old_storage.list_conversations()
+            if old_convs:
+                storage.migrate_from_json(old_storage)
+                print(f"📦 Migrated {len(old_convs)} conversations from JSON → SQLite")
+        except Exception as e:
+            print(f"⚠️ JSON migration skipped: {e}")
+    
     memory = MemoryManager(storage=storage)
     
     # Initialize action executor and agent loop
@@ -625,10 +638,8 @@ async def clear_storage():
     """Clear all conversation data (keeps settings)."""
     if not storage:
         raise HTTPException(status_code=503, detail="Storage not initialized")
-    convs = storage.list_conversations()
-    for c in convs:
-        storage.delete_conversation(c["id"])
-    return {"cleared": True, "deleted_count": len(convs)}
+    storage.clear_all()
+    return {"cleared": True}
 
 # ============================================================
 # Connection Management Endpoints
@@ -773,6 +784,322 @@ async def chat_with_file(file: UploadFile = FastAPIFile(...)):
         }
     except Exception as e:
         return {"error": str(e)}
+
+# ============================================================
+# SSE Streaming Chat (True Token Streaming)
+# ============================================================
+
+@app.post("/chat/stream")
+async def chat_stream(request: ChatRequest):
+    """Stream chat response via Server-Sent Events — real token-by-token streaming."""
+    import time
+
+    if not llm_manager:
+        raise HTTPException(status_code=503, detail="LLM not initialized")
+
+    system = request.system or DIVE_AI_SYSTEM_PROMPT
+    conv_id = request.conversation_id
+
+    # Auto-create conversation
+    if not conv_id and storage:
+        convs = storage.list_conversations()
+        if convs:
+            conv_id = convs[0]["id"]
+        else:
+            conv_id = storage.create_conversation("New Chat")
+
+    # Save user message
+    if storage and conv_id:
+        storage.save_message(conv_id, "user", request.message)
+
+    if memory and conv_id:
+        memory.set_conversation(conv_id)
+
+    async def generate():
+        start_time = time.time()
+        full_response = ""
+        full_thinking = ""
+        model_name = "unknown"
+
+        try:
+            # Build context
+            context_messages = []
+            if memory:
+                context_messages = memory.build_context_messages(request.message)
+
+            # Real token-by-token streaming from LLM
+            stream_gen = stream_chat_generator(
+                message=request.message,
+                system=system,
+                model_id=request.model_id,
+                messages=context_messages if len(context_messages) > 1 else None
+            )
+
+            for event_type, data in stream_gen:
+                if event_type == "token":
+                    full_response += data
+                    yield f"data: {json.dumps({'type': 'content', 'content': data})}\n\n"
+
+                elif event_type == "thinking":
+                    full_thinking += data
+                    yield f"data: {json.dumps({'type': 'thinking', 'content': data})}\n\n"
+
+                elif event_type == "done":
+                    model_name = data.get("model", "unknown")
+                    # Use accumulated content from tokens
+                    if not full_response and data.get("content"):
+                        full_response = data["content"]
+                    if not full_thinking and data.get("thinking"):
+                        full_thinking = data["thinking"]
+
+                elif event_type == "error":
+                    yield f"data: {json.dumps({'type': 'error', 'error': data})}\n\n"
+                    return
+
+            # Parse and execute actions
+            all_actions = []
+            if action_exec and action_exec.has_actions(full_response):
+                action_results_raw = action_exec.parse_and_execute(
+                    full_response, automation_allowed=pc_operator.allowed
+                )
+                all_actions = [r.to_dict() for r in action_results_raw]
+                if storage:
+                    for ar in all_actions:
+                        storage.log_action(ar)
+                yield f"data: {json.dumps({'type': 'actions', 'actions': all_actions})}\n\n"
+
+            latency = (time.time() - start_time) * 1000
+
+            # Save assistant response
+            if storage and conv_id:
+                storage.save_message(
+                    conv_id, "assistant", full_response,
+                    thinking=full_thinking or None, model=model_name,
+                    latency_ms=round(latency, 2),
+                    actions=all_actions,
+                    tokens=0
+                )
+
+            # Update memory
+            if memory:
+                memory.add_message("user", request.message)
+                memory.add_message("assistant", full_response,
+                                   thinking=full_thinking or None, model=model_name)
+                memory.extract_facts(request.message, full_response)
+
+            # Final metadata
+            yield f"data: {json.dumps({'type': 'done', 'model': model_name, 'latency_ms': round(latency, 2), 'conversation_id': conv_id})}\n\n"
+
+        except Exception as e:
+            yield f"data: {json.dumps({'type': 'error', 'error': str(e)})}\n\n"
+
+    return StreamingResponse(
+        generate(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        }
+    )
+
+
+# ============================================================
+# Vision Chat (Multimodal — Image + Text)
+# ============================================================
+
+class VisionRequest(BaseModel):
+    message: str
+    image_base64: str  # base64-encoded image (no data: prefix)
+    image_type: str = "image/png"  # MIME type
+    model_id: Optional[str] = None
+    conversation_id: Optional[str] = None
+    system: Optional[str] = None
+
+@app.post("/chat/vision")
+async def chat_vision(request: VisionRequest):
+    """Multimodal chat — send image + text to vision-capable model."""
+    if not llm_manager:
+        raise HTTPException(status_code=503, detail="LLM not initialized")
+
+    system = request.system or DIVE_AI_SYSTEM_PROMPT
+    conv_id = request.conversation_id
+
+    # Auto-create conversation
+    if not conv_id and storage:
+        convs = storage.list_conversations()
+        conv_id = convs[0]["id"] if convs else storage.create_conversation("Vision Chat")
+
+    # Build multimodal message (OpenAI vision format)
+    user_content = [
+        {"type": "text", "text": request.message},
+        {
+            "type": "image_url",
+            "image_url": {
+                "url": f"data:{request.image_type};base64,{request.image_base64}"
+            }
+        }
+    ]
+
+    messages = []
+    if system:
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": user_content})
+
+    # Find a vision-capable model
+    model_id = request.model_id
+    if not model_id:
+        # Auto-select vision model
+        for m in llm_manager.all_models:
+            if m.supports_vision and m.status != "no_key":
+                model_id = m.id
+                break
+
+    if not model_id:
+        raise HTTPException(status_code=400, detail="No vision-capable model available")
+
+    model = llm_manager.get_model(model_id)
+    if not model:
+        raise HTTPException(status_code=400, detail=f"Model {model_id} not found")
+
+    client = llm_manager.get_client(model.provider_id)
+    if not client:
+        raise HTTPException(status_code=503, detail="Provider not available")
+
+    result = client.chat(messages, model.model, max_tokens=4096)
+
+    # Save to storage
+    if storage and conv_id:
+        storage.save_message(conv_id, "user", f"[Image] {request.message}")
+        if result.success:
+            storage.save_message(
+                conv_id, "assistant", result.content,
+                model=result.model, latency_ms=result.latency_ms
+            )
+
+    if not result.success:
+        raise HTTPException(status_code=500, detail=result.error)
+
+    return {
+        "response": result.content,
+        "model": result.model,
+        "tokens": result.tokens,
+        "latency_ms": result.latency_ms,
+        "conversation_id": conv_id,
+    }
+
+# ============================================================
+# Web Search + Chat (Search-Augmented Generation)
+# ============================================================
+
+class SearchChatRequest(BaseModel):
+    message: str
+    model_id: Optional[str] = None
+    conversation_id: Optional[str] = None
+    system: Optional[str] = None
+    search_limit: int = 5
+
+@app.post("/chat/search")
+async def chat_with_search(request: SearchChatRequest):
+    """Chat with web search — searches the internet, then uses results as context for LLM."""
+    import urllib.request
+    import urllib.parse
+
+    if not llm_manager:
+        raise HTTPException(status_code=503, detail="LLM not initialized")
+
+    # Step 1: Web search via DuckDuckGo
+    search_results = []
+    try:
+        query = request.message[:200]  # Truncate long messages
+        url = f"https://api.duckduckgo.com/?q={urllib.parse.quote(query)}&format=json&no_html=1"
+        req = urllib.request.Request(url, headers={"User-Agent": "DiveAI/29.8"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+
+        if data.get("Abstract"):
+            search_results.append({
+                "title": data.get("Heading", ""),
+                "snippet": data["Abstract"],
+                "url": data.get("AbstractURL", ""),
+                "source": data.get("AbstractSource", "")
+            })
+        for topic in data.get("RelatedTopics", [])[:request.search_limit]:
+            if isinstance(topic, dict) and "Text" in topic:
+                search_results.append({
+                    "title": topic.get("Text", "")[:100],
+                    "snippet": topic.get("Text", ""),
+                    "url": topic.get("FirstURL", ""),
+                    "source": "DuckDuckGo"
+                })
+    except Exception:
+        pass  # Search failure = proceed without search context
+
+    # Step 2: Build search-augmented prompt
+    search_context = ""
+    if search_results:
+        search_context = "\n\n--- WEB SEARCH RESULTS ---\n"
+        for i, r in enumerate(search_results, 1):
+            search_context += f"\n[{i}] {r['title']}\n{r['snippet']}\nSource: {r['url']}\n"
+        search_context += "\n--- END SEARCH RESULTS ---\n"
+        search_context += "\nUse the above search results to answer the user's question. Cite sources when applicable.\n"
+
+    system = (request.system or DIVE_AI_SYSTEM_PROMPT) + search_context
+
+    # Step 3: LLM chat with search context
+    result = await quick_chat(
+        message=request.message,
+        system=system,
+        model_id=request.model_id
+    )
+
+    conv_id = request.conversation_id
+    if storage and conv_id:
+        storage.save_message(conv_id, "user", f"[🔍 Search] {request.message}")
+        if result.get("content"):
+            storage.save_message(conv_id, "assistant", result["content"],
+                                 model=result.get("model", ""))
+
+    return {
+        "response": result.get("content", ""),
+        "model": result.get("model", "unknown"),
+        "search_results": search_results,
+        "search_count": len(search_results),
+        "tokens": result.get("tokens", 0),
+        "latency_ms": result.get("latency_ms", 0),
+        "conversation_id": conv_id,
+    }
+
+@app.get("/search")
+async def web_search(q: str, limit: int = 5):
+    """Standalone web search endpoint (DuckDuckGo)."""
+    import urllib.request
+    import urllib.parse
+
+    try:
+        url = f"https://api.duckduckgo.com/?q={urllib.parse.quote(q)}&format=json&no_html=1"
+        req = urllib.request.Request(url, headers={"User-Agent": "DiveAI/29.8"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+
+        results = []
+        if data.get("Abstract"):
+            results.append({
+                "title": data.get("Heading", ""),
+                "snippet": data["Abstract"],
+                "url": data.get("AbstractURL", ""),
+            })
+        for topic in data.get("RelatedTopics", [])[:limit]:
+            if isinstance(topic, dict) and "Text" in topic:
+                results.append({
+                    "title": topic.get("Text", "")[:100],
+                    "snippet": topic.get("Text", ""),
+                    "url": topic.get("FirstURL", ""),
+                })
+        return {"query": q, "results": results, "count": len(results)}
+    except Exception as e:
+        return {"query": q, "results": [], "error": str(e)}
+
 
 # ============================================================
 # Code Actions (generate, review, debug, refactor)

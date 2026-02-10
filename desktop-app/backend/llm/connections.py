@@ -158,6 +158,76 @@ class LLMClient:
         except Exception as e:
             return LLMResponse(success=False, error=str(e), provider=self.provider.name)
 
+    def stream_chat(self, messages: List[Dict], model: str,
+                    temperature: float = 0.7, max_tokens: int = 4096):
+        """Stream chat completion — yields (event_type, data) tuples.
+        Event types: 'token', 'thinking', 'done', 'error'
+        """
+        import json as _json
+
+        payload = {
+            "model": model,
+            "messages": messages,
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+            "stream": True,
+        }
+
+        try:
+            resp = requests.post(
+                f"{self.provider.base_url}/chat/completions",
+                headers=self.headers,
+                json=payload,
+                timeout=180,
+                stream=True,
+            )
+            resp.raise_for_status()
+
+            full_content = ""
+            full_thinking = ""
+            model_name = model
+
+            for line in resp.iter_lines(decode_unicode=True):
+                if not line:
+                    continue
+                if line.startswith("data: "):
+                    data_str = line[6:]
+                    if data_str.strip() == "[DONE]":
+                        break
+                    try:
+                        chunk = _json.loads(data_str)
+                        delta = chunk.get("choices", [{}])[0].get("delta", {})
+                        model_name = chunk.get("model", model)
+
+                        # Content token
+                        if "content" in delta and delta["content"]:
+                            token = delta["content"]
+                            full_content += token
+                            yield ("token", token)
+
+                        # Thinking token (Claude-style)
+                        if "thinking" in delta and delta["thinking"]:
+                            thinking_token = delta["thinking"]
+                            full_thinking += thinking_token
+                            yield ("thinking", thinking_token)
+
+                        # Role-only chunks (skip)
+                        if "role" in delta and "content" not in delta:
+                            continue
+
+                    except _json.JSONDecodeError:
+                        continue
+
+            yield ("done", {
+                "content": full_content,
+                "thinking": full_thinking,
+                "model": model_name,
+                "provider": self.provider.name,
+            })
+
+        except Exception as e:
+            yield ("error", str(e))
+
     def test_connection(self) -> tuple:
         """Quick ping test, returns (success, latency_ms)"""
         start = time.time()
@@ -326,6 +396,28 @@ class V98ConnectionManager:
 
         return LLMResponse(success=False, error="All providers failed")
 
+    def stream_chat(self, message: str, system: str = "",
+                    model_id: str = None, messages: list = None):
+        """Stream chat with model resolution — yields (event_type, data) tuples."""
+        model = self.get_model(model_id) if model_id else self.get_default_model()
+        if not model:
+            yield ("error", "No models available")
+            return
+
+        if messages:
+            chat_messages = list(messages)
+            if system and (not chat_messages or chat_messages[0].get('role') != 'system'):
+                chat_messages.insert(0, {"role": "system", "content": system})
+        else:
+            chat_messages = []
+            if system:
+                chat_messages.append({"role": "system", "content": system})
+            chat_messages.append({"role": "user", "content": message})
+
+        client = self.get_client(model.provider_id)
+        if client:
+            yield from client.stream_chat(chat_messages, model.model)
+
     def test_provider(self, provider_id: str) -> Dict:
         """Test a provider connection"""
         client = self.get_client(provider_id)
@@ -441,6 +533,11 @@ async def quick_chat(message: str, system: str = "", model_id: str = None, messa
     mgr = get_manager()
     result = mgr.chat(message=message, system=system, model_id=model_id, messages=messages)
     return result.to_dict()
+
+def stream_chat_generator(message: str, system: str = "", model_id: str = None, messages: list = None):
+    """Generator that yields (event_type, data) from LLM streaming."""
+    mgr = get_manager()
+    yield from mgr.stream_chat(message=message, system=system, model_id=model_id, messages=messages)
 
 def print_summary():
     """Print connection summary"""
