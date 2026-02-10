@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "computer_id": null,
+  "computer_name": null,
+  "passphrase_hash": null,
+  "passphrase_2_hash": null,
+  "gmail_hash": null,
+  "phone_hash": null,
+  "owner_configured": false
+}

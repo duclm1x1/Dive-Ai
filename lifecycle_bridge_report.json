@@ -1,0 +1,157 @@
+{
+  "total_tests": 25,
+  "passed": 25,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "tests": [
+    {
+      "name": "Route \u2192 coding category",
+      "pass": true
+    },
+    {
+      "name": "Route \u2192 devops category",
+      "pass": true
+    },
+    {
+      "name": "Route \u2192 web_frontend category",
+      "pass": true
+    },
+    {
+      "name": "Route \u2192 security category",
+      "pass": true
+    },
+    {
+      "name": "Route \u2192 Vietnamese input",
+      "pass": true
+    },
+    {
+      "name": "Route \u2192 multi-category",
+      "pass": true
+    },
+    {
+      "name": "Route \u2192 full lifecycle trigger",
+      "pass": true
+    },
+    {
+      "name": "Route \u2192 confidence > 0",
+      "pass": true
+    },
+    {
+      "name": "Execute \u2192 coding task",
+      "pass": true
+    },
+    {
+      "name": "Execute \u2192 search task",
+      "pass": true
+    },
+    {
+      "name": "Execute \u2192 devops task",
+      "pass": true
+    },
+    {
+      "name": "Execute \u2192 with context",
+      "pass": true
+    },
+    {
+      "name": "Execute \u2192 has duration_ms",
+      "pass": true
+    },
+    {
+      "name": "Lifecycle \u2192 8 stages completed",
+      "pass": true
+    },
+    {
+      "name": "Lifecycle \u2192 all stage names present",
+      "pass": true
+    },
+    {
+      "name": "Lifecycle \u2192 algorithms used",
+      "pass": true
+    },
+    {
+      "name": "Smart execute \u2192 triggers lifecycle",
+      "pass": true
+    },
+    {
+      "name": "Create algorithm from CodeGenerator",
+      "pass": true
+    },
+    {
+      "name": "Create algorithm with new category",
+      "pass": true
+    },
+    {
+      "name": "Suggest algorithm for task",
+      "pass": true
+    },
+    {
+      "name": "Derived algorithm executes",
+      "pass": true
+    },
+    {
+      "name": "Stats \u2192 has all sections",
+      "pass": true
+    },
+    {
+      "name": "History \u2192 has records",
+      "pass": true
+    },
+    {
+      "name": "List algorithms \u2192 32+",
+      "pass": true
+    },
+    {
+      "name": "History \u2192 records categories",
+      "pass": true
+    }
+  ],
+  "stats": {
+    "bridge": {
+      "total_executions": 6,
+      "total_lifecycle_runs": 4,
+      "total_algorithms_created": 3,
+      "derived_algorithms": 3,
+      "execution_history_size": 6
+    },
+    "lifecycle": {
+      "total_tasks": 4,
+      "completed": 4,
+      "registry_skills": 207,
+      "algorithms": 35,
+      "lifecycle_stages": 8
+    },
+    "algorithms": {
+      "total_algorithms": 35,
+      "deployed": 35,
+      "total_executions": 107,
+      "categories_covered": 33
+    },
+    "categories_available": [
+      "coding",
+      "git",
+      "web_frontend",
+      "devops_cloud",
+      "browser_automation",
+      "image_video",
+      "search_research",
+      "ai_llm",
+      "marketing_sales",
+      "productivity",
+      "communication",
+      "data_analytics",
+      "security_passwords",
+      "speech_transcription",
+      "finance"
+    ],
+    "stages_available": [
+      "plan",
+      "scaffold",
+      "code",
+      "build",
+      "test",
+      "debug",
+      "deploy",
+      "verify"
+    ]
+  }
+}

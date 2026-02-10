@@ -1,0 +1,118 @@
+# Dive AI - LLM Configuration
+# Providers with multiple models, grouped by vendor
+
+providers:
+  v98:
+    name: "V98 API"
+    base_url: "https://v98store.com/v1"
+    api_key_env: "V98_API_KEY"
+    rate_limit: 100
+    is_primary: true
+    models:
+      - id: "claude-opus-4-6-thinking"
+        name: "Claude Opus 4.6 Thinking"
+        model: "claude-opus-4-6-thinking"
+        vendor: "Anthropic"
+        thinking: true
+        priority: 1
+        context_length: 200000
+        max_output: 16384
+        supports_vision: true
+        supports_streaming: true
+
+      - id: "claude-sonnet-4-5-thinking"
+        name: "Claude Sonnet 4.5 Thinking"
+        model: "claude-sonnet-4-5-thinking"
+        vendor: "Anthropic"
+        thinking: true
+        priority: 2
+        context_length: 200000
+        max_output: 16384
+        supports_vision: true
+        supports_streaming: true
+
+      - id: "claude-sonnet-4-5"
+        name: "Claude Sonnet 4.5"
+        model: "claude-sonnet-4-5-20250514"
+        vendor: "Anthropic"
+        thinking: false
+        priority: 3
+        context_length: 200000
+        max_output: 8192
+        supports_vision: true
+        supports_streaming: true
+
+      - id: "chatgpt-codex-5-3"
+        name: "ChatGPT Codex 5.3"
+        model: "chatgpt-codex-5-3"
+        vendor: "OpenAI"
+        thinking: false
+        priority: 4
+        context_length: 128000
+        max_output: 8192
+        supports_vision: false
+        supports_streaming: true
+
+      - id: "chatgpt-5-2"
+        name: "ChatGPT 5.2"
+        model: "chatgpt-5-2"
+        vendor: "OpenAI"
+        thinking: false
+        priority: 5
+        context_length: 128000
+        max_output: 8192
+        supports_vision: true
+        supports_streaming: true
+
+  aicoding:
+    name: "AICoding API"
+    base_url: "https://api.aicoding.world/v1"
+    api_key_env: "AICODING_API_KEY"
+    rate_limit: 60
+    is_primary: false
+    models:
+      - id: "claude-opus-4-6"
+        name: "Claude Opus 4.6"
+        model: "claude-opus-4-6"
+        vendor: "Anthropic"
+        thinking: false
+        priority: 1
+        context_length: 200000
+        max_output: 8192
+        supports_vision: true
+        supports_streaming: true
+
+      - id: "claude-sonnet-4-5"
+        name: "Claude Sonnet 4.5"
+        model: "claude-sonnet-4-5"
+        vendor: "Anthropic"
+        thinking: false
+        priority: 2
+        context_length: 200000
+        max_output: 8192
+        supports_vision: true
+        supports_streaming: true
+
+# Gateway base models (always used internally, independent of chat selection)
+gateway_models:
+  reasoning: "claude-opus-4-6-thinking"    # For planning, debugging
+  coding: "chatgpt-codex-5-3"              # For code generation
+  vision: "claude-sonnet-4-5"              # For screenshots, UI analysis
+
+failover:
+  chain:
+    - v98
+    - aicoding
+  retry_count: 2
+  retry_delay_ms: 1000
+  health_check_interval_seconds: 60
+
+routing:
+  default_provider: v98
+  default_model: "claude-opus-4-6-thinking"
+
+performance:
+  connection_timeout_seconds: 30
+  request_timeout_seconds: 120
+  stream_timeout_seconds: 300
+  max_concurrent_requests: 10

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #0a0e27 0%, #151933 100%);
+  color: #e5e7eb;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-dive-surface/40 backdrop-blur-xl border border-dive-surface-light/50 rounded-xl shadow-2xl;
+  }
+
+  .glow-button {
+    @apply bg-gradient-to-r from-dive-primary to-dive-secondary text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-dive-primary/50 hover:scale-105;
+  }
+
+  .input-dive {
+    @apply bg-dive-surface/60 border border-dive-surface-light focus:border-dive-primary focus:ring-2 focus:ring-dive-primary/30 transition-all rounded-lg px-4 py-3 text-white placeholder-gray-400 outline-none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151933;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00d9ff40;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d9ff80;
+}

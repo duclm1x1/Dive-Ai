@@ -1,0 +1,62 @@
+{
+  "version": "20.0.0",
+  "created": "2026-02-03T08:42:28.406863",
+  "canonical_locations": {
+    "internal": "v20/skills/internal",
+    "external": "v20/skills/external"
+  },
+  "skills": {
+    "internal": [
+      {
+        "name": "dive_coder_rag_enterprise_v14_3",
+        "path": "skills/internal/dive_coder_rag_enterprise_v14_3",
+        "type": "internal"
+      },
+      {
+        "name": "dive_coder_rag_skill_adaptive_active_retrieval_cragplus_v14_3",
+        "path": "skills/internal/dive_coder_rag_skill_adaptive_active_retrieval_cragplus_v14_3",
+        "type": "internal"
+      },
+      {
+        "name": "dive_coder_rag_skill_contextual_compression_v14_3",
+        "path": "skills/internal/dive_coder_rag_skill_contextual_compression_v14_3",
+        "type": "internal"
+      },
+      {
+        "name": "dive_coder_rag_skill_csv_qa_v14_3",
+        "path": "skills/internal/dive_coder_rag_skill_csv_qa_v14_3",
+        "type": "internal"
+      },
+      {
+        "name": "dive_coder_rag_skill_explainable_retrieval_v14_3",
+        "path": "skills/internal/dive_coder_rag_skill_explainable_retrieval_v14_3",
+        "type": "internal"
+      },
+      {
+        "name": "dive_coder_rag_skill_proposition_chunking_v14_3",
+        "path": "skills/internal/dive_coder_rag_skill_proposition_chunking_v14_3",
+        "type": "internal"
+      },
+      {
+        "name": "expo_production",
+        "path": "skills/internal/expo_production",
+        "type": "internal"
+      }
+    ],
+    "external": [
+      {
+        "name": "antigravity-awesome-skills-main",
+        "path": "skills/external/antigravity-awesome-skills-main",
+        "type": "external"
+      }
+    ]
+  },
+  "orchestrator": {
+    "canonical": "v20/coder/orchestrator/orchestrator.py",
+    "legacy_locations": []
+  },
+  "replication": {
+    "canonical": "v20/coder/replication/replication_manager.py",
+    "legacy_locations": []
+  }
+}

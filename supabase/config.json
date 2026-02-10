@@ -1,0 +1,54 @@
+{
+  "name": "Dive AI",
+  "version": "29.7.0",
+  "supabase": {
+    "project_id": "YOUR_PROJECT_ID",
+    "api": {
+      "enabled": true,
+      "schemas": ["public"],
+      "extra_search_path": ["public", "extensions"]
+    },
+    "db": {
+      "port": 5432,
+      "major_version": 15
+    },
+    "realtime": {
+      "enabled": true,
+      "tables": [
+        "messages",
+        "conversations",
+        "agents",
+        "workflow_executions",
+        "tasks",
+        "execution_history"
+      ]
+    },
+    "storage": {
+      "enabled": true,
+      "buckets": [
+        {
+          "name": "avatars",
+          "public": true
+        },
+        {
+          "name": "project-files",
+          "public": false
+        },
+        {
+          "name": "memory-snapshots",
+          "public": false
+        }
+      ]
+    },
+    "auth": {
+      "enabled": true,
+      "providers": ["email", "github", "google"]
+    },
+    "edge_functions": [
+      {
+        "name": "chat",
+        "path": "supabase/functions/chat"
+      }
+    ]
+  }
+}

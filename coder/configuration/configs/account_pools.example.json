@@ -1,0 +1,40 @@
+{
+  "v98api": [
+    {
+      "account_id": "v98_account_1",
+      "api_key": "${ENV:V98API_KEY}",
+      "base_url": "https://v98store.com/v1"
+    }
+  ],
+  "aicoding": [
+    {
+      "account_id": "aicoding_account_1",
+      "api_key": "${ENV:AICODING_API_KEY}",
+      "base_url": "https://aicoding.io.vn/v1"
+    }
+  ],
+  "gemini_oauth": [
+    {
+      "account_id": "gemini_user_1",
+      "oauth_token_path": "./configs/tokens/gemini_cli.json"
+    }
+  ],
+  "kiro_oauth": [
+    {
+      "account_id": "kiro_user_1",
+      "oauth_token_path": "./configs/tokens/kiro_social.json"
+    }
+  ],
+  "qwen_oauth": [
+    {
+      "account_id": "qwen_user_1",
+      "oauth_token_path": "./configs/tokens/qwen.json"
+    }
+  ],
+  "antigravity": [
+    {
+      "account_id": "antigravity_user_1",
+      "oauth_token_path": "./configs/tokens/antigravity.json"
+    }
+  ]
+}

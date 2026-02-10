@@ -1,0 +1,347 @@
+﻿============================================================
+PHASE 1: ADVANCED MEMORY ARCHITECTURE
+============================================================
+  [92mPASS[0m Memory init
+  [92mPASS[0m Identity files created
+  [92mPASS[0m Read user file
+  [92mPASS[0m Read identity
+  [92mPASS[0m Read soul
+  [92mPASS[0m Read heartbeat
+  [92mPASS[0m Append to memory
+  [92mPASS[0m Set preference
+  [92mPASS[0m Daily log created
+  [92mPASS[0m Daily log content
+  [92mPASS[0m List daily logs
+  [92mPASS[0m Search BM25
+  [92mPASS[0m Search keyword
+  [92mPASS[0m System context build
+  [92mPASS[0m Context has soul
+  [92mPASS[0m Memory status
+
+============================================================
+PHASE 2: DIVEHUB MARKETPLACE
+============================================================
+  [92mPASS[0m Publish skill
+  [92mPASS[0m Published has files
+  [92mPASS[0m Search finds skill
+  [92mPASS[0m Install skill
+  [92mPASS[0m List installed
+  [92mPASS[0m Export .diveskill
+  [92mPASS[0m Hub stats
+  [92mPASS[0m Uninstall
+
+============================================================
+PHASE 3: AGENT SKILLS OPEN STANDARD
+============================================================
+  [92mPASS[0m Create SKILL.md
+  [92mPASS[0m Parse frontmatter
+  [92mPASS[0m Parse category
+  [92mPASS[0m Parse sections
+  [92mPASS[0m Discover skills
+
+============================================================
+PHASE 4: IDENTITY/PERSONA SYSTEM
+============================================================
+  [92mPASS[0m Identity has name
+  [92mPASS[0m Soul has rules
+  [92mPASS[0m User has preferences
+  [92mPASS[0m Heartbeat has monitors
+  [92mPASS[0m Update persona section
+  [92mPASS[0m Dynamic prompt from persona
+
+============================================================
+PHASE 5: SECURITY HARDENING
+============================================================
+  [92mPASS[0m Safe input passes
+  [92mPASS[0m Injection detected
+  [92mPASS[0m DAN mode detected
+  [92mPASS[0m Sanitize system tags
+  [92mPASS[0m Sanitize instruction override
+  [92mPASS[0m Safe skill scan
+  [92mPASS[0m Dangerous skill flagged
+  [92mPASS[0m Audit log entries
+  [92mPASS[0m Security stats
+
+============================================================
+PHASE 6: DAILY EPHEMERAL LOGS
+============================================================
+  [92mPASS[0m Multiple log entries
+  [92mPASS[0m Log has categories
+  [92mPASS[0m Log date header
+
+============================================================
+PHASE 7: CLI INTERFACE
+============================================================
+  [92mPASS[0m CLI module exists
+  [92mPASS[0m CLI status import
+  [92mPASS[0m CLI memory import
+  [92mPASS[0m CLI security import
+
+============================================================
+PHASE 8: SESSION REPLAY
+============================================================
+  [92mPASS[0m Session events recorded
+  [92mPASS[0m Session file exists
+  [92mPASS[0m Load session
+  [92mPASS[0m Replay summary
+  [92mPASS[0m Summary tool calls
+  [92mPASS[0m Summary llm calls
+  [92mPASS[0m Summary errors
+  [92mPASS[0m List sessions
+  [92mPASS[0m Export session
+  [92mPASS[0m Finalize session
+
+============================================================
+MAX AUTO ALGORITHM CREATION
+============================================================
+
+  Creating 20 algorithms...
+  [92mPASS[0m Created 20/20 algorithms
+  [92mPASS[0m Deployed 20/20 algorithms
+
+  Executing all 20 algorithms...
+    OK text_summarizer: {'text': 'Dive AI is an advanced artificial intelligence system that provides co
+    OK json_validator: {'data': '{"key": "value", "nested": {"a": 1}}', 'valid': True}
+    OK word_counter: {'text': 'The quick brown fox jumps over the lazy dog', 'words': 9, 'chars': 43,
+    OK hash_generator: {'text': 'Hello Dive AI', 'md5': '96feaee40960db65dd37e9c3929c5730', 'sha256': '
+    OK base64_codec: {'text': 'Hello World', 'action': 'encode', 'result': 'SGVsbG8gV29ybGQ='}
+    OK timestamp_converter: {'timestamp': 1707500000, 'iso': '2024-02-10T00:33:20', 'unix': 1707500000.0, 'h
+    OK regex_tester: {'pattern': '\\b\\w{5}\\b', 'text': 'Hello world Dive AI test', 'matches': ['Hel
+    OK string_transformer: {'text': 'hello dive ai', 'action': 'title', 'result': 'Hello Dive Ai'}
+    OK math_evaluator: {'expression': '(21 + 21) * 2', 'result': 84}
+    OK csv_parser: {'data': 'name,age\nAlice,30\nBob,25', 'rows': [{'name': 'Alice', 'age': '30'}, 
+    OK url_parser: {'url': 'https://dive-ai.com/skills?q=search&page=1', 'scheme': 'https', 'host':
+    OK diff_generator: {'old': 'hello\nworld', 'new': 'hello\ndive ai', 'diff': '--- \n+++ \n@@ -1,2 +1
+    OK color_converter: {'hex': '#3498DB', 'rgb': [52, 152, 219], 'css': 'rgb(52,152,219)'}
+    OK password_generator: {'length': 20, 'password': 'zWp8SxUVlAE#VUt6sB8c', 'strength': 'strong'}
+    OK ip_info: {'ip': '192.168.1.1', 'version': 4, 'is_private': True, 'is_loopback': False}
+    OK uuid_generator: {'count': 3, 'uuids': ['46dc59b3-365f-4d0e-9286-2bddfa079903', 'e479be28-2b73-47
+    OK slug_generator: {'text': 'Dive AI Advanced Memory Architecture', 'slug': 'dive-ai-advanced-memor
+    OK fibonacci_calc: {'n': 15, 'sequence': [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377], 
+    OK prime_checker: {'n': 97, 'is_prime': True, 'primes_below': [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
+    OK statistics_calc: {'numbers': [10, 20, 30, 40, 50, 60], 'mean': 35.0, 'median': 35.0, 'stdev': 18.
+  [92mPASS[0m Executed 20/20 algorithms
+
+  AlgorithmService Stats:
+     Skills loaded: 0
+     Auto-algos created: 20
+     Auto-algos deployed: 20
+     Total executions: 20
+
+============================================================
+FINAL RESULTS
+============================================================
+
+  64/64 tests passed
+
+============================================================
+  ALL 64 TESTS PASSED - ALL 8 PHASES + MAX ALGO COMPLETE!
+============================================================
+============================================================
+FEATURE 1: LANE QUEUE (7-STAGE PIPELINE)
+============================================================
+  PASS: 7-stage pipeline defined
+  PASS: Stage 6 is verifier (unique)
+  PASS: Lane created
+  PASS: Lane serial by default
+  PASS: Task submitted
+  PASS: Task executed
+  PASS: 7 stages completed
+  PASS: Verifier ran
+  PASS: Session isolation
+  PASS: Pipeline hook executed
+  PASS: Pipeline stats
+  PASS: Heartbeat check
+
+============================================================
+FEATURE 2: CONTEXT WINDOW GUARD
+============================================================
+  PASS: Token estimation
+  PASS: Message added
+  PASS: Context tracking
+  PASS: Tool token tracking
+  PASS: Safety check passes
+  PASS: Build context
+  PASS: Context compaction (auto)
+  PASS: Facts extracted
+  PASS: Preserved messages survive compaction
+  PASS: Guard stats
+
+============================================================
+FEATURE 3: SEMANTIC SNAPSHOTS
+============================================================
+  PASS: Snapshot parsed
+  PASS: Snapshot has elements
+  PASS: Interactive elements found
+  PASS: Text output has refs
+  PASS: Text has heading
+  PASS: Cost savings calculated
+  PASS: Page diff detection
+  PASS: Snapshot stats
+
+============================================================
+FEATURE 4: MCP INTEGRATION
+============================================================
+  PASS: Register MCP server
+  PASS: Register SSE server
+  PASS: Add tools to server
+  PASS: List all tools
+  PASS: List tools by server
+  PASS: Connect to server
+  PASS: MCP tool call
+  PASS: Health check
+  PASS: List servers
+  PASS: MCP stats
+  PASS: Config saved
+
+============================================================
+FEATURE 5: TOOL APPROVAL SYSTEM
+============================================================
+  PASS: Low risk detection
+  PASS: High risk detection
+  PASS: Medium risk detection
+  PASS: Low risk auto-approved
+  PASS: Medium risk auto-approved
+  PASS: High risk queued
+  PASS: Manual approval
+  PASS: Session whitelist works
+  PASS: Global whitelist
+  PASS: Deny request
+  PASS: Timeout check
+  PASS: Approval stats
+  PASS: Approval history
+
+============================================================
+FEATURE 6: MODEL RESOLVER
+============================================================
+  PASS: Register Anthropic
+  PASS: Register OpenAI
+  PASS: Register local provider
+  PASS: Basic resolve
+  PASS: Resolve specific model
+  PASS: Resolve with vision
+  PASS: Cost-aware routing
+  PASS: Latency routing
+  PASS: Priority routing
+  PASS: Health degrades on errors
+  PASS: Auto-failover
+  PASS: Provider comparison
+  PASS: Resolver stats
+
+============================================================
+SURPASS MATRIX: DIVE AI vs OPENCLAW
+============================================================
+  [OK] 7-stage pipeline (vs 6)
+  [OK] Algorithm verification stage
+  [OK] Context window guard
+  [OK] Smart compaction with fact extraction
+  [OK] Semantic snapshots (ARIA)
+  [OK] MCP integration
+  [OK] Risk-based tool approval
+  [OK] Session whitelists (unique)
+  [OK] Smart model resolver
+  [OK] Cost-aware LLM routing (unique)
+  [OK] Latency percentile tracking
+  [OK] Auto failover with backoff
+  [OK] Combo/chain engine (unique)
+  [OK] Algorithm verification every exec (unique)
+  [OK] Cost tracking per-skill (unique)
+  [OK] Auto algorithm creator (unique)
+  PASS: ALL surpass features verified
+
+============================================================
+FINAL RESULTS
+============================================================
+  68/68 tests passed
+
+  *** ALL TESTS PASSED -- DIVE AI SURPASSES OPENCLAW! ***
+============================================================
+============================================================
+DIVE ENGINE INTEGRATION TEST
+============================================================
+
+--- Health Check ---
+  PASS: Engine operational
+  PASS: 7-stage pipeline wired
+  PASS: Model resolver wired
+  PASS: All subsystems ok
+
+--- Chat Request (Full Pipeline) ---
+  PASS: Chat success
+  PASS: 7 stages completed
+  PASS: Has content
+  PASS: Has request ID
+  PASS: Duration tracked
+  PASS: Auto-approved (no tools)
+
+--- Code Request ---
+  PASS: Code request success
+  PASS: Same session context grows
+
+--- Context Guard Integration ---
+  PASS: Session context tracked
+  PASS: Context has messages
+  PASS: Token accounting
+
+--- Model Resolver Integration ---
+  PASS: Providers registered
+  PASS: Resolver used
+
+--- Tool Approval Integration ---
+  PASS: Tool request processed
+  PASS: Tool approval checked
+  PASS: High risk tool goes through pipeline
+
+--- Semantic Snapshot Integration ---
+  PASS: Browse works
+  PASS: Cost savings
+  PASS: Elements indexed
+  PASS: Context updated
+
+--- MCP Tool Call + Approval ---
+  PASS: MCP tool call success
+  PASS: Risk assessed
+
+--- Session Isolation ---
+  PASS: Sessions isolated
+  PASS: Separate contexts
+
+--- Multi-Request Pipeline ---
+  PASS: 5 requests all succeed
+  PASS: Pipeline stats updated
+
+--- Engine Stats ---
+  PASS: Total requests tracked
+  PASS: Total cost tracked
+  PASS: Total tokens tracked
+  PASS: Active sessions
+  PASS: Pipeline stats included
+  PASS: MCP stats included
+  PASS: Approval stats included
+
+--- Singleton ---
+  PASS: Singleton works
+
+============================================================
+FULL SYSTEM VERIFICATION
+============================================================
+  [OK] 7-stage pipeline
+  [OK] Context Guard wired
+  [OK] Model Resolver wired
+  [OK] Tool Approval wired
+  [OK] MCP Client wired
+  [OK] Semantic Snapshots wired
+  [OK] Session isolation
+  [OK] Skill registry
+  [OK] Algorithm registry
+  [OK] Health check
+  PASS: ALL features integrated
+
+============================================================
+FINAL RESULTS
+============================================================
+  39/39 tests passed
+
+  *** ALL INTEGRATION TESTS PASSED ***
+  *** DIVE AI ENGINE FULLY WIRED ***
+============================================================

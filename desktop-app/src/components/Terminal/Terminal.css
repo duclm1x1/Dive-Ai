@@ -1,0 +1,215 @@
+/* 
+ * ============================================
+ * TERMINAL COMPONENT - CRT RETRO STYLE
+ * UI/UX Pro Max: Developer-focused Terminal
+ * ============================================
+ */
+
+.terminal {
+  height: 100%;
+  background: #0a0a0a;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* CRT Scanline Effect */
+.terminal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* CRT Glow */
+.terminal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: 
+    inset 0 0 80px rgba(0, 245, 255, 0.03),
+    inset 0 0 40px rgba(0, 245, 255, 0.02);
+  pointer-events: none;
+  z-index: 11;
+}
+
+/* Header */
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: linear-gradient(180deg, #1a1a1a, #111);
+  border-bottom: 1px solid #333;
+  position: relative;
+  z-index: 5;
+}
+
+.terminal-header::before {
+  content: '';
+  position: absolute;
+  left: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.terminal-cwd {
+  font-size: 11px;
+  color: var(--accent);
+  background: rgba(0, 245, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(0, 245, 255, 0.2);
+}
+
+/* Window buttons (decorative) */
+.terminal-header .window-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-header .dot.red { background: #ff5f57; }
+.terminal-header .dot.yellow { background: #febc2e; }
+.terminal-header .dot.green { background: #28c840; }
+
+/* Output Area */
+.terminal-output {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-4);
+  font-size: 13px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 5;
+}
+
+.terminal-output .line {
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin-bottom: 2px;
+  animation: lineAppear 0.15s ease-out;
+}
+
+@keyframes lineAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.terminal-output .line.input {
+  color: var(--accent);
+}
+
+.terminal-output .line.output {
+  color: #a8b2c1;
+}
+
+.terminal-output .line.error {
+  color: #ef4444;
+}
+
+/* Prompt / Input Area */
+.prompt {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: #111;
+  border-top: 1px solid #333;
+  position: relative;
+  z-index: 5;
+}
+
+.prompt-symbol {
+  color: var(--success);
+  font-size: 14px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.prompt input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  outline: none;
+  caret-color: var(--accent);
+}
+
+.prompt input::placeholder {
+  color: var(--text-muted);
+}
+
+.prompt input:disabled {
+  opacity: 0.5;
+}
+
+/* Blinking cursor effect */
+.prompt input:focus {
+  animation: cursorBlink 1s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { border-right: 2px solid var(--accent); }
+  50% { border-right: 2px solid transparent; }
+}
+
+/* Scrollbar */
+.terminal-output::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-output::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.terminal-output::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.terminal-output::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Executing state */
+.terminal.executing .prompt-symbol {
+  animation: spinLoader 1s linear infinite;
+}
+
+@keyframes spinLoader {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

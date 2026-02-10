@@ -1,0 +1,32 @@
+﻿============================================================
+DIVE ENGINE INTEGRATION TEST
+============================================================
+
+.venv\Scripts\python.exe : Traceback (most recent 
+call last):
+At line:1 char:1
++ .venv\Scripts\python.exe -u test_dive_engine.py 
+2>&1 | Out-File -enco ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo          : NotSpecified: (Trace 
+   back (most recent call last)::String) [], Remo  
+  teException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\Antigravity\Dive 
+AI\test_dive_engine.py", line 37, in <module>
+    engine = DiveEngine()
+  File "D:\Antigravity\Dive AI\desktop-app\backend\
+dive_core\engine\dive_engine.py", line 95, in 
+__init__
+    self.lane_queue = LaneQueue(
+                      ~~~~~~~~~^
+        
+max_concurrent=config.get("max_concurrent", 1),
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: LaneQueue.__init__() got an unexpected 
+keyword argument 'max_concurrent'

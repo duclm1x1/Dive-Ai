@@ -1,0 +1,122 @@
+[
+  {
+    "provider": "v98",
+    "model": "claude-opus-4.5",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "claude-sonnet-4.5",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "claude-haiku-4.6",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "gemini-3.0-pro",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "gemini-3.0-flash",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "gpt-5.1",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "gpt-5.1-turbo",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "qwen-3.0",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "qwen-3.0-turbo",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "llama-4",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "v98",
+    "model": "llama-4-turbo",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "aicoding",
+    "model": "claude-opus-4.5",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "aicoding",
+    "model": "claude-sonnet-4.5",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "aicoding",
+    "model": "gemini-3.0-pro",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "aicoding",
+    "model": "gpt-5.1",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "openai",
+    "model": "gpt-5.1",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "openai",
+    "model": "gpt-5.1-turbo",
+    "status": "failed",
+    "error": "'LLMResponse' object has no attribute 'tokens'"
+  },
+  {
+    "provider": "openai",
+    "model": "gpt-5.0",
+    "status": "failed",
+    "error": "Unknown model: gpt-5.0"
+  },
+  {
+    "provider": "openai",
+    "model": "o1",
+    "status": "failed",
+    "error": "Unknown model: o1"
+  },
+  {
+    "provider": "openai",
+    "model": "o1-mini",
+    "status": "failed",
+    "error": "Unknown model: o1-mini"
+  }
+]

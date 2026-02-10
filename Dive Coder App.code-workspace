@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": ".."
+        },
+        {
+            "path": "../Dive-Ai-v28.7"
+        }
+    ],
+    "settings": {
+        "powershell.cwd": "Dive AI"
+    }
+}

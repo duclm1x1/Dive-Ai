@@ -1,0 +1,30 @@
+{
+  "app": {
+    "name": "Dive AI",
+    "version": "29.7.0",
+    "description": "AI-Powered Desktop Assistant"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 1879
+  },
+  "llm": {
+    "provider": "v98",
+    "base_url": "https://v98store.com/v1",
+    "default_model": "claude-opus-4-6-thinking",
+    "max_tokens": 8192,
+    "temperature": 0.7,
+    "timeout": 120
+  },
+  "features": {
+    "computer_use": true,
+    "self_modify": true,
+    "orchestrator": true,
+    "browser_automation": false
+  },
+  "paths": {
+    "dive_core": "dive_core",
+    "memory": "memory",
+    "logs": "logs"
+  }
+}

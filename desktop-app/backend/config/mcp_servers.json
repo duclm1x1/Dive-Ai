@@ -1,0 +1,1211 @@
+{
+  "servers": {
+    "test-server": {
+      "transport": "stdio",
+      "command": "echo",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "filesystem": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "file-search": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "file-watcher": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "glob": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "zip-archive": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "csv-reader": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "json-parser": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "yaml-parser": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "xml-parser": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "markdown-processor": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "pdf-reader": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "image-processor": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "audio-processor": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "video-processor": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "clipboard": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "git": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "github": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "gitlab": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "bitbucket": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "gitea": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "git-diff": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "git-blame": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "git-log": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "postgres": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "mysql": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "sqlite": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "mongodb": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "redis": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "elasticsearch": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "dynamodb": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "firestore": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "supabase": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "prisma": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "drizzle": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "sql-formatter": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "fetch": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "puppeteer": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "playwright": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "selenium": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "rest-client": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "graphql-client": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "websocket": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "grpc-client": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "soap-client": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "curl": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "httpie": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "postman": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "docker": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "kubernetes": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "terraform": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "aws": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "gcp": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "azure": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "vercel": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "netlify": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "cloudflare": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "heroku": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "digitalocean": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "fly-io": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "railway": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "ansible": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "pulumi": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "openai": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "anthropic": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "huggingface": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "ollama": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "langchain": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "llamaindex": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "vectordb": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "pinecone": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "weaviate": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "chromadb": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "slack": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "discord": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "telegram": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "email": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "twilio": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "sendgrid": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "webhook": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "sse-server": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "prometheus": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "grafana": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "datadog": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "sentry": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "logstash": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "kibana": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "new-relic": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "pagerduty": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "linter": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "formatter": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "compiler": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "bundler": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "test-runner": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "debugger": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "profiler": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "coverage": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "typescript": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "python-repl": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "node-repl": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "jupyter": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "swagger": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "redoc": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "docusaurus": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "storybook": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "typedoc": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "vault": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "secrets-manager": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "oauth": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "jwt": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "ssl-checker": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "vulnerability-scanner": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "snyk": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "trivy": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "pandas": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "numpy": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "matplotlib": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "tableau": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "dbt": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "airflow": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    },
+    "spark": {
+      "transport": {
+        "transport": "stdio",
+        "status": "registered"
+      },
+      "command": "",
+      "args": [],
+      "url": "",
+      "env": {}
+    }
+  }
+}

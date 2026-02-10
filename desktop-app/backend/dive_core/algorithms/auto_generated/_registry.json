@@ -1,0 +1,1173 @@
+{
+  "text_summarizer": {
+    "name": "text_summarizer",
+    "class_name": "TextSummarizerAlgorithm",
+    "file": "text_summarizer_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\text_summarizer_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Summarize text to key points",
+    "has_verifier": false,
+    "tags": [
+      "text_summarizer"
+    ]
+  },
+  "json_validator": {
+    "name": "json_validator",
+    "class_name": "JsonValidatorAlgorithm",
+    "file": "json_validator_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\json_validator_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Validate JSON structure",
+    "has_verifier": false,
+    "tags": [
+      "json_validator"
+    ]
+  },
+  "word_counter": {
+    "name": "word_counter",
+    "class_name": "WordCounterAlgorithm",
+    "file": "word_counter_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\word_counter_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Count words in text",
+    "has_verifier": false,
+    "tags": [
+      "word_counter"
+    ]
+  },
+  "hash_generator": {
+    "name": "hash_generator",
+    "class_name": "HashGeneratorAlgorithm",
+    "file": "hash_generator_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\hash_generator_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Generate hash values",
+    "has_verifier": false,
+    "tags": [
+      "hash_generator"
+    ]
+  },
+  "base64_codec": {
+    "name": "base64_codec",
+    "class_name": "Base64CodecAlgorithm",
+    "file": "base64_codec_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\base64_codec_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Encode/decode base64",
+    "has_verifier": false,
+    "tags": [
+      "base64_codec"
+    ]
+  },
+  "timestamp_converter": {
+    "name": "timestamp_converter",
+    "class_name": "TimestampConverterAlgorithm",
+    "file": "timestamp_converter_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\timestamp_converter_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Convert timestamps",
+    "has_verifier": false,
+    "tags": [
+      "timestamp_converter"
+    ]
+  },
+  "regex_tester": {
+    "name": "regex_tester",
+    "class_name": "RegexTesterAlgorithm",
+    "file": "regex_tester_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\regex_tester_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Test regex patterns",
+    "has_verifier": false,
+    "tags": [
+      "regex_tester"
+    ]
+  },
+  "string_transformer": {
+    "name": "string_transformer",
+    "class_name": "StringTransformerAlgorithm",
+    "file": "string_transformer_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\string_transformer_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Transform strings",
+    "has_verifier": false,
+    "tags": [
+      "string_transformer"
+    ]
+  },
+  "math_evaluator": {
+    "name": "math_evaluator",
+    "class_name": "MathEvaluatorAlgorithm",
+    "file": "math_evaluator_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\math_evaluator_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Evaluate math expressions",
+    "has_verifier": false,
+    "tags": [
+      "math_evaluator"
+    ]
+  },
+  "csv_parser": {
+    "name": "csv_parser",
+    "class_name": "CsvParserAlgorithm",
+    "file": "csv_parser_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\csv_parser_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Parse CSV data",
+    "has_verifier": false,
+    "tags": [
+      "csv_parser"
+    ]
+  },
+  "url_parser": {
+    "name": "url_parser",
+    "class_name": "UrlParserAlgorithm",
+    "file": "url_parser_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\url_parser_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Parse URL components",
+    "has_verifier": false,
+    "tags": [
+      "url_parser"
+    ]
+  },
+  "diff_generator": {
+    "name": "diff_generator",
+    "class_name": "DiffGeneratorAlgorithm",
+    "file": "diff_generator_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\diff_generator_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Generate text diffs",
+    "has_verifier": false,
+    "tags": [
+      "diff_generator"
+    ]
+  },
+  "color_converter": {
+    "name": "color_converter",
+    "class_name": "ColorConverterAlgorithm",
+    "file": "color_converter_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\color_converter_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Convert colors between formats",
+    "has_verifier": false,
+    "tags": [
+      "color_converter"
+    ]
+  },
+  "password_generator": {
+    "name": "password_generator",
+    "class_name": "PasswordGeneratorAlgorithm",
+    "file": "password_generator_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\password_generator_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Generate secure passwords",
+    "has_verifier": false,
+    "tags": [
+      "password_generator"
+    ]
+  },
+  "ip_info": {
+    "name": "ip_info",
+    "class_name": "IpInfoAlgorithm",
+    "file": "ip_info_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\ip_info_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Parse IP addresses",
+    "has_verifier": false,
+    "tags": [
+      "ip_info"
+    ]
+  },
+  "uuid_generator": {
+    "name": "uuid_generator",
+    "class_name": "UuidGeneratorAlgorithm",
+    "file": "uuid_generator_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\uuid_generator_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Generate UUIDs",
+    "has_verifier": false,
+    "tags": [
+      "uuid_generator"
+    ]
+  },
+  "slug_generator": {
+    "name": "slug_generator",
+    "class_name": "SlugGeneratorAlgorithm",
+    "file": "slug_generator_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\slug_generator_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Generate URL slugs",
+    "has_verifier": false,
+    "tags": [
+      "slug_generator"
+    ]
+  },
+  "fibonacci_calc": {
+    "name": "fibonacci_calc",
+    "class_name": "FibonacciCalcAlgorithm",
+    "file": "fibonacci_calc_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\fibonacci_calc_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Calculate Fibonacci numbers",
+    "has_verifier": false,
+    "tags": [
+      "fibonacci_calc"
+    ]
+  },
+  "prime_checker": {
+    "name": "prime_checker",
+    "class_name": "PrimeCheckerAlgorithm",
+    "file": "prime_checker_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\prime_checker_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Check prime numbers",
+    "has_verifier": false,
+    "tags": [
+      "prime_checker"
+    ]
+  },
+  "statistics_calc": {
+    "name": "statistics_calc",
+    "class_name": "StatisticsCalcAlgorithm",
+    "file": "statistics_calc_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\statistics_calc_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 05:19:05",
+    "description": "Calculate basic statistics",
+    "has_verifier": false,
+    "tags": [
+      "statistics_calc"
+    ]
+  },
+  "openclaw_coding_agents_ides": {
+    "name": "openclaw_coding_agents_ides",
+    "class_name": "OpenclawCodingAgentsIdesAlgorithm",
+    "file": "openclaw_coding_agents_ides_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_coding_agents_ides_algo.py",
+    "category": "coding_agents_ides",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Coding Agents & IDEs (130 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "coding_agents_ides",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_git_github": {
+    "name": "openclaw_git_github",
+    "class_name": "OpenclawGitGithubAlgorithm",
+    "file": "openclaw_git_github_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_git_github_algo.py",
+    "category": "git_github",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Git & GitHub (64 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "git_github",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_moltbook": {
+    "name": "openclaw_moltbook",
+    "class_name": "OpenclawMoltbookAlgorithm",
+    "file": "openclaw_moltbook_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_moltbook_algo.py",
+    "category": "moltbook",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Moltbook (41 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "moltbook",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_web_frontend_development": {
+    "name": "openclaw_web_frontend_development",
+    "class_name": "OpenclawWebFrontendDevelopmentAlgorithm",
+    "file": "openclaw_web_frontend_development_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_web_frontend_development_algo.py",
+    "category": "web_frontend_development",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Web & Frontend Development (195 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "web_frontend_development",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_devops_cloud": {
+    "name": "openclaw_devops_cloud",
+    "class_name": "OpenclawDevopsCloudAlgorithm",
+    "file": "openclaw_devops_cloud_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_devops_cloud_algo.py",
+    "category": "devops_cloud",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for DevOps & Cloud (206 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "devops_cloud",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_browser_automation": {
+    "name": "openclaw_browser_automation",
+    "class_name": "OpenclawBrowserAutomationAlgorithm",
+    "file": "openclaw_browser_automation_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_browser_automation_algo.py",
+    "category": "browser_automation",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Browser & Automation (138 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "browser_automation",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_image_video_generation": {
+    "name": "openclaw_image_video_generation",
+    "class_name": "OpenclawImageVideoGenerationAlgorithm",
+    "file": "openclaw_image_video_generation_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_image_video_generation_algo.py",
+    "category": "image_video_generation",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Image & Video Generation (59 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "image_video_generation",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_apple_apps_services": {
+    "name": "openclaw_apple_apps_services",
+    "class_name": "OpenclawAppleAppsServicesAlgorithm",
+    "file": "openclaw_apple_apps_services_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_apple_apps_services_algo.py",
+    "category": "apple_apps_services",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Apple Apps & Services (32 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "apple_apps_services",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_search_research": {
+    "name": "openclaw_search_research",
+    "class_name": "OpenclawSearchResearchAlgorithm",
+    "file": "openclaw_search_research_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_search_research_algo.py",
+    "category": "search_research",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Search & Research (243 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "search_research",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_clawdbot_tools": {
+    "name": "openclaw_clawdbot_tools",
+    "class_name": "OpenclawClawdbotToolsAlgorithm",
+    "file": "openclaw_clawdbot_tools_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_clawdbot_tools_algo.py",
+    "category": "clawdbot_tools",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Clawdbot Tools (115 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "clawdbot_tools",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_cli_utilities": {
+    "name": "openclaw_cli_utilities",
+    "class_name": "OpenclawCliUtilitiesAlgorithm",
+    "file": "openclaw_cli_utilities_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_cli_utilities_algo.py",
+    "category": "cli_utilities",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for CLI Utilities (123 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "cli_utilities",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_marketing_sales": {
+    "name": "openclaw_marketing_sales",
+    "class_name": "OpenclawMarketingSalesAlgorithm",
+    "file": "openclaw_marketing_sales_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_marketing_sales_algo.py",
+    "category": "marketing_sales",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Marketing & Sales (135 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "marketing_sales",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_productivity_tasks": {
+    "name": "openclaw_productivity_tasks",
+    "class_name": "OpenclawProductivityTasksAlgorithm",
+    "file": "openclaw_productivity_tasks_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_productivity_tasks_algo.py",
+    "category": "productivity_tasks",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Productivity & Tasks (133 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "productivity_tasks",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_ai_llms": {
+    "name": "openclaw_ai_llms",
+    "class_name": "OpenclawAiLlmsAlgorithm",
+    "file": "openclaw_ai_llms_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_ai_llms_algo.py",
+    "category": "ai_llms",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for AI & LLMs (279 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "ai_llms",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_data_analytics": {
+    "name": "openclaw_data_analytics",
+    "class_name": "OpenclawDataAnalyticsAlgorithm",
+    "file": "openclaw_data_analytics_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_data_analytics_algo.py",
+    "category": "data_analytics",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Data & Analytics (44 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "data_analytics",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_finance": {
+    "name": "openclaw_finance",
+    "class_name": "OpenclawFinanceAlgorithm",
+    "file": "openclaw_finance_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_finance_algo.py",
+    "category": "finance",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Finance (22 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "finance",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_media_streaming": {
+    "name": "openclaw_media_streaming",
+    "class_name": "OpenclawMediaStreamingAlgorithm",
+    "file": "openclaw_media_streaming_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_media_streaming_algo.py",
+    "category": "media_streaming",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Media & Streaming (79 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "media_streaming",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_notes_pkm": {
+    "name": "openclaw_notes_pkm",
+    "class_name": "OpenclawNotesPkmAlgorithm",
+    "file": "openclaw_notes_pkm_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_notes_pkm_algo.py",
+    "category": "notes_pkm",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Notes & PKM (96 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "notes_pkm",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_ios_macos_development": {
+    "name": "openclaw_ios_macos_development",
+    "class_name": "OpenclawIosMacosDevelopmentAlgorithm",
+    "file": "openclaw_ios_macos_development_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_ios_macos_development_algo.py",
+    "category": "ios_macos_development",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for iOS & macOS Development (14 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "ios_macos_development",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_transportation": {
+    "name": "openclaw_transportation",
+    "class_name": "OpenclawTransportationAlgorithm",
+    "file": "openclaw_transportation_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_transportation_algo.py",
+    "category": "transportation",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Transportation (71 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "transportation",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_personal_development": {
+    "name": "openclaw_personal_development",
+    "class_name": "OpenclawPersonalDevelopmentAlgorithm",
+    "file": "openclaw_personal_development_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_personal_development_algo.py",
+    "category": "personal_development",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Personal Development (52 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "personal_development",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_health_fitness": {
+    "name": "openclaw_health_fitness",
+    "class_name": "OpenclawHealthFitnessAlgorithm",
+    "file": "openclaw_health_fitness_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_health_fitness_algo.py",
+    "category": "health_fitness",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Health & Fitness (54 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "health_fitness",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_communication": {
+    "name": "openclaw_communication",
+    "class_name": "OpenclawCommunicationAlgorithm",
+    "file": "openclaw_communication_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_communication_algo.py",
+    "category": "communication",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Communication (122 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "communication",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_speech_transcription": {
+    "name": "openclaw_speech_transcription",
+    "class_name": "OpenclawSpeechTranscriptionAlgorithm",
+    "file": "openclaw_speech_transcription_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_speech_transcription_algo.py",
+    "category": "speech_transcription",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Speech & Transcription (62 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "speech_transcription",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_smart_home_iot": {
+    "name": "openclaw_smart_home_iot",
+    "class_name": "OpenclawSmartHomeIotAlgorithm",
+    "file": "openclaw_smart_home_iot_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_smart_home_iot_algo.py",
+    "category": "smart_home_iot",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Smart Home & IoT (56 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "smart_home_iot",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_shopping_e_commerce": {
+    "name": "openclaw_shopping_e_commerce",
+    "class_name": "OpenclawShoppingECommerceAlgorithm",
+    "file": "openclaw_shopping_e_commerce_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_shopping_e_commerce_algo.py",
+    "category": "shopping_e_commerce",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Shopping & E-commerce (48 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "shopping_e_commerce",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_calendar_scheduling": {
+    "name": "openclaw_calendar_scheduling",
+    "class_name": "OpenclawCalendarSchedulingAlgorithm",
+    "file": "openclaw_calendar_scheduling_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_calendar_scheduling_algo.py",
+    "category": "calendar_scheduling",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Calendar & Scheduling (48 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "calendar_scheduling",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_pdf_documents": {
+    "name": "openclaw_pdf_documents",
+    "class_name": "OpenclawPdfDocumentsAlgorithm",
+    "file": "openclaw_pdf_documents_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_pdf_documents_algo.py",
+    "category": "pdf_documents",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for PDF & Documents (65 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "pdf_documents",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_self_hosted_automation": {
+    "name": "openclaw_self_hosted_automation",
+    "class_name": "OpenclawSelfHostedAutomationAlgorithm",
+    "file": "openclaw_self_hosted_automation_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_self_hosted_automation_algo.py",
+    "category": "self_hosted_automation",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Self-Hosted & Automation (25 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "self_hosted_automation",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_security_passwords": {
+    "name": "openclaw_security_passwords",
+    "class_name": "OpenclawSecurityPasswordsAlgorithm",
+    "file": "openclaw_security_passwords_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_security_passwords_algo.py",
+    "category": "security_passwords",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Security & Passwords (58 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "security_passwords",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_gaming": {
+    "name": "openclaw_gaming",
+    "class_name": "OpenclawGamingAlgorithm",
+    "file": "openclaw_gaming_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_gaming_algo.py",
+    "category": "gaming",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Gaming (50 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "gaming",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "openclaw_agent_to_agent_protocols": {
+    "name": "openclaw_agent_to_agent_protocols",
+    "class_name": "OpenclawAgentToAgentProtocolsAlgorithm",
+    "file": "openclaw_agent_to_agent_protocols_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\openclaw_agent_to_agent_protocols_algo.py",
+    "category": "agent_to_agent_protocols",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:26:04",
+    "description": "Auto-algorithm for Agent-to-Agent Protocols (14 compatible OpenClaw skills)",
+    "has_verifier": false,
+    "tags": [
+      "agent_to_agent_protocols",
+      "openclaw",
+      "auto-generated"
+    ]
+  },
+  "antigravity-test-algo": {
+    "name": "antigravity-test-algo",
+    "class_name": "AntigravityTestAlgoAlgorithm",
+    "file": "antigravity_test_algo_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\antigravity_test_algo_algo.py",
+    "category": "custom",
+    "logic_type": "transform",
+    "created": "2026-02-10 10:37:47",
+    "description": "Test algorithm for Antigravity integration",
+    "has_verifier": false,
+    "tags": [
+      "antigravity-test-algo"
+    ]
+  },
+  "web-research-pipeline": {
+    "name": "web-research-pipeline",
+    "class_name": "WebResearchPipelineAlgorithm",
+    "file": "web_research_pipeline_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\web_research_pipeline_algo.py",
+    "category": "browser",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Orchestrates web-browse + web-scrape + pdf-extract for comprehensive web research",
+    "has_verifier": true,
+    "tags": [
+      "web-browse",
+      "web-scrape",
+      "pdf-extract",
+      "research"
+    ]
+  },
+  "browser-automation-suite": {
+    "name": "browser-automation-suite",
+    "class_name": "BrowserAutomationSuiteAlgorithm",
+    "file": "browser_automation_suite_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\browser_automation_suite_algo.py",
+    "category": "browser",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Combines form-fill + cookie-manager + web-screenshot for automated browser testing",
+    "has_verifier": false,
+    "tags": [
+      "form-fill",
+      "cookie-manager",
+      "web-screenshot",
+      "testing"
+    ]
+  },
+  "spa-content-extractor": {
+    "name": "spa-content-extractor",
+    "class_name": "SpaContentExtractorAlgorithm",
+    "file": "spa_content_extractor_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\spa_content_extractor_algo.py",
+    "category": "browser",
+    "logic_type": "transform",
+    "created": "2026-02-10 11:21:13",
+    "description": "Uses spa-renderer to render JavaScript-heavy pages then extract content",
+    "has_verifier": false,
+    "tags": [
+      "spa-renderer",
+      "web-scrape",
+      "javascript"
+    ]
+  },
+  "multi-source-research": {
+    "name": "multi-source-research",
+    "class_name": "MultiSourceResearchAlgorithm",
+    "file": "multi_source_research_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\multi_source_research_algo.py",
+    "category": "search",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Combines academic-search + web-search + news-search + deep-research for comprehensive research",
+    "has_verifier": true,
+    "tags": [
+      "academic-search",
+      "web-search",
+      "news-search",
+      "deep-research",
+      "youtube-search"
+    ]
+  },
+  "youtube-deep-search": {
+    "name": "youtube-deep-search",
+    "class_name": "YoutubeDeepSearchAlgorithm",
+    "file": "youtube_deep_search_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\youtube_deep_search_algo.py",
+    "category": "search",
+    "logic_type": "transform",
+    "created": "2026-02-10 11:21:13",
+    "description": "Search YouTube for videos and extract key information",
+    "has_verifier": false,
+    "tags": [
+      "youtube-search",
+      "video",
+      "research"
+    ]
+  },
+  "omnichannel-messenger": {
+    "name": "omnichannel-messenger",
+    "class_name": "OmnichannelMessengerAlgorithm",
+    "file": "omnichannel_messenger_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\omnichannel_messenger_algo.py",
+    "category": "communication",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Send messages across Slack, Discord, Telegram, WhatsApp, Email, Signal, and webhooks",
+    "has_verifier": true,
+    "tags": [
+      "slack-bot",
+      "discord-bot",
+      "telegram-bot",
+      "whatsapp-bot",
+      "email-send",
+      "signal",
+      "webhook-sender"
+    ]
+  },
+  "notification-hub": {
+    "name": "notification-hub",
+    "class_name": "NotificationHubAlgorithm",
+    "file": "notification_hub_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\notification_hub_algo.py",
+    "category": "communication",
+    "logic_type": "transform",
+    "created": "2026-02-10 11:21:13",
+    "description": "Unified notification system with priority routing and read tracking",
+    "has_verifier": false,
+    "tags": [
+      "email-send",
+      "email-read",
+      "slack-bot",
+      "notification"
+    ]
+  },
+  "email-workflow": {
+    "name": "email-workflow",
+    "class_name": "EmailWorkflowAlgorithm",
+    "file": "email_workflow_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\email_workflow_algo.py",
+    "category": "communication",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Complete email workflow: read inbox, filter, process, and respond",
+    "has_verifier": false,
+    "tags": [
+      "email-read",
+      "email-send",
+      "workflow"
+    ]
+  },
+  "full-cicd-pipeline": {
+    "name": "full-cicd-pipeline",
+    "class_name": "FullCicdPipelineAlgorithm",
+    "file": "full_cicd_pipeline_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\full_cicd_pipeline_algo.py",
+    "category": "devops",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Complete CI/CD: test \u2192 build \u2192 containerize \u2192 deploy \u2192 monitor",
+    "has_verifier": true,
+    "tags": [
+      "ci-cd",
+      "docker-ops",
+      "cloud-deploy",
+      "api-tester"
+    ]
+  },
+  "infrastructure-manager": {
+    "name": "infrastructure-manager",
+    "class_name": "InfrastructureManagerAlgorithm",
+    "file": "infrastructure_manager_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\infrastructure_manager_algo.py",
+    "category": "devops",
+    "logic_type": "transform",
+    "created": "2026-02-10 11:21:13",
+    "description": "Manage infrastructure with Docker, K8s, Terraform, and system monitoring",
+    "has_verifier": false,
+    "tags": [
+      "docker-ops",
+      "k8s-manager",
+      "terraform",
+      "network-tools",
+      "process-manager"
+    ]
+  },
+  "devops-toolkit": {
+    "name": "devops-toolkit",
+    "class_name": "DevopsToolkitAlgorithm",
+    "file": "devops_toolkit_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\devops_toolkit_algo.py",
+    "category": "devops",
+    "logic_type": "transform",
+    "created": "2026-02-10 11:21:13",
+    "description": "File management, compression, clipboard, and system utilities",
+    "has_verifier": false,
+    "tags": [
+      "file-manager",
+      "compression",
+      "clipboard",
+      "system-info"
+    ]
+  },
+  "git-workflow-automation": {
+    "name": "git-workflow-automation",
+    "class_name": "GitWorkflowAutomationAlgorithm",
+    "file": "git_workflow_automation_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\git_workflow_automation_algo.py",
+    "category": "git",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Automate git operations + issue tracking + PR management + release",
+    "has_verifier": true,
+    "tags": [
+      "git-ops",
+      "issue-tracker",
+      "pr-manager",
+      "release-manager"
+    ]
+  },
+  "ai-agent-orchestrator": {
+    "name": "ai-agent-orchestrator",
+    "class_name": "AiAgentOrchestratorAlgorithm",
+    "file": "ai_agent_orchestrator_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\ai_agent_orchestrator_algo.py",
+    "category": "ai",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Spawn and manage AI agents, switch models, optimize prompts, with self-improvement",
+    "has_verifier": true,
+    "tags": [
+      "agent-spawn",
+      "model-switcher",
+      "prompt-optimizer",
+      "self-improve",
+      "skill-generator",
+      "memory-query"
+    ]
+  },
+  "prompt-optimization-engine": {
+    "name": "prompt-optimization-engine",
+    "class_name": "PromptOptimizationEngineAlgorithm",
+    "file": "prompt_optimization_engine_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\prompt_optimization_engine_algo.py",
+    "category": "ai",
+    "logic_type": "transform",
+    "created": "2026-02-10 11:21:13",
+    "description": "Analyze, optimize, and test prompts with A/B comparison",
+    "has_verifier": false,
+    "tags": [
+      "prompt-optimizer",
+      "self-improve",
+      "ai"
+    ]
+  },
+  "full-dev-workflow": {
+    "name": "full-dev-workflow",
+    "class_name": "FullDevWorkflowAlgorithm",
+    "file": "full_dev_workflow_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\full_dev_workflow_algo.py",
+    "category": "coding",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "LSP-powered development: scaffold \u2192 code \u2192 refactor \u2192 review with multi-agent support",
+    "has_verifier": true,
+    "tags": [
+      "lsp",
+      "project-scaffold",
+      "code-refactor",
+      "multi-agent-dev"
+    ]
+  },
+  "productivity-suite": {
+    "name": "productivity-suite",
+    "class_name": "ProductivitySuiteAlgorithm",
+    "file": "productivity_suite_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\productivity_suite_algo.py",
+    "category": "productivity",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Unified productivity: calendar + tasks + notes + scheduling + code-review + database",
+    "has_verifier": true,
+    "tags": [
+      "calendar",
+      "task-manager",
+      "note-taker",
+      "scheduler",
+      "code-review",
+      "database"
+    ]
+  },
+  "data-analysis-engine": {
+    "name": "data-analysis-engine",
+    "class_name": "DataAnalysisEngineAlgorithm",
+    "file": "data_analysis_engine_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\data_analysis_engine_algo.py",
+    "category": "data",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Data analysis pipeline: ingest, clean, analyze, visualize, report",
+    "has_verifier": true,
+    "tags": [
+      "data-analyzer",
+      "analytics",
+      "visualization"
+    ]
+  },
+  "system-monitoring-suite": {
+    "name": "system-monitoring-suite",
+    "class_name": "SystemMonitoringSuiteAlgorithm",
+    "file": "system_monitoring_suite_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\system_monitoring_suite_algo.py",
+    "category": "system",
+    "logic_type": "transform",
+    "created": "2026-02-10 11:21:13",
+    "description": "System monitoring: info gathering, repo monitoring, release tracking",
+    "has_verifier": false,
+    "tags": [
+      "system-info",
+      "repo-monitor",
+      "release-manager",
+      "monitoring"
+    ]
+  },
+  "full-stack-developer": {
+    "name": "full-stack-developer",
+    "class_name": "FullStackDeveloperAlgorithm",
+    "file": "full_stack_developer_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\full_stack_developer_algo.py",
+    "category": "combo",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "End-to-end development: research \u2192 scaffold \u2192 code \u2192 test \u2192 deploy \u2192 monitor",
+    "has_verifier": true,
+    "tags": [
+      "full-stack",
+      "development",
+      "deployment",
+      "research",
+      "coding",
+      "testing",
+      "devops"
+    ]
+  },
+  "intelligent-assistant": {
+    "name": "intelligent-assistant",
+    "class_name": "IntelligentAssistantAlgorithm",
+    "file": "intelligent_assistant_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\intelligent_assistant_algo.py",
+    "category": "combo",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "AI-powered assistant: search + communicate + manage tasks + analyze data",
+    "has_verifier": false,
+    "tags": [
+      "assistant",
+      "search",
+      "communication",
+      "productivity",
+      "ai"
+    ]
+  },
+  "security-audit-pipeline": {
+    "name": "security-audit-pipeline",
+    "class_name": "SecurityAuditPipelineAlgorithm",
+    "file": "security_audit_pipeline_algo.py",
+    "file_path": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated\\security_audit_pipeline_algo.py",
+    "category": "combo",
+    "logic_type": "pipeline",
+    "created": "2026-02-10 11:21:13",
+    "description": "Full security audit: scan code \u2192 check network \u2192 review PRs \u2192 generate report",
+    "has_verifier": true,
+    "tags": [
+      "security",
+      "audit",
+      "code-review",
+      "network-tools"
+    ]
+  }
+}

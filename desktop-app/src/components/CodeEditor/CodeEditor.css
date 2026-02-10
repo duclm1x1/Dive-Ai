@@ -1,0 +1,238 @@
+/* 
+ * ============================================
+ * CODE EDITOR COMPONENT - VS CODE STYLE
+ * UI/UX Pro Max: Developer-focused Editor
+ * ============================================
+ */
+
+.code-editor {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* Header / Toolbar */
+.editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--glass-bg);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.editor-tabs {
+  display: flex;
+  gap: 2px;
+}
+
+.editor-tab {
+  padding: var(--space-2) var(--space-4);
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  transition: var(--transition-base);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.editor-tab:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+}
+
+.editor-tab.active {
+  background: #1e1e1e;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent);
+}
+
+.editor-tab .close-btn {
+  opacity: 0;
+  font-size: 10px;
+  transition: var(--transition-fast);
+}
+
+.editor-tab:hover .close-btn {
+  opacity: 1;
+}
+
+/* Editor Actions */
+.editor-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.editor-actions button {
+  padding: var(--space-2) var(--space-3);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 11px;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.editor-actions button:hover {
+  background: var(--glass-bg-hover);
+  color: var(--accent);
+  border-color: var(--accent-glow);
+}
+
+/* Editor Content */
+.editor-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Line Numbers */
+.line-numbers {
+  padding: var(--space-4) var(--space-3);
+  background: #1a1a1a;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: right;
+  user-select: none;
+  border-right: 1px solid #333;
+  min-width: 50px;
+}
+
+.line-numbers .line-number {
+  transition: color var(--transition-fast);
+}
+
+.line-numbers .line-number:hover {
+  color: var(--accent);
+}
+
+.line-numbers .line-number.active {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Textarea */
+.editor-textarea {
+  flex: 1;
+  padding: var(--space-4);
+  background: #1e1e1e;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  border: none;
+  outline: none;
+  resize: none;
+  tab-size: 4;
+  white-space: pre;
+  overflow: auto;
+}
+
+.editor-textarea::selection {
+  background: rgba(0, 245, 255, 0.3);
+}
+
+.editor-textarea::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.editor-textarea::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.editor-textarea::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+.editor-textarea::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+.editor-textarea::-webkit-scrollbar-corner {
+  background: #1a1a1a;
+}
+
+/* File Explorer (if present) */
+.file-explorer {
+  width: 220px;
+  background: var(--bg-surface);
+  border-right: 1px solid var(--glass-border);
+  overflow-y: auto;
+}
+
+.file-tree-item {
+  padding: var(--space-2) var(--space-3);
+  color: var(--text-secondary);
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: var(--transition-fast);
+}
+
+.file-tree-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.file-tree-item.active {
+  background: rgba(0, 245, 255, 0.1);
+  color: var(--accent);
+  border-left: 2px solid var(--accent);
+}
+
+/* Status Bar */
+.editor-statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-1) var(--space-4);
+  background: var(--primary-800);
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.editor-statusbar span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Save Indicator */
+.save-status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.save-status.saved {
+  color: var(--success);
+}
+
+.save-status.unsaved {
+  color: var(--warning);
+}
+
+.save-status.saving {
+  color: var(--accent);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

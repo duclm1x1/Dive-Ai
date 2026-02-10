@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""
+Dive AI V28 - Unified CLI
+==========================
+The single entry point for all Dive AI operations.
+Designed to be called by Manus (or any AI agent) to delegate heavy tasks
+to Dive AI engine, saving tokens and credits.
+
+Usage:
+    dive ask "How do I fix this bug?"
+    dive code --task "Create a REST API" --lang python
+    dive search --query "authentication best practices"
+    dive memory --action recall --project myapp
+    dive computer --task "Open Chrome and go to github.com"
+    dive serve --port 8000
+    dive status
+
+Architecture:
+    Manus (orchestrator) → dive CLI/API → Dive AI Engine
+                                        → UI-TARS (computer use)
+"""
+import sys
+import os
+
+# Ensure project root is in path
+DIVE_ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, DIVE_ROOT)
+
+from src.cli.main import main
+
+if __name__ == "__main__":
+    main()

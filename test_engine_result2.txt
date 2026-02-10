@@ -1,0 +1,90 @@
+﻿============================================================
+DIVE ENGINE INTEGRATION TEST
+============================================================
+
+--- Health Check ---
+  PASS: Engine operational
+  PASS: 7-stage pipeline wired
+  PASS: Model resolver wired
+  PASS: All subsystems ok
+
+--- Chat Request (Full Pipeline) ---
+  PASS: Chat success
+  PASS: 7 stages completed
+  FAIL: Has content -- returned falsy
+  PASS: Has request ID
+  PASS: Duration tracked
+  PASS: Auto-approved (no tools)
+
+--- Code Request ---
+  PASS: Code request success
+  FAIL: Same session context grows -- returned falsy
+
+--- Context Guard Integration ---
+  PASS: Session context tracked
+  PASS: Context has messages
+  PASS: Token accounting
+
+--- Model Resolver Integration ---
+  PASS: Providers registered
+  PASS: Resolver used
+
+--- Tool Approval Integration ---
+  PASS: Tool request processed
+  FAIL: Tool approval checked -- returned falsy
+  PASS: High risk tool goes through pipeline
+
+--- Semantic Snapshot Integration ---
+  PASS: Browse works
+  PASS: Cost savings
+  PASS: Elements indexed
+  PASS: Context updated
+
+--- MCP Tool Call + Approval ---
+  PASS: MCP tool call success
+  PASS: Risk assessed
+
+--- Session Isolation ---
+  PASS: Sessions isolated
+  PASS: Separate contexts
+
+--- Multi-Request Pipeline ---
+  PASS: 5 requests all succeed
+  PASS: Pipeline stats updated
+
+--- Engine Stats ---
+  PASS: Total requests tracked
+  PASS: Total cost tracked
+  PASS: Total tokens tracked
+  PASS: Active sessions
+  PASS: Pipeline stats included
+  PASS: MCP stats included
+  PASS: Approval stats included
+
+--- Singleton ---
+  PASS: Singleton works
+
+============================================================
+FULL SYSTEM VERIFICATION
+============================================================
+  [OK] 7-stage pipeline
+  [OK] Context Guard wired
+  [OK] Model Resolver wired
+  [OK] Tool Approval wired
+  [OK] MCP Client wired
+  [OK] Semantic Snapshots wired
+  [OK] Session isolation
+  [OK] Skill registry
+  [OK] Algorithm registry
+  [OK] Health check
+  PASS: ALL features integrated
+
+============================================================
+FINAL RESULTS
+============================================================
+  36/39 tests passed
+  3 failures:
+    - Has content: returned falsy
+    - Same session context grows: returned falsy
+    - Tool approval checked: returned falsy
+============================================================

@@ -1,0 +1,3 @@
+internal: ../skills/internal
+external: ../skills/external
+alias_map: ../coder/configuration/skill_aliases.yml

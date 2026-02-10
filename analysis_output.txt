@@ -1,0 +1,118 @@
+﻿Loaded manifest: 2988 skills, 32 categories
+
+=================================================================
+  PHASE 3: Analyze via Dive AI
+=================================================================
+  Γ£ô AgentSkillsStandard loaded
+  Analyzed 500/2988...
+  Analyzed 1000/2988...
+  Analyzed 1500/2988...
+  Analyzed 2000/2988...
+  Analyzed 2500/2988...
+
+  Analyzed:       2882
+  ≡ƒƒó Compatible:  2873 (99.7%)
+  ≡ƒƒí Adaptable:   9 (0.3%)
+  ≡ƒö┤ Incompatible:0 (0.0%)
+  Dive parsed:    2882 ok, 0 fail
+
+  Platforms:
+    cross-platform       2654
+    windows               192
+    macos                  36
+
+  Categories:
+    AI & LLMs                                     ≡ƒƒó279 ≡ƒƒí  0 ≡ƒö┤  0
+    Search & Research                             ≡ƒƒó243 ≡ƒƒí  0 ≡ƒö┤  0
+    DevOps & Cloud                                ≡ƒƒó206 ≡ƒƒí  0 ≡ƒö┤  0
+    Web & Frontend Development                    ≡ƒƒó195 ≡ƒƒí  1 ≡ƒö┤  0
+    Browser & Automation                          ≡ƒƒó138 ≡ƒƒí  0 ≡ƒö┤  0
+    Marketing & Sales                             ≡ƒƒó135 ≡ƒƒí  0 ≡ƒö┤  0
+    Productivity & Tasks                          ≡ƒƒó133 ≡ƒƒí  0 ≡ƒö┤  0
+    Coding Agents & IDEs                          ≡ƒƒó130 ≡ƒƒí  0 ≡ƒö┤  0
+    CLI Utilities                                 ≡ƒƒó123 ≡ƒƒí  1 ≡ƒö┤  0
+    Communication                                 ≡ƒƒó122 ≡ƒƒí  0 ≡ƒö┤  0
+    Clawdbot Tools                                ≡ƒƒó115 ≡ƒƒí  0 ≡ƒö┤  0
+    Notes & PKM                                   ≡ƒƒó 96 ≡ƒƒí  0 ≡ƒö┤  0
+    Media & Streaming                             ≡ƒƒó 79 ≡ƒƒí  0 ≡ƒö┤  0
+    Transportation                                ≡ƒƒó 71 ≡ƒƒí  0 ≡ƒö┤  0
+    Git & GitHub                                  ≡ƒƒó 64 ≡ƒƒí  1 ≡ƒö┤  0
+    PDF & Documents                               ≡ƒƒó 65 ≡ƒƒí  0 ≡ƒö┤  0
+    Speech & Transcription                        ≡ƒƒó 62 ≡ƒƒí  0 ≡ƒö┤  0
+    Image & Video Generation                      ≡ƒƒó 59 ≡ƒƒí  0 ≡ƒö┤  0
+    Security & Passwords                          ≡ƒƒó 58 ≡ƒƒí  1 ≡ƒö┤  0
+    Smart Home & IoT                              ≡ƒƒó 56 ≡ƒƒí  0 ≡ƒö┤  0
+    Health & Fitness                              ≡ƒƒó 54 ≡ƒƒí  0 ≡ƒö┤  0
+    Personal Development                          ≡ƒƒó 52 ≡ƒƒí  0 ≡ƒö┤  0
+    Gaming                                        ≡ƒƒó 50 ≡ƒƒí  0 ≡ƒö┤  0
+    Shopping & E-commerce                         ≡ƒƒó 48 ≡ƒƒí  0 ≡ƒö┤  0
+    Calendar & Scheduling                         ≡ƒƒó 48 ≡ƒƒí  0 ≡ƒö┤  0
+    Data & Analytics                              ≡ƒƒó 44 ≡ƒƒí  0 ≡ƒö┤  0
+    Moltbook                                      ≡ƒƒó 41 ≡ƒƒí  0 ≡ƒö┤  0
+    Apple Apps & Services                         ≡ƒƒó 32 ≡ƒƒí  2 ≡ƒö┤  0
+    Self-Hosted & Automation                      ≡ƒƒó 25 ≡ƒƒí  0 ≡ƒö┤  0
+    Finance                                       ≡ƒƒó 22 ≡ƒƒí  0 ≡ƒö┤  0
+    iOS & macOS Development                       ≡ƒƒó 14 ≡ƒƒí  3 ≡ƒö┤  0
+    Agent-to-Agent Protocols                      ≡ƒƒó 14 ≡ƒƒí  0 ≡ƒö┤  0
+
+  Saved: dive_ai_analysis.json (1416.6 KB)
+
+=================================================================
+  PHASE 4: Generate registry + algorithms
+=================================================================
+  Generated: skill_registry_full.py (466.2 KB)
+  Algorithms created: 0/32
+  Stats: {
+  "total_algorithms": 52,
+  "categories": {
+    "custom": 20,
+    "coding_agents_ides": 1,
+    "git_github": 1,
+    "moltbook": 1,
+    "web_frontend_development": 1,
+    "devops_cloud": 1,
+    "browser_automation": 1,
+    "image_video_generation": 1,
+    "apple_apps_services": 1,
+    "search_research": 1,
+    "clawdbot_tools": 1,
+    "cli_utilities": 1,
+    "marketing_sales": 1,
+    "productivity_tasks": 1,
+    "ai_llms": 1,
+    "data_analytics": 1,
+    "finance": 1,
+    "media_streaming": 1,
+    "notes_pkm": 1,
+    "ios_macos_development": 1,
+    "transportation": 1,
+    "personal_development": 1,
+    "health_fitness": 1,
+    "communication": 1,
+    "speech_transcription": 1,
+    "smart_home_iot": 1,
+    "shopping_e_commerce": 1,
+    "calendar_scheduling": 1,
+    "pdf_documents": 1,
+    "self_hosted_automation": 1,
+    "security_passwords": 1,
+    "gaming": 1,
+    "agent_to_agent_protocols": 1
+  },
+  "with_verifiers": 0,
+  "creation_log_entries": 32,
+  "algorithms_dir": "D:\\Antigravity\\Dive AI\\desktop-app\\backend\\dive_core\\algorithms\\auto_generated"
+}
+
+=================================================================
+  FINAL REPORT
+=================================================================
+  SKILL.md files:    2882
+  Category folders:  32
+  Total disk usage:  16.87 MB
+  Skills analyzed:   2882
+  Compatible:        2873
+  Registry size:     466.2 KB
+=================================================================
+
+  Γ£à ALL DONE ΓÇö 2,999 OpenClaw skills integrated into Dive AI!

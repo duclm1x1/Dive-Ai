@@ -1,0 +1,580 @@
+{
+  "title": "Antigravity \u2194 Dive AI Full Integration Report",
+  "timestamp": "2026-02-10T10:37:48.320739",
+  "subsystems": {
+    "security": {
+      "status": "ok",
+      "init_time_ms": 9.0,
+      "details": {
+        "injection_patterns": 0
+      },
+      "error": ""
+    },
+    "metrics": {
+      "status": "ok",
+      "init_time_ms": 1.1,
+      "details": {
+        "type": "stub (prometheus_client not installed)"
+      },
+      "error": ""
+    },
+    "memory": {
+      "status": "ok",
+      "init_time_ms": 3.8,
+      "details": {
+        "memory_files": 7
+      },
+      "error": ""
+    },
+    "identity": {
+      "status": "ok",
+      "init_time_ms": 0.0,
+      "details": {
+        "personas": 1
+      },
+      "error": ""
+    },
+    "skill_registry": {
+      "status": "ok",
+      "init_time_ms": 83.5,
+      "details": {
+        "skills_loaded": 55,
+        "categories": 10
+      },
+      "error": ""
+    },
+    "skill_intelligence": {
+      "status": "ok",
+      "init_time_ms": 4.8,
+      "details": {
+        "skills_defined": 7
+      },
+      "error": ""
+    },
+    "skills_standard": {
+      "status": "ok",
+      "init_time_ms": 1.9,
+      "details": {
+        "format": "SKILL.md bidirectional"
+      },
+      "error": ""
+    },
+    "auto_creator": {
+      "status": "ok",
+      "init_time_ms": 2.0,
+      "details": {
+        "algorithms": 53
+      },
+      "error": ""
+    },
+    "marketplace": {
+      "status": "ok",
+      "init_time_ms": 1.7,
+      "details": {
+        "skills_available": 0
+      },
+      "error": ""
+    },
+    "algorithm_service": {
+      "status": "ok",
+      "init_time_ms": 35.1,
+      "details": {
+        "skills": 0,
+        "algos_deployed": 53
+      },
+      "error": ""
+    },
+    "lifecycle": {
+      "status": "ok",
+      "init_time_ms": 5.1,
+      "details": {
+        "categories": 32,
+        "total_skills": 207
+      },
+      "error": ""
+    },
+    "engine": {
+      "status": "ok",
+      "init_time_ms": 753.4,
+      "details": {
+        "pipeline_stages": 7,
+        "mcp_servers": 121
+      },
+      "error": ""
+    },
+    "orchestrator": {
+      "status": "ok",
+      "init_time_ms": 4.3,
+      "details": {
+        "systems": [
+          "master_orchestrator",
+          "subsystems",
+          "statistics",
+          "timestamp"
+        ]
+      },
+      "error": ""
+    }
+  },
+  "testing": {
+    "total": 52,
+    "passed": 52,
+    "failed": 0,
+    "skipped": 0,
+    "pass_rate": 100.0
+  },
+  "issues_found": [],
+  "fixes_applied": [],
+  "summary": {
+    "subsystems_ok": 13,
+    "subsystems_total": 13,
+    "total_init_time_ms": 905.7
+  },
+  "subsystem_stats": {
+    "engine": {
+      "status": "operational",
+      "subsystems": {
+        "lane_queue": "ok",
+        "context_guard": "0 sessions",
+        "model_resolver": "2 providers",
+        "tool_approval": "ok",
+        "mcp_client": "121 servers (surpasses OpenClaw)",
+        "semantic_engine": "ok",
+        "memory": "7 files",
+        "identity": "1 personas",
+        "security": "multi-layer active",
+        "marketplace": "0 skills",
+        "skills_standard": "SKILL.md bidirectional",
+        "daily_logger": "0 entries",
+        "session_replay": "0 events",
+        "cli": "11 commands"
+      },
+      "pipeline_stages": 7,
+      "total_requests": 0,
+      "mcp_servers": 121
+    },
+    "skill_registry": {
+      "total_skills": 55,
+      "categories": {
+        "browser": 7,
+        "search": 5,
+        "communication": 9,
+        "devops": 10,
+        "system": 3,
+        "git": 4,
+        "ai": 6,
+        "coding": 4,
+        "productivity": 6,
+        "data": 1
+      },
+      "total_executions": 0,
+      "total_cost": 0.0,
+      "load_errors": 0,
+      "auto_discover_time_ms": 78.9,
+      "cached_queries": 1,
+      "skills": {
+        "web-browse": {
+          "name": "web-browse",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "cookie-manager": {
+          "name": "cookie-manager",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "form-fill": {
+          "name": "form-fill",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "pdf-extract": {
+          "name": "pdf-extract",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "web-scrape": {
+          "name": "web-scrape",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "spa-renderer": {
+          "name": "spa-renderer",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "web-screenshot": {
+          "name": "web-screenshot",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "academic-search": {
+          "name": "academic-search",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "deep-research": {
+          "name": "deep-research",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "news-search": {
+          "name": "news-search",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "web-search": {
+          "name": "web-search",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "youtube-search": {
+          "name": "youtube-search",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "discord-bot": {
+          "name": "discord-bot",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "email-read": {
+          "name": "email-read",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "email-send": {
+          "name": "email-send",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "imessage": {
+          "name": "imessage",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "signal": {
+          "name": "signal",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "slack-bot": {
+          "name": "slack-bot",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "telegram-bot": {
+          "name": "telegram-bot",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "webhook-sender": {
+          "name": "webhook-sender",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "whatsapp-bot": {
+          "name": "whatsapp-bot",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "api-tester": {
+          "name": "api-tester",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "ci-cd": {
+          "name": "ci-cd",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "clipboard": {
+          "name": "clipboard",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "cloud-deploy": {
+          "name": "cloud-deploy",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "compression": {
+          "name": "compression",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "docker-ops": {
+          "name": "docker-ops",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "file-manager": {
+          "name": "file-manager",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "git-ops": {
+          "name": "git-ops",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "issue-tracker": {
+          "name": "issue-tracker",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "k8s-manager": {
+          "name": "k8s-manager",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "network-tools": {
+          "name": "network-tools",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "process-manager": {
+          "name": "process-manager",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "pr-manager": {
+          "name": "pr-manager",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "release-manager": {
+          "name": "release-manager",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "repo-monitor": {
+          "name": "repo-monitor",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "system-info": {
+          "name": "system-info",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "terraform": {
+          "name": "terraform",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "agent-spawn": {
+          "name": "agent-spawn",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "memory-query": {
+          "name": "memory-query",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "model-switcher": {
+          "name": "model-switcher",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "prompt-optimizer": {
+          "name": "prompt-optimizer",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "self-improve": {
+          "name": "self-improve",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "skill-generator": {
+          "name": "skill-generator",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "lsp": {
+          "name": "lsp",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "multi-agent-dev": {
+          "name": "multi-agent-dev",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "project-scaffold": {
+          "name": "project-scaffold",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "code-refactor": {
+          "name": "code-refactor",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "calendar": {
+          "name": "calendar",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "code-review": {
+          "name": "code-review",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "database": {
+          "name": "database",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "data-analyzer": {
+          "name": "data-analyzer",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "note-taker": {
+          "name": "note-taker",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "scheduler": {
+          "name": "scheduler",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        },
+        "task-manager": {
+          "name": "task-manager",
+          "executions": 0,
+          "total_cost": 0.0,
+          "last_success": null
+        }
+      }
+    },
+    "algorithm_service": {
+      "skills_loaded": 0,
+      "auto_algorithms_created": 53,
+      "auto_algorithms_deployed": 53,
+      "total_executions": 1,
+      "execution_log_size": 3,
+      "categories": {
+        "custom": 21,
+        "coding_agents_ides": 1,
+        "git_github": 1,
+        "moltbook": 1,
+        "web_frontend_development": 1,
+        "devops_cloud": 1,
+        "browser_automation": 1,
+        "image_video_generation": 1,
+        "apple_apps_services": 1,
+        "search_research": 1,
+        "clawdbot_tools": 1,
+        "cli_utilities": 1,
+        "marketing_sales": 1,
+        "productivity_tasks": 1,
+        "ai_llms": 1,
+        "data_analytics": 1,
+        "finance": 1,
+        "media_streaming": 1,
+        "notes_pkm": 1,
+        "ios_macos_development": 1,
+        "transportation": 1,
+        "personal_development": 1,
+        "health_fitness": 1,
+        "communication": 1,
+        "speech_transcription": 1,
+        "smart_home_iot": 1,
+        "shopping_e_commerce": 1,
+        "calendar_scheduling": 1,
+        "pdf_documents": 1,
+        "self_hosted_automation": 1,
+        "security_passwords": 1,
+        "gaming": 1,
+        "agent_to_agent_protocols": 1
+      },
+      "with_verifiers": 0
+    },
+    "security": {
+      "total_checks": 4,
+      "blocked_count": 2,
+      "scanned_skills": 3,
+      "total_events": 3,
+      "cve_count": 1,
+      "unpatched_cves": 1,
+      "active_sessions": 2,
+      "severity_breakdown": {
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 2
+      }
+    },
+    "marketplace": {
+      "total_skills": 1,
+      "installed_skills": 0,
+      "total_installs": 0,
+      "total_uninstalls": 0,
+      "categories": 14,
+      "verified_skills": 1,
+      "blocked_skills": 0
+    },
+    "lifecycle": {
+      "categories": 32,
+      "total_skills": 207
+    }
+  }
+}

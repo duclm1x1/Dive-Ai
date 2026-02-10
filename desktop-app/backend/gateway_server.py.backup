@@ -1,0 +1,710 @@
+"""
+Dive AI V29.4 Gateway Server - Full V28.6 Integration
+With Self-Use and Self-Modification Capabilities
+
+Features:
+- V98 API with 5 Claude models (primary)
+- Computer Use (UI-TARS style)
+- 128 Specialized Agents
+- 123+ Skills
+- Self-Improve/Self-Modify capabilities
+- Smart 7-Phase Orchestrator
+"""
+
+import os
+import sys
+import asyncio
+import json
+import traceback
+from datetime import datetime
+from typing import Dict, Any, Optional, List
+from pathlib import Path
+
+# Add dive_core to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'dive_core'))
+sys.path.insert(0, os.path.dirname(__file__))
+
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse, StreamingResponse
+from pydantic import BaseModel
+import uvicorn
+
+# Import LLM connections (V98 with 5 Claude models)
+from llm.connections import (
+    V98ConnectionManager, get_manager, quick_chat,
+    ALL_MODELS, print_summary
+)
+
+# ============================================================
+# Pydantic Models
+# ============================================================
+
+class ChatRequest(BaseModel):
+    message: str
+    system: Optional[str] = None
+    model_id: Optional[str] = None
+    stream: Optional[bool] = False
+
+class CodeRequest(BaseModel):
+    action: str  # generate, review, debug, refactor, test, explain
+    code: Optional[str] = None
+    task: Optional[str] = None
+    language: Optional[str] = "python"
+    file_path: Optional[str] = None
+
+class ComputerRequest(BaseModel):
+    instruction: str
+    mode: Optional[str] = "local"  # local, browser, remote
+
+class MemoryRequest(BaseModel):
+    action: str  # store, recall, search, list, clear
+    project: Optional[str] = "default"
+    content: Optional[str] = None
+    key: Optional[str] = None
+
+class SelfModifyRequest(BaseModel):
+    action: str  # analyze, fix, test, improve
+    target: Optional[str] = None  # file path or module name
+    issue: Optional[str] = None
+    auto_apply: Optional[bool] = False
+
+class AutomationRequest(BaseModel):
+    action: str
+    params: Optional[Dict[str, Any]] = {}
+
+class TerminalRequest(BaseModel):
+    command: str
+    cwd: Optional[str] = None
+
+class FileRequest(BaseModel):
+    path: str
+    content: Optional[str] = None
+
+class OrchestrateRequest(BaseModel):
+    task: str
+    context: Optional[Dict[str, Any]] = {}
+    max_steps: Optional[int] = 10
+
+# ============================================================
+# FastAPI App
+# ============================================================
+
+app = FastAPI(
+    title="Dive AI V29.4 Gateway",
+    version="29.4.0",
+    description="V28.6 Complete + V98 Claude Models + Self-Improvement"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Global managers
+llm_manager: V98ConnectionManager = None
+project_memory: Dict[str, Dict[str, Any]] = {}
+DIVE_CORE_PATH = Path(__file__).parent / "dive_core"
+APP_PATH = Path(__file__).parent.parent
+
+# ============================================================
+# Startup
+# ============================================================
+
+@app.on_event("startup")
+async def startup():
+    global llm_manager
+    llm_manager = get_manager()
+    print_summary()
+    print("\n🔧 Self-Modification: ENABLED")
+    print("📁 Dive Core Path:", DIVE_CORE_PATH)
+    print("📁 App Path:", APP_PATH)
+
+# ============================================================
+# Core Endpoints
+# ============================================================
+
+@app.get("/health")
+async def health_check():
+    status = llm_manager.status() if llm_manager else {}
+    return {
+        "status": "healthy",
+        "version": "29.4.0",
+        "timestamp": datetime.now().isoformat(),
+        "llm": {
+            "provider": "V98",
+            "models": status.get("total_connections", 0),
+            "available": status.get("primary_available", False),
+            "primary": status.get("primary_model", "None")
+        },
+        "features": {
+            "computer_use": True,
+            "self_modify": True,
+            "orchestrator": True,
+            "skills": 123,
+            "agents": 128
+        }
+    }
+
+@app.get("/models")
+async def get_models():
+    return {
+        "provider": "V98",
+        "models": [
+            {
+                "id": model["id"],
+                "name": model["name"],
+                "model": model["model"],
+                "priority": model.get("priority", 5),
+                "thinking": model.get("thinking", False)
+            }
+            for model in ALL_MODELS
+        ],
+        "total": len(ALL_MODELS)
+    }
+
+# ============================================================
+# Chat Endpoint (with all models)
+# ============================================================
+
+@app.post("/chat")
+async def chat(request: ChatRequest):
+    try:
+        if not llm_manager:
+            raise HTTPException(status_code=503, detail="LLM not initialized")
+        
+        start_time = datetime.now()
+        result = await quick_chat(
+            message=request.message,
+            system=request.system,
+            model_id=request.model_id
+        )
+        latency = (datetime.now() - start_time).total_seconds() * 1000
+        
+        return {
+            "response": result.get("content", ""),
+            "thinking": result.get("thinking", None),
+            "model": result.get("model", "unknown"),
+            "tokens": result.get("tokens", 0),
+            "latency_ms": round(latency, 2)
+        }
+    except Exception as e:
+        return {"error": str(e), "traceback": traceback.format_exc()}
+
+# ============================================================
+# Code Actions (generate, review, debug, refactor)
+# ============================================================
+
+@app.post("/api/code")
+async def code_action(request: CodeRequest):
+    """Code generation, review, debugging, refactoring using Claude"""
+    try:
+        action = request.action.lower()
+        
+        prompts = {
+            "generate": f"Generate {request.language} code for: {request.task}",
+            "review": f"Review this {request.language} code and suggest improvements:\n```{request.language}\n{request.code}\n```",
+            "debug": f"Find and fix bugs in this {request.language} code:\n```{request.language}\n{request.code}\n```",
+            "refactor": f"Refactor this {request.language} code for better performance and readability:\n```{request.language}\n{request.code}\n```",
+            "test": f"Generate comprehensive tests for this {request.language} code:\n```{request.language}\n{request.code}\n```",
+            "explain": f"Explain this {request.language} code in detail:\n```{request.language}\n{request.code}\n```"
+        }
+        
+        prompt = prompts.get(action, request.task or request.code)
+        
+        result = await quick_chat(
+            message=prompt,
+            system=f"You are an expert {request.language} developer. Be concise and provide working code."
+        )
+        
+        return {
+            "action": action,
+            "language": request.language,
+            "result": result.get("content", ""),
+            "model": result.get("model", "unknown")
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+# ============================================================
+# Self-Modification Capabilities
+# ============================================================
+
+@app.post("/api/self-modify")
+async def self_modify(request: SelfModifyRequest):
+    """
+    Dive AI Self-Improvement: Analyze, fix, and improve its own code
+    """
+    try:
+        action = request.action.lower()
+        target = request.target or str(APP_PATH)
+        
+        if action == "analyze":
+            # Analyze target file/module for issues
+            if os.path.isfile(target):
+                with open(target, 'r', encoding='utf-8') as f:
+                    code = f.read()
+                
+                result = await quick_chat(
+                    message=f"""Analyze this code for issues, bugs, and improvements:
+
+File: {target}
+```python
+{code[:8000]}
+```
+
+Provide:
+1. Issues found (bugs, errors, security issues)
+2. Performance improvements
+3. Code quality suggestions
+4. Specific fixes with line numbers""",
+                    system="You are an expert code analyzer. Find all issues and provide specific fixes."
+                )
+                
+                return {
+                    "action": "analyze",
+                    "target": target,
+                    "analysis": result.get("content", ""),
+                    "model": result.get("model")
+                }
+            else:
+                # List files in directory
+                files = list(Path(target).rglob("*.py"))[:20]
+                return {
+                    "action": "analyze",
+                    "target": target,
+                    "files": [str(f) for f in files],
+                    "message": "Specify a file path to analyze"
+                }
+        
+        elif action == "fix":
+            # Generate and optionally apply fixes
+            issue = request.issue or "general improvements"
+            
+            if os.path.isfile(target):
+                with open(target, 'r', encoding='utf-8') as f:
+                    original_code = f.read()
+                
+                result = await quick_chat(
+                    message=f"""Fix the following issue in this code:
+
+Issue: {issue}
+
+File: {target}
+```python
+{original_code[:8000]}
+```
+
+Provide the COMPLETE fixed code, not just the changes.""",
+                    system="You are an expert Python developer. Provide complete working code with the issue fixed."
+                )
+                
+                fixed_code = result.get("content", "")
+                
+                # Auto-apply if requested
+                if request.auto_apply and fixed_code:
+                    # Extract code from markdown if present
+                    if "```python" in fixed_code:
+                        import re
+                        match = re.search(r'```python\n(.*?)```', fixed_code, re.DOTALL)
+                        if match:
+                            fixed_code = match.group(1)
+                    
+                    # Backup original
+                    backup_path = target + ".backup"
+                    with open(backup_path, 'w', encoding='utf-8') as f:
+                        f.write(original_code)
+                    
+                    # Write fixed code
+                    with open(target, 'w', encoding='utf-8') as f:
+                        f.write(fixed_code)
+                    
+                    return {
+                        "action": "fix",
+                        "target": target,
+                        "issue": issue,
+                        "applied": True,
+                        "backup": backup_path,
+                        "model": result.get("model")
+                    }
+                
+                return {
+                    "action": "fix",
+                    "target": target,
+                    "issue": issue,
+                    "fixed_code": fixed_code,
+                    "applied": False,
+                    "model": result.get("model")
+                }
+            else:
+                return {"error": f"File not found: {target}"}
+        
+        elif action == "test":
+            # Generate and run tests
+            if os.path.isfile(target):
+                with open(target, 'r', encoding='utf-8') as f:
+                    code = f.read()
+                
+                result = await quick_chat(
+                    message=f"""Generate comprehensive unit tests for this code:
+
+```python
+{code[:8000]}
+```
+
+Include:
+1. Test all functions
+2. Edge cases
+3. Error handling
+4. Use pytest framework""",
+                    system="You are an expert test engineer. Generate comprehensive tests."
+                )
+                
+                return {
+                    "action": "test",
+                    "target": target,
+                    "tests": result.get("content", ""),
+                    "model": result.get("model")
+                }
+            else:
+                return {"error": f"File not found: {target}"}
+        
+        elif action == "improve":
+            # Suggest and apply improvements
+            if os.path.isfile(target):
+                with open(target, 'r', encoding='utf-8') as f:
+                    code = f.read()
+                
+                result = await quick_chat(
+                    message=f"""Improve this code:
+
+```python
+{code[:8000]}
+```
+
+Focus on:
+1. Performance optimization
+2. Better error handling
+3. Cleaner architecture
+4. Modern Python patterns
+5. Type hints
+
+Provide the COMPLETE improved code.""",
+                    system="You are a senior Python architect. Improve code quality and performance."
+                )
+                
+                return {
+                    "action": "improve",
+                    "target": target,
+                    "improvements": result.get("content", ""),
+                    "model": result.get("model")
+                }
+            else:
+                return {"error": f"File not found: {target}"}
+        
+        else:
+            return {
+                "error": f"Unknown action: {action}",
+                "available_actions": ["analyze", "fix", "test", "improve"]
+            }
+    
+    except Exception as e:
+        return {"error": str(e), "traceback": traceback.format_exc()}
+
+# ============================================================
+# Self-Use: Dive AI using itself
+# ============================================================
+
+@app.post("/api/self-use")
+async def self_use(request: OrchestrateRequest):
+    """
+    Dive AI using itself to complete tasks
+    Orchestrates multiple actions to achieve a goal
+    """
+    try:
+        task = request.task
+        
+        # Use Claude to plan the task
+        plan_result = await quick_chat(
+            message=f"""You are Dive AI V29.4. Plan how to complete this task using your capabilities:
+
+Task: {task}
+
+Available capabilities:
+1. Chat with Claude models (/chat)
+2. Code generation/review/debug (/api/code)
+3. Computer control (/automation/*)
+4. File operations (/fs/*)
+5. Terminal commands (/terminal/execute)
+6. Self-modification (/api/self-modify)
+
+Create a step-by-step plan with specific API calls.""",
+            system="You are Dive AI's orchestrator. Plan tasks using available APIs."
+        )
+        
+        plan = plan_result.get("content", "")
+        
+        # Execute the plan (simplified - full implementation would parse and execute each step)
+        return {
+            "task": task,
+            "plan": plan,
+            "status": "planned",
+            "next": "Execute each step via API calls",
+            "model": plan_result.get("model")
+        }
+    
+    except Exception as e:
+        return {"error": str(e)}
+
+# ============================================================
+# Computer Use Endpoints
+# ============================================================
+
+@app.post("/api/computer")
+async def computer_use(request: ComputerRequest):
+    """UI-TARS style computer control"""
+    try:
+        result = await quick_chat(
+            message=f"""Parse this natural language instruction into desktop actions:
+
+Instruction: {request.instruction}
+Mode: {request.mode}
+
+Return JSON with:
+{{
+  "actions": [
+    {{"type": "click/type/scroll/screenshot", "params": {{...}}}}
+  ],
+  "explanation": "what each action does"
+}}""",
+            system="You are a desktop automation parser. Convert instructions to actions."
+        )
+        
+        return {
+            "instruction": request.instruction,
+            "mode": request.mode,
+            "parsed": result.get("content", ""),
+            "model": result.get("model")
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/automation/screenshot")
+async def take_screenshot():
+    """Capture screen"""
+    try:
+        import pyautogui
+        from PIL import Image
+        import io
+        import base64
+        
+        screenshot = pyautogui.screenshot()
+        buffer = io.BytesIO()
+        screenshot.save(buffer, format="PNG")
+        b64 = base64.b64encode(buffer.getvalue()).decode()
+        
+        return {
+            "screenshot": b64,
+            "size": {"width": screenshot.width, "height": screenshot.height},
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/automation/execute")
+async def execute_automation(request: AutomationRequest):
+    """Execute automation action"""
+    try:
+        import pyautogui
+        
+        action = request.action
+        params = request.params or {}
+        
+        if action == "click":
+            x, y = params.get("x", 500), params.get("y", 500)
+            pyautogui.click(x, y)
+            return {"status": "success", "action": "click", "position": {"x": x, "y": y}}
+        
+        elif action == "type":
+            text = params.get("text", "")
+            pyautogui.typewrite(text, interval=0.05)
+            return {"status": "success", "action": "type", "text": text}
+        
+        elif action == "hotkey":
+            keys = params.get("keys", [])
+            pyautogui.hotkey(*keys)
+            return {"status": "success", "action": "hotkey", "keys": keys}
+        
+        elif action == "scroll":
+            amount = params.get("amount", -3)
+            pyautogui.scroll(amount)
+            return {"status": "success", "action": "scroll", "amount": amount}
+        
+        elif action == "move":
+            x, y = params.get("x", 500), params.get("y", 500)
+            pyautogui.moveTo(x, y)
+            return {"status": "success", "action": "move", "position": {"x": x, "y": y}}
+        
+        else:
+            return {"error": f"Unknown action: {action}"}
+        
+    except Exception as e:
+        return {"error": str(e)}
+
+# ============================================================
+# Memory Endpoints
+# ============================================================
+
+@app.post("/api/memory")
+async def memory_action(request: MemoryRequest):
+    """Project memory management"""
+    global project_memory
+    
+    project = request.project
+    
+    if request.action == "store":
+        if project not in project_memory:
+            project_memory[project] = {}
+        
+        key = request.key or datetime.now().isoformat()
+        project_memory[project][key] = {
+            "content": request.content,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+        return {"status": "stored", "project": project, "key": key}
+    
+    elif request.action == "recall":
+        memories = project_memory.get(project, {})
+        return {"project": project, "memories": memories}
+    
+    elif request.action == "list":
+        return {"projects": list(project_memory.keys())}
+    
+    elif request.action == "clear":
+        if project in project_memory:
+            del project_memory[project]
+        return {"status": "cleared", "project": project}
+    
+    else:
+        return {"error": f"Unknown action: {request.action}"}
+
+# ============================================================
+# Terminal Endpoint
+# ============================================================
+
+@app.post("/terminal/execute")
+async def execute_terminal(request: TerminalRequest):
+    """Execute terminal command"""
+    import subprocess
+    
+    try:
+        cwd = request.cwd or str(APP_PATH)
+        result = subprocess.run(
+            request.command,
+            shell=True,
+            cwd=cwd,
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        
+        return {
+            "output": result.stdout,
+            "error": result.stderr,
+            "code": result.returncode,
+            "command": request.command,
+            "cwd": cwd
+        }
+    except subprocess.TimeoutExpired:
+        return {"error": "Command timed out", "command": request.command}
+    except Exception as e:
+        return {"error": str(e)}
+
+# ============================================================
+# File System Endpoints
+# ============================================================
+
+@app.post("/fs/read")
+async def read_file(request: FileRequest):
+    """Read file contents"""
+    try:
+        with open(request.path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        return {"content": content, "path": request.path}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/fs/write")
+async def write_file(request: FileRequest):
+    """Write file contents"""
+    try:
+        with open(request.path, 'w', encoding='utf-8') as f:
+            f.write(request.content or "")
+        return {"success": True, "path": request.path}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/fs/list")
+async def list_files(request: FileRequest):
+    """List files in directory"""
+    try:
+        path = Path(request.path)
+        if path.is_dir():
+            files = [
+                {
+                    "name": f.name,
+                    "type": "dir" if f.is_dir() else "file",
+                    "size": f.stat().st_size if f.is_file() else None
+                }
+                for f in path.iterdir()
+            ]
+            return {"path": str(path), "files": files}
+        else:
+            return {"error": "Not a directory"}
+    except Exception as e:
+        return {"error": str(e)}
+
+# ============================================================
+# Skills Endpoint
+# ============================================================
+
+@app.get("/api/skills")
+async def list_skills():
+    """List available skills"""
+    skills_path = DIVE_CORE_PATH / "skills"
+    skills = []
+    
+    if skills_path.exists():
+        for skill_file in skills_path.rglob("*.py"):
+            if not skill_file.name.startswith("_"):
+                skills.append({
+                    "name": skill_file.stem,
+                    "path": str(skill_file)
+                })
+    
+    return {
+        "total": len(skills),
+        "skills": skills
+    }
+
+# ============================================================
+# Run Server
+# ============================================================
+
+if __name__ == "__main__":
+    print("=" * 60)
+    print("🦞 Dive AI V29.4 Gateway - V28.6 Complete Integration")
+    print("=" * 60)
+    print("Features:")
+    print("  - V98 API with 5 Claude Models")
+    print("  - Computer Use (UI-TARS style)")
+    print("  - Self-Use & Self-Modification")
+    print("  - 128 Agents, 123+ Skills")
+    print("  - Smart Orchestrator")
+    print("=" * 60)
+    
+    uvicorn.run(app, host="127.0.0.1", port=1879)

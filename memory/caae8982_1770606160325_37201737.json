@@ -1,0 +1,13 @@
+{
+  "id": "caae8982_1770606160325_37201737",
+  "type": "conversation",
+  "content": "User: test\nAssistant: response",
+  "metadata": {
+    "user_input": "test",
+    "assistant_response": "response",
+    "timestamp": "2026-02-09T10:02:40.325155"
+  },
+  "created_at": 1770606160.3251753,
+  "updated_at": 1770606160.3251753,
+  "synced": false
+}

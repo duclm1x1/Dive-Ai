@@ -1,0 +1,54 @@
+
+=== adaptive_rag (dive_core.engine.dive_adaptive_rag) ===
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+    File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+    File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+    File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+    File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+    File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+    File "D:\Antigravity\Dive AI\desktop-app\backend\dive_core\engine\dive_adaptive_rag.py", line 17, in <module>
+      from core.dive_query_classifier import DiveQueryClassifier, QueryClassification
+  ModuleNotFoundError: No module named 'core'
+
+=== impact_analyzer (dive_core.engine.dive_impact_analyzer) ===
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+    File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+    File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+    File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+    File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+    File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+    File "D:\Antigravity\Dive AI\desktop-app\backend\dive_core\engine\dive_impact_analyzer.py", line 14, in <module>
+      from dive_dependency_tracker import DiveDependencyTracker, FileDependency
+  ModuleNotFoundError: No module named 'dive_dependency_tracker'
+
+=== llm_optimizer (dive_core.llm_optimizer) ===
+  OK - loaded successfully
+
+=== memory_brain (dive_core.memory.dive_memory_brain) ===
+  OK - loaded successfully
+
+=== search_engine (dive_core.search.dive_search_engine) ===
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+    File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+    File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+    File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+    File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+    File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+    File "D:\Antigravity\Dive AI\desktop-app\backend\dive_core\search\dive_search_engine.py", line 15, in <module>
+      from dive_search_index import DiveSearchIndex, SearchResult
+  ModuleNotFoundError: No module named 'dive_search_index'
+
+=== self_improve (dive_core.dive_ai_self_improve) ===
+    File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+    File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+    File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+    File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+    File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+    File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+    File "D:\Antigravity\Dive AI\desktop-app\backend\dive_core\dive_ai_self_improve.py", line 258, in <module>
+      with open(solution_path, 'w') as f:
+           ~~~~^^^^^^^^^^^^^^^^^^^^
+  FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/dive-ai-local/server/dive_coder_wrapper.py'

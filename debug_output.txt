@@ -1,0 +1,149 @@
+﻿Total lines: 3316
+
+=== LINES 100-140 ===
+ 100 | | [Apple Apps & Services](#apple-apps--services) (35) | [iOS & macOS Development](#ios--macos-development) (17) | [Security & Passwords](#security--pa
+ 101 | | [Search & Research](#search--research) (253) | [Transportation](#transportation) (73) | [Gaming](#gaming) (62) |
+ 102 | | [Clawdbot Tools](#clawdbot-tools) (121) | [Personal Development](#personal-development) (56) | [Agent-to-Agent Protocols](#agent-to-agent-protocols)
+ 103 | | [CLI Utilities](#cli-utilities) (131) | [Health & Fitness](#health--fitness) (55) | |
+ 104 | 
+ 105 | 
+ 106 | 
+ 107 | <details open>
+ 108 | <summary><h3 style="display:inline">Coding Agents & IDEs</h3></summary>
+ 109 | 
+ 110 | - [achurch](https://github.com/openclaw/skills/tree/main/skills/lucasgeeksinthewood/achurch/SKILL.md) - A 24/7 digital sanctuary for AI agents and hum
+ 111 | - [agent-config](https://github.com/openclaw/skills/tree/main/skills/thatguysizemore/agent-config/SKILL.md) - Intelligently modify agent core context 
+ 112 | - [agent-council](https://github.com/openclaw/skills/tree/main/skills/itsahedge/agent-council/SKILL.md) - Complete toolkit for creating autonomous AI 
+ 113 | - [agent-identity-kit](https://github.com/openclaw/skills/tree/main/skills/ryancampbell/agent-identity-kit/SKILL.md) - A portable identity system for 
+ 114 | - [agenticflow-skill](https://github.com/openclaw/skills/tree/main/skills/seanphan/agenticflow-skill/SKILL.md) - Comprehensive guide for building AI w
+ 115 | - [agentlens](https://github.com/openclaw/skills/tree/main/skills/nguyenphutrong/agentlens/SKILL.md) - Navigate and understand codebases using agentle
+ 116 | - [agentskills-io](https://github.com/openclaw/skills/tree/main/skills/killerapp/agentskills-io/SKILL.md) - Create, validate, and publish Agent Skills
+ 117 | - [aisa-twitter-api](https://github.com/openclaw/skills/tree/main/skills/aisapay/aisa-twitter-api/SKILL.md) - Search X (Twitter) in real time, extract
+ 118 | - [apple-hig](https://github.com/openclaw/skills/tree/main/skills/kdbhalala/apple-hig/SKILL.md) - Expert guide for designing iOS, macOS, watchOS, tvOS
+ 119 | - [arbiter](https://github.com/openclaw/skills/tree/main/skills/5hanth/arbiter/SKILL.md) - Push decisions to Arbiter Zebu for async human review.
+ 120 | - [aster](https://github.com/openclaw/skills/tree/main/skills/satyajiit/aster/SKILL.md) - Your AI CoPilot on Mobile ΓÇö or give your AI its own phone.
+ 121 | - [avatar-video-messages](https://github.com/openclaw/skills/tree/main/skills/thewulf7/avatar-video-messages/SKILL.md) - Generate and send video messa
+ 122 | - [backend-patterns](https://github.com/openclaw/skills/tree/main/skills/charmmm718/backend-patterns/SKILL.md) - Backend architecture patterns, API de
+ 123 | - [bidclub](https://github.com/openclaw/skills/tree/main/skills/jasonfdg/bidclub/SKILL.md) - Post investment ideas to the AI-native investment communi
+ 124 | - [bidclub-ai](https://github.com/openclaw/skills/tree/main/skills/jasonfdg/bidclub-ai/SKILL.md) - Post investment ideas to the AI-native investment c
+ 125 | - [bot-bowl-party](https://github.com/openclaw/skills/tree/main/skills/fsa317/bot-bowl-party/SKILL.md) - Complete guide for AI agents to participate i
+ 126 | - [botpress-adk](https://github.com/openclaw/skills/tree/main/skills/yueranlu/botpress-adk/SKILL.md) - A guide to build AI bots with Botpress's Agent 
+ 127 | - [browse](https://github.com/openclaw/skills/tree/main/skills/pkiv/browse/SKILL.md) - Complete guide for creating and deploying browser automation fu
+ 128 | - [budget-variance-analyzer](https://github.com/openclaw/skills/tree/main/skills/datadrivenconstruction/budget-variance-analyzer/SKILL.md) - Analyze b
+ 129 | - [buildlog](https://github.com/openclaw/skills/tree/main/skills/espetey/buildlog/SKILL.md) - Record, export, and share your AI coding sessions as rep
+ 130 | - [catholic-grounding](https://github.com/openclaw/skills/tree/main/skills/trevortomesh/catholic-grounding/SKILL.md) - Help answer questions about Cat
+ 131 | - [cc-godmode](https://github.com/openclaw/skills/tree/main/skills/cubetribe/cc-godmode/SKILL.md) - Self-orchestrating multi-agent development workflo
+ 132 | - [cellcog](https://github.com/openclaw/skills/tree/main/skills/nitishgargiitd/cellcog/SKILL.md) - #1 on DeepResearch Bench (Feb 2026).
+ 133 | - [claude-optimised](https://github.com/openclaw/skills/tree/main/skills/hexnickk/claude-optimised/SKILL.md) - Guide for writing and optimizing CLAUDE
+ 134 | - [claude-team](https://github.com/openclaw/skills/tree/main/skills/jalehman/claude-team/SKILL.md) - Orchestrate multiple Claude Code workers via iTer
+ 135 | - [clawder](https://github.com/openclaw/skills/tree/main/skills/assassin808/clawder/SKILL.md) - Use Clawder to sync identity, browse post cards, swipe
+ 136 | - [code-mentor](https://github.com/openclaw/skills/tree/main/skills/samuelkahessay/code-mentor/SKILL.md) - Comprehensive AI programming tutor for all 
+ 137 | - [codebuddy-code](https://github.com/openclaw/skills/tree/main/skills/pmwalkercao/codebuddy-code/SKILL.md) - CodeBuddy Code CLI installation, configu
+ 138 | - [codeconductor](https://github.com/openclaw/skills/tree/main/skills/larsonreever/codeconductor/SKILL.md) - AI-powered software development platform 
+ 139 | - [coder-workspaces](https://github.com/openclaw/skills/tree/main/skills/developmentcats/coder-workspaces/SKILL.md) - Manage Coder workspaces and AI c
+ 140 | - [codex-account-switcher](https://github.com/openclaw/skills/tree/main/skills/odrobnik/codex-account-switcher/SKILL.md) - Manage multiple OpenAI Code
+
+=== ALL H2 HEADERS ===
+  38 | ## Installation
+  64 | ## Why This List Exists?
+  89 | ## Table of Contents
+3300 | ## ≡ƒñ¥ Contributing
+3309 | ## License
+
+=== NON-LINK LINES BETWEEN 110-3300 ===
+ 244 | </details>
+ 246 | <details open>
+ 247 | <summary><h3 style="display:inline">Git & GitHub</h3></summary>
+ 316 | </details>
+ 318 | <details>
+ 319 | <summary><h3 style="display:inline">Moltbook</h3></summary>
+ 373 | </details>
+ 375 | <details>
+ 376 | <summary><h3 style="display:inline">Web & Frontend Development</h3></summary>
+ 581 | </details>
+ 583 | <details>
+ 584 | <summary><h3 style="display:inline">DevOps & Cloud</h3></summary>
+ 799 | </details>
+ 801 | <details>
+ 802 | <summary><h3 style="display:inline">Browser & Automation</h3></summary>
+ 944 | </details>
+ 946 | <details>
+ 947 | <summary><h3 style="display:inline">Image & Video Generation</h3></summary>
+1010 | </details>
+1012 | <details>
+1013 | <summary><h3 style="display:inline">Apple Apps & Services</h3></summary>
+1051 | </details>
+1053 | <details>
+1054 | <summary><h3 style="display:inline">Search & Research</h3></summary>
+1309 | </details>
+1311 | <details>
+1312 | <summary><h3 style="display:inline">Clawdbot Tools</h3></summary>
+1435 | </details>
+1437 | <details>
+1438 | <summary><h3 style="display:inline">CLI Utilities</h3></summary>
+1570 | </details>
+1572 | <details>
+1573 | <summary><h3 style="display:inline">Marketing & Sales</h3></summary>
+1718 | </details>
+1720 | <details>
+1721 | <summary><h3 style="display:inline">Productivity & Tasks</h3></summary>
+1859 | </details>
+1861 | <details>
+1862 | <summary><h3 style="display:inline">AI & LLMs</h3></summary>
+2152 | </details>
+2154 | <details>
+2155 | <summary><h3 style="display:inline">Data & Analytics</h3></summary>
+2204 | </details>
+2206 | <details>
+2207 | <summary><h3 style="display:inline">Finance</h3></summary>
+2232 | </details>
+2234 | <details>
+2235 | <summary><h3 style="display:inline">Media & Streaming</h3></summary>
+2318 | </details>
+2320 | <details>
+2321 | <summary><h3 style="display:inline">Notes & PKM</h3></summary>
+2424 | </details>
+2426 | <details>
+2427 | <summary><h3 style="display:inline">iOS & macOS Development</h3></summary>
+2447 | </details>
+2449 | <details>
+2450 | <summary><h3 style="display:inline">Transportation</h3></summary>
+2526 | </details>
+2528 | <details>
+2529 | <summary><h3 style="display:inline">Personal Development</h3></summary>
+2588 | </details>
+2590 | <details>
+2591 | <summary><h3 style="display:inline">Health & Fitness</h3></summary>
+2649 | </details>
+2651 | <details>
+2652 | <summary><h3 style="display:inline">Communication</h3></summary>
+2786 | </details>
+2788 | <details>
+2789 | <summary><h3 style="display:inline">Speech & Transcription</h3></summary>
+2857 | </details>
+2859 | <details>
+2860 | <summary><h3 style="display:inline">Smart Home & IoT</h3></summary>
+2919 | </details>
+2921 | <details>
+2922 | <summary><h3 style="display:inline">Shopping & E-commerce</h3></summary>
+2976 | </details>
+2978 | <details>
+2979 | <summary><h3 style="display:inline">Calendar & Scheduling</h3></summary>
+3032 | </details>
+3034 | <details>
+3035 | <summary><h3 style="display:inline">PDF & Documents</h3></summary>
+3105 | </details>
+3107 | <details>
+3108 | <summary><h3 style="display:inline">Self-Hosted & Automation</h3></summary>
+3136 | </details>
+3138 | <details>
+3139 | <summary><h3 style="display:inline">Security & Passwords</h3></summary>
+3204 | </details>
+3206 | <details>
+3207 | <summary><h3 style="display:inline">Gaming</h3></summary>
+3272 | </details>
+3274 | <details>
+3275 | <summary><h3 style="display:inline">Agent-to-Agent Protocols</h3></summary>
+3296 | </details>
+3298 | <br/>
+3300 | ## ≡ƒñ¥ Contributing
